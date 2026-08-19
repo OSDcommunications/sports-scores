@@ -2,8 +2,13 @@ name: Daily MaxPreps Scraper
 
 on:
   schedule:
-    - cron: '0 12 * * *' # Runs daily at 12:00 PM UTC / 6:00 AM MDT
-  workflow_dispatch: # Allows manual run button in GitHub
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   scrape-and-publish:
