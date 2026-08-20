@@ -3,14 +3,12 @@ import os
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-# Ogden High School Varsity Football MaxPreps Schedule URL
 TARGET_URL = "https://www.maxpreps.com/ut/ogden/ogden-tigers/football/schedule/"
 
 def fetch_ogden_football_schedule():
     games = []
     
     with sync_playwright() as p:
-        # Launch headless browser with standard browser headers to bypass basic blocks
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -18,15 +16,16 @@ def fetch_ogden_football_schedule():
         page = context.new_page()
         
         print(f"Fetching schedule from {TARGET_URL}...")
-        page.goto(TARGET_URL, wait_until="networkidle", timeout=60000)
+        # Wait for HTML structure to load instead of waiting for ad scripts
+        page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=60000)
+        page.wait_for_timeout(5000) # Pause 5 seconds for game data to render
         
-        # Extract rendered HTML
         html_content = page.content()
         browser.close()
 
     soup = BeautifulSoup(html_content, "html.parser")
     
-    # Locate game rows inside schedule container
+    # Locate schedule entries
     game_rows = soup.find_all("tr", class_=lambda c: c and "contest" in c.lower()) or soup.find_all("li", class_=lambda c: c and "contest" in c.lower())
     
     for row in game_rows:
@@ -44,10 +43,9 @@ def fetch_ogden_football_schedule():
                 "opponent": opponent,
                 "result": result
             })
-        except Exception as e:
+        except Exception:
             continue
 
-    # Save results to JSON file for CMS consumption
     output_path = "ogden_football_schedule.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump({"team": "Ogden High Varsity Football", "updated": True, "games": games}, f, indent=2)
