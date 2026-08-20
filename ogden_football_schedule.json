@@ -1,5 +1,56 @@
 {
   "team": "Ogden High Varsity Football",
   "updated": true,
-  "games": []
+  "games": [
+    {
+      "date": "8/147:00pm",
+      "opponent": "vsBear River",
+      "result": "L36-13"
+    },
+    {
+      "date": "8/217:00pm",
+      "opponent": "vsBonneville",
+      "result": "Preview Game"
+    },
+    {
+      "date": "8/287:00pm",
+      "opponent": "@West Field",
+      "result": "Preview Game"
+    },
+    {
+      "date": "9/47:00pm",
+      "opponent": "@Clearfield",
+      "result": "Preview Game"
+    },
+    {
+      "date": "9/117:00pm",
+      "opponent": "@Emery",
+      "result": "Preview Game"
+    },
+    {
+      "date": "9/187:00pm",
+      "opponent": "vsLogan*",
+      "result": "Preview Game"
+    },
+    {
+      "date": "9/257:00pm",
+      "opponent": "@Grantsville*",
+      "result": "Preview Game"
+    },
+    {
+      "date": "10/27:00pm",
+      "opponent": "vsUnion*",
+      "result": "Preview Game"
+    },
+    {
+      "date": "10/87:00pm",
+      "opponent": "@Morgan*",
+      "result": "Preview Game"
+    },
+    {
+      "date": "10/145:00pm",
+      "opponent": "vsBen Lomond*",
+      "result": "Preview Game"
+    }
+  ]
 }
