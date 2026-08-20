@@ -1,5 +1,5 @@
 import json
-import os
+import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
@@ -16,35 +16,63 @@ def fetch_ogden_football_schedule():
         page = context.new_page()
         
         print(f"Fetching schedule from {TARGET_URL}...")
-        # Wait for HTML structure to load instead of waiting for ad scripts
         page.goto(TARGET_URL, wait_until="domcontentloaded", timeout=60000)
-        page.wait_for_timeout(5000) # Pause 5 seconds for game data to render
+        
+        # Scroll down to ensure all lazy-loaded content loads
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(4000)
         
         html_content = page.content()
         browser.close()
 
     soup = BeautifulSoup(html_content, "html.parser")
     
-    # Locate schedule entries
-    game_rows = soup.find_all("tr", class_=lambda c: c and "contest" in c.lower()) or soup.find_all("li", class_=lambda c: c and "contest" in c.lower())
-    
-    for row in game_rows:
+    # Method 1: Extract structured JSON-LD embedded by MaxPreps
+    script_tags = soup.find_all("script", type="application/ld+json")
+    for script in script_tags:
+        if not script.string:
+            continue
         try:
-            date_elem = row.find(class_=lambda c: c and "date" in c.lower())
-            opponent_elem = row.find(class_=lambda c: c and "opponent" in c.lower())
-            result_elem = row.find(class_=lambda c: c and "result" in c.lower())
+            data = json.loads(script.string)
+            items = data if isinstance(data, list) else [data]
             
-            date = date_elem.get_text(strip=True) if date_elem else "TBD"
-            opponent = opponent_elem.get_text(strip=True) if opponent_elem else "Unknown Opponent"
-            result = result_elem.get_text(strip=True) if result_elem else "Upcoming"
-
-            games.append({
-                "date": date,
-                "opponent": opponent,
-                "result": result
-            })
+            for item in items:
+                if item.get("@type") in ["SportsEvent", "Event"]:
+                    raw_date = item.get("startDate", "TBD")
+                    date = raw_date.split("T")[0] if "T" in raw_date else raw_date
+                    
+                    competitors = item.get("competitor", [])
+                    opponent = "Unknown Opponent"
+                    if isinstance(competitors, list):
+                        for comp in competitors:
+                            name = comp.get("name", "")
+                            if "Ogden" not in name and name:
+                                opponent = name
+                                break
+                    
+                    result = "Upcoming"
+                    if "eventStatus" in item and "Completed" in item.get("eventStatus", ""):
+                        result = "Final"
+                        
+                    games.append({
+                        "date": date,
+                        "opponent": opponent,
+                        "result": result
+                    })
         except Exception:
             continue
+
+    # Method 2: Fallback table text scraper if JSON-LD is absent
+    if not games:
+        rows = soup.find_all("tr")
+        for row in rows:
+            cells = [td.get_text(strip=True) for td in row.find_all(["td", "th"])]
+            if len(cells) >= 2 and any(m in cells[0].lower() for m in ["aug", "sep", "oct", "nov", "10/", "8/", "9/"]):
+                games.append({
+                    "date": cells[0],
+                    "opponent": cells[1],
+                    "result": cells[2] if len(cells) > 2 else "Upcoming"
+                })
 
     output_path = "ogden_football_schedule.json"
     with open(output_path, "w", encoding="utf-8") as f:
