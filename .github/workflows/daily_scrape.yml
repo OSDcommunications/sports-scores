@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install playwright beautifulsoup4
+          pip install requests playwright beautifulsoup4
           playwright install chromium
 
       - name: Run Scraper
