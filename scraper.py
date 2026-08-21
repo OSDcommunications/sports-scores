@@ -43,12 +43,15 @@ MONTHS_MAP = {
 }
 MONTH_NAMES = {v: k for k, v in MONTHS_MAP.items()}
 
-def parse_game_row(date_raw, opponent_raw, result_raw):
-    cleaned_date = re.sub(r'(\d{1,2}/\d{1,2})(\d{1,2}:)', r'\1 \2', date_raw.strip())
-    cleaned_date = re.sub(r'([a-zA-Z]{3}\s*\d{1,2})(\d{1,2}:)', r'\1 \2', cleaned_date)
+def parse_game_row(date_raw, opponent_raw, result_raw, full_row_text=""):
+    combined = f"{opponent_raw} {result_raw} {full_row_text}"
+    
+    # 1. Clean up Opponent Name & Strip MaxPreps Metadata
+    opp_clean = opponent_raw.strip()
+    opp_clean = re.sub(r'(Match Details|Location:|Box Score|Contest Details|Game Details).*$', '', opp_clean, flags=re.IGNORECASE)
+    opp_clean = re.sub(r'\([^\)]*\)', '', opp_clean).strip()
 
     is_home = True
-    opp_clean = opponent_raw.strip()
     if opp_clean.startswith("@"):
         is_home = False
         opp_clean = opp_clean.lstrip("@").strip()
@@ -56,8 +59,12 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
         is_home = True
         opp_clean = re.sub(r"^vs\.?\s*", "", opp_clean, flags=re.IGNORECASE).strip()
 
-    is_region = "*" in opp_clean or "*" in opponent_raw
+    is_region = "*" in opp_clean or "*" in opponent_raw or "*" in full_row_text
     opp_clean = opp_clean.replace("*", "").strip()
+
+    # 2. Parse Date and Time
+    cleaned_date = re.sub(r'(\d{1,2}/\d{1,2})(\d{1,2}:)', r'\1 \2', date_raw.strip())
+    cleaned_date = re.sub(r'([a-zA-Z]{3}\s*\d{1,2})(\d{1,2}:)', r'\1 \2', cleaned_date)
 
     month_num, day_num = 8, 1
     slash_match = re.search(r'(\d{1,2})/(\d{1,2})', cleaned_date)
@@ -81,11 +88,24 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
 
     date_display = f"{date_part} • {time_part}" if time_part else date_part
 
-    res_clean = result_raw.strip()
-    if not res_clean or res_clean.lower() in ["preview game", "preview", "upcoming", "report score"]:
-        res_clean = "Preview Game"
+    # 3. Parse Result & Score (Supports W/L 36-13, win 9 lost 1, etc.)
+    res_clean = "Preview Game"
+    wl_match = re.search(r'\b([WL])\b\s*(\d+)\s*[-–]\s*(\d+)', combined, re.IGNORECASE)
+    win_lost_match = re.search(r'win\s*(\d+)\s*lost?\s*(\d+)', combined, re.IGNORECASE)
+    score_only = re.search(r'(\d+)\s*[-–]\s*(\d+)', result_raw + " " + full_row_text)
 
-    # Sort key for fall season
+    if wl_match:
+        res_clean = f"{wl_match.group(1).upper()} {wl_match.group(2)}-{wl_match.group(3)}"
+    elif win_lost_match:
+        res_clean = f"W {win_lost_match.group(1)}-{win_lost_match.group(2)}"
+    elif score_only and any(w in combined.lower() for w in ["win", "won", "w"]):
+        res_clean = f"W {score_only.group(1)}-{score_only.group(2)}"
+    elif score_only and any(l in combined.lower() for l in ["loss", "lost", "l"]):
+        res_clean = f"L {score_only.group(1)}-{score_only.group(2)}"
+    elif result_raw.strip() and result_raw.strip().lower() not in ["preview game", "preview", "upcoming", "report score"]:
+        res_clean = result_raw.strip()
+
+    # Sort key for fall sports
     sort_month = month_num + 12 if month_num < 6 else month_num
     sort_key = sort_month * 100 + day_num
 
@@ -110,45 +130,29 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
 
     try:
         page.goto(target_url, wait_until="domcontentloaded", timeout=45000)
-        page.wait_for_timeout(5000)
+        page.wait_for_timeout(4000)
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         page.wait_for_timeout(2000)
 
         html_content = page.content()
         soup = BeautifulSoup(html_content, "html.parser")
 
-        # 1. Primary: Extract from Next.js payload script tag if available
-        script_tag = soup.find("script", id="__NEXT_DATA__")
-        if script_tag and script_tag.string:
-            try:
-                data = json.loads(script_tag.string)
-                # Walk down properties to extract schedule items if structure matches
-                raw_games = data.get("props", {}).get("pageProps", {}).get("schedule", [])
-                for g in raw_games:
-                    d_str = g.get("date", "") + " " + g.get("time", "")
-                    o_str = g.get("opponent", "")
-                    r_str = g.get("result", "Preview Game")
-                    if d_str and o_str:
-                        parsed = parse_game_row(d_str, o_str, r_str)
-                        games.append(parsed)
-            except Exception:
-                pass
+        rows = soup.find_all("tr")
+        for row in rows:
+            tds = row.find_all(["td", "th"])
+            cells = [td.get_text(" ", strip=True) for td in tds]
+            row_full_text = row.get_text(" ", strip=True)
 
-        # 2. Fallback: Parse table rows & list elements
-        if not games:
-            rows = soup.find_all(["tr", "li"])
-            for row in rows:
-                cells = [td.get_text(strip=True) for td in row.find_all(["td", "th", "div", "span"]) if td.get_text(strip=True)]
-                if len(cells) >= 2 and any(re.search(r'(\d{1,2}/\d{1,2}|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', cells[0], re.IGNORECASE) for _ in [1]):
-                    date_str = cells[0]
-                    opp_str = cells[1]
-                    if any(h in date_str.lower() for h in ["date", "time", "schedule", "overall", "league"]):
-                        continue
-                    res_str = cells[2] if len(cells) > 2 else "Preview Game"
+            if len(cells) >= 2 and any(re.search(r'(\d{1,2}/\d{1,2}|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', cells[0], re.IGNORECASE) for _ in [1]):
+                date_str = cells[0]
+                opp_str = cells[1]
+                if any(h in date_str.lower() for h in ["date", "time", "schedule", "overall", "league"]):
+                    continue
+                res_str = cells[2] if len(cells) > 2 else "Preview Game"
 
-                    parsed = parse_game_row(date_str, opp_str, res_str)
-                    if not any(g["date_display"] == parsed["date_display"] and g["opponent"] == parsed["opponent"] for g in games):
-                        games.append(parsed)
+                parsed = parse_game_row(date_str, opp_str, res_str, row_full_text)
+                if not any(g["date_display"] == parsed["date_display"] and g["opponent"] == parsed["opponent"] for g in games):
+                    games.append(parsed)
 
         games.sort(key=lambda x: x["sort_key"])
 
