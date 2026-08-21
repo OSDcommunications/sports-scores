@@ -4,14 +4,14 @@
   "games": [
     {
       "date": "8/20",
-      "time": "TBAM",
-      "date_display": "AUG 20 \u2022 TBAM",
-      "opponent": "4:00pm",
+      "time": "TBA",
+      "date_display": "AUG 20 \u2022 TBA",
+      "opponent": "",
       "location": "Away",
       "is_home": false,
       "is_region": false,
-      "result": "l\n0-0",
-      "result_display": "l\n0-0"
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     },
     {
       "date": "8/20",

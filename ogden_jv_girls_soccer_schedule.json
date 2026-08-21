@@ -3,17 +3,6 @@
   "updated": true,
   "games": [
     {
-      "date": "8/20",
-      "time": "TBAM",
-      "date_display": "AUG 20 \u2022 TBAM",
-      "opponent": "5:00pm",
-      "location": "Away",
-      "is_home": false,
-      "is_region": false,
-      "result": "l\n2-1",
-      "result_display": "l\n2-1"
-    },
-    {
       "date": "8/5",
       "time": "3:30PM",
       "date_display": "AUG 5 \u2022 3:30PM",
@@ -64,6 +53,17 @@
       "opponent": "Farmington",
       "location": "Home",
       "is_home": true,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "8/20",
+      "time": "TBA",
+      "date_display": "AUG 20 \u2022 TBA",
+      "opponent": "",
+      "location": "Away",
+      "is_home": false,
       "is_region": false,
       "result": "Preview Game",
       "result_display": "Preview Game"

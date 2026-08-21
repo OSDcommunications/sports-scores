@@ -3,17 +3,6 @@
   "updated": true,
   "games": [
     {
-      "date": "8/21",
-      "time": "TBAM",
-      "date_display": "AUG 21 \u2022 TBAM",
-      "opponent": "7:00pm",
-      "location": "Away",
-      "is_home": false,
-      "is_region": false,
-      "result": "Preview Game",
-      "result_display": "Preview Game"
-    },
-    {
       "date": "8/14",
       "time": "7:00PM",
       "date_display": "AUG 14 \u2022 7:00PM",
@@ -23,6 +12,17 @@
       "is_region": false,
       "result": "L 36-13",
       "result_display": "L 36-13"
+    },
+    {
+      "date": "8/21",
+      "time": "TBA",
+      "date_display": "AUG 21 \u2022 TBA",
+      "opponent": "",
+      "location": "Away",
+      "is_home": false,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     },
     {
       "date": "8/21",

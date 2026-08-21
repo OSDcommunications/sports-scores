@@ -3,17 +3,6 @@
   "updated": true,
   "games": [
     {
-      "date": "8/20",
-      "time": "TBAM",
-      "date_display": "AUG 20 \u2022 TBAM",
-      "opponent": "7:00pm",
-      "location": "Away",
-      "is_home": false,
-      "is_region": false,
-      "result": "l\n2-3",
-      "result_display": "l\n2-3"
-    },
-    {
       "date": "8/5",
       "time": "5:30PM",
       "date_display": "AUG 5 \u2022 5:30PM",
@@ -54,8 +43,8 @@
       "location": "Home",
       "is_home": true,
       "is_region": false,
-      "result": "W 2-1",
-      "result_display": "W 2-1"
+      "result": "W 2-1 (2OT)",
+      "result_display": "W 2-1 (2OT)"
     },
     {
       "date": "8/17",
@@ -67,6 +56,17 @@
       "is_region": false,
       "result": "L 5-1",
       "result_display": "L 5-1"
+    },
+    {
+      "date": "8/20",
+      "time": "TBA",
+      "date_display": "AUG 20 \u2022 TBA",
+      "opponent": "",
+      "location": "Away",
+      "is_home": false,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     },
     {
       "date": "8/20",
