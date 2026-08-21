@@ -3,7 +3,6 @@ import re
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
-# Define teams to scrape
 TEAMS = [
     {
         "name": "Ogden High Varsity Football",
@@ -62,13 +61,20 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
         "result_display": res_clean
     }
 
-def fetch_team_schedule(team_name, target_url, output_path, page):
+def fetch_team_schedule(team_name, target_url, output_path, browser):
     print(f"Fetching schedule for {team_name}...")
     games = []
+    
+    # Create an isolated context for every team page visit
+    context = browser.new_context(
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    )
+    page = context.new_page()
+    
     try:
         page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(3000)
+        page.wait_for_timeout(5000)
         html_content = page.content()
 
         soup = BeautifulSoup(html_content, "html.parser")
@@ -80,22 +86,22 @@ def fetch_team_schedule(team_name, target_url, output_path, page):
                 games.append(parse_game_row(cells[0], cells[1], cells[2] if len(cells) > 2 else "Preview Game"))
     except Exception as e:
         print(f"Error fetching {team_name}: {e}")
+    finally:
+        context.close()
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump({"team": team_name, "updated": True, "games": games}, f, indent=2)
-    print(f"Saved {len(games)} games to {output_path}")
+    # Guard: only save if games were successfully parsed
+    if games:
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump({"team": team_name, "updated": True, "games": games}, f, indent=2)
+        print(f"Saved {len(games)} games to {output_path}")
+    else:
+        print(f"Warning: No games parsed for {team_name}. Keeping prior file intact.")
 
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
-        
         for team in TEAMS:
-            fetch_team_schedule(team["name"], team["url"], team["output"], page)
-            
+            fetch_team_schedule(team["name"], team["url"], team["output"], browser)
         browser.close()
 
 if __name__ == "__main__":
