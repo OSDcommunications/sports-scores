@@ -1,4 +1,5 @@
 import json
+import re
 import datetime
 from playwright.sync_api import sync_playwright
 
@@ -68,60 +69,100 @@ TEAMS = [
     }
 ]
 
-def scrape_schedule(page, team):
-    print(f"Fetching schedule for {team['name']}...")
+def parse_game_row(text):
+    lines = [line.strip() for line in text.split("\n") if line.strip()]
+    if not lines:
+        return None
+
+    date_str = lines[0] if len(lines) > 0 else ""
+    opponent_str = ""
+    result_str = ""
+    location_str = ""
+    time_str = ""
+
+    for line in lines[1:]:
+        if any(marker in line.lower() for marker in ["vs", "@", "against"]):
+            opponent_str = line
+        elif re.search(r'\b(W|L|T)\b|\d+-\d+', line):
+            result_str = line
+        elif any(loc in line.lower() for loc in ["home", "away", "neutral"]):
+            location_str = line
+        elif re.search(r'\d+:\d+|\b(am|pm)\b', line.lower()):
+            time_str = line
+        elif not opponent_str:
+            opponent_str = line
+
+    return {
+        "date": date_str,
+        "opponent": opponent_str,
+        "opponent_name": opponent_str.replace("vs", "").replace("@", "").strip(),
+        "result": result_str,
+        "score": result_str,
+        "time": time_str,
+        "location": location_str,
+        "raw": " | ".join(lines),
+        "details": lines
+    }
+
+def scrape_team_schedule(page, team):
+    print(f"Scraping schedule for {team['name']}...")
     games = []
     wins, losses, ties = 0, 0, 0
 
     try:
-        page.goto(team["url"], wait_until="domcontentloaded", timeout=45000)
+        page.goto(team["url"], wait_until="networkidle", timeout=60000)
         page.wait_for_timeout(3000)
 
-        # Target MaxPreps contest rows
-        rows = page.query_selector_all("tr, div[class*='contest-row'], div[class*='ContestRow']")
-        
+        # Target table rows and container elements on MaxPreps
+        rows = page.query_selector_all("tr, li[class*='contest'], div[class*='contest-row'], div[class*='ContestRow']")
+
         for row in rows:
             text = row.inner_text().strip()
-            if text and len(text) > 5:
-                lines = [line.strip() for line in text.split("\n") if line.strip()]
-                
-                game_obj = {
-                    "raw": " | ".join(lines),
-                    "date": lines[0] if len(lines) > 0 else "",
-                    "opponent": lines[1] if len(lines) > 1 else "",
-                    "result": lines[2] if len(lines) > 2 else "",
-                    "details": lines
-                }
-                games.append(game_obj)
-                
-                full_str = " ".join(lines).upper()
-                if " W " in f" {full_str} " or full_str.startswith("W "):
-                    wins += 1
-                elif " L " in f" {full_str} " or full_str.startswith("L "):
-                    losses += 1
-                elif " T " in f" {full_str} " or full_str.startswith("T "):
-                    ties += 1
+            if text and len(text) > 8:
+                parsed = parse_game_row(text)
+                if parsed and parsed["date"]:
+                    games.append(parsed)
+
+                    res_upper = parsed["result"].upper()
+                    if "W" in res_upper:
+                        wins += 1
+                    elif "L" in res_upper:
+                        losses += 1
+                    elif "T" in res_upper:
+                        ties += 1
 
     except Exception as e:
         print(f"  [ERROR] Scraping failed for {team['name']}: {e}")
 
+    overall_record = f"{wins}-{losses}" + (f"-{ties}" if ties > 0 else "")
+
+    # Structured schema compatible with both legacy and new frontend widgets
     schedule_data = {
         "team": team["name"],
         "source_url": team["url"],
-        "last_updated": datetime.datetime.now().isoformat(),
+        "last_updated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "overall_record": overall_record,
+        "record": overall_record,
         "metrics": {
-            "total_games": len(games),
+            "overall_record": overall_record,
+            "wins": wins,
+            "losses": losses,
+            "ties": ties,
+            "total_games": len(games)
+        },
+        "game_metrics": {
             "wins": wins,
             "losses": losses,
             "ties": ties
         },
-        "games": games
+        "games": games,
+        "schedule": games
     }
 
     with open(team["output"], "w", encoding="utf-8") as f:
         json.dump(schedule_data, f, indent=2, ensure_ascii=False)
 
-    print(f"  [SUCCESS] Saved {len(games)} entries to {team['output']}")
+    print(f"  [SUCCESS] {len(games)} games scraped -> {team['output']}")
 
 def main():
     with sync_playwright() as p:
@@ -132,7 +173,7 @@ def main():
         page = context.new_page()
 
         for team in TEAMS:
-            scrape_schedule(page, team)
+            scrape_team_schedule(page, team)
 
         browser.close()
 
