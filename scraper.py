@@ -82,7 +82,7 @@ HEADERS = {
 def extract_contests_from_json(obj):
     """Recursively find contest list in MaxPreps Next.js JSON tree."""
     if isinstance(obj, dict):
-        for key in ["contests", "scheduleEntries", "games", "contestList"]:
+        for key in ["contests", "scheduleEntries", "games", "contestList", "schedule"]:
             if key in obj and isinstance(obj[key], list) and len(obj[key]) > 0:
                 return obj[key]
         for v in obj.values():
@@ -242,18 +242,14 @@ def process_and_save_team(team, raw_contests):
         "schedule": games
     }
 
-    # Only overwrite if we found games OR if no file exists yet
-    if total_games > 0 or not os.path.exists(team["output"]):
-        with open(team["output"], "w", encoding="utf-8") as f:
-            json.dump(payload, f, indent=2, ensure_ascii=False)
-        print(f"  [SUCCESS] Wrote {total_games} games -> {team['output']}")
-    else:
-        print(f"  [WARNING] 0 games scraped for {team['name']}. Preserving existing {team['output']} file.")
+    # Save output JSON
+    with open(team["output"], "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2, ensure_ascii=False)
+    print(f"  [SUCCESS] Wrote {total_games} games -> {team['output']}")
 
 def main():
     print("Starting MaxPreps Schedule Scraper...")
     
-    # Track teams that need Playwright fallback
     fallback_teams = []
 
     for team in TEAMS:
@@ -264,7 +260,6 @@ def main():
         else:
             fallback_teams.append(team)
 
-    # Use Playwright for any remaining teams
     if fallback_teams:
         print(f"\nLaunching Playwright browser fallback for {len(fallback_teams)} teams...")
         with sync_playwright() as p:
