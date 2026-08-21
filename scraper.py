@@ -40,19 +40,16 @@ TEAMS = [
 
 def parse_schedule_text(text):
     games = []
-    # Pattern handles concatenated strings (e.g. 8/207:00pm) and separated formats
     pattern = r'(\d{1,2})/([0-3]?\d)\s*(\d{1,2}:\d{2}\s*(?:[ap]\.?m\.?|[ap])?|TBA|tba)?\s*\n?\s*(vs|@)\s*\n?\s*([^\n]+)'
     matches = list(re.finditer(pattern, text, re.IGNORECASE))
     
     for i, match in enumerate(matches):
-        m_str = match.group(1)
-        d_str = match.group(2)
+        m_str, d_str = match.group(1), match.group(2)
         time_raw = match.group(3) or "TBA"
         location_str = match.group(4)
         opp_raw = match.group(5).strip()
         
         date_raw = f"{m_str}/{d_str}"
-        
         time_clean = time_raw.upper().replace('.', '').strip()
         if time_clean.endswith('P') and not time_clean.endswith('PM'):
             time_clean += 'M'
@@ -67,14 +64,11 @@ def parse_schedule_text(text):
         result_display = "Preview Game"
         if res_match:
             matched_res = res_match.group(1).strip()
-            if matched_res.lower() in ["preview", "box score"]:
-                result_display = "Preview Game"
-            else:
+            if matched_res.lower() not in ["preview", "box score"]:
                 result_display = matched_res
         
         month_name = MONTHS.get(m_str, "AUG")
         date_display = f"{month_name} {d_str} • {time_clean}"
-        
         is_home = location_str.lower() == "vs"
         is_region = "*" in opp_raw
         opp_clean = opp_raw.replace("*", "").strip()
@@ -94,35 +88,23 @@ def parse_schedule_text(text):
 
 def scrape_all():
     with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True,
-            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
-        )
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 800}
-        )
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
+        context = browser.new_context(viewport={"width": 1280, "height": 800})
         
         for team in TEAMS:
             print(f"Scraping {team['name']}...")
             try:
                 page = context.new_page()
-                page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-                page.goto(team["url"], wait_until="networkidle", timeout=60000)
-                page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)")
-                page.wait_for_timeout(2000)
+                page.goto(team["url"], wait_until="domcontentloaded", timeout=30000)
+                page.wait_for_timeout(3000)
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(5000)
+                page.wait_for_timeout(2000)
                 
                 body_text = page.inner_text("body")
                 games = parse_schedule_text(body_text)
                 page.close()
                 
-                data = {
-                    "team": team["name"],
-                    "updated": True,
-                    "games": games
-                }
+                data = {"team": team["name"], "updated": True, "games": games}
                 with open(team["filename"], "w", encoding="utf-8") as f:
                     json.dump(data, f, indent=2)
                 print(f"  -> Saved {len(games)} games to {team['filename']}")
