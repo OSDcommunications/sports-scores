@@ -3,6 +3,17 @@
   "updated": true,
   "games": [
     {
+      "date": "8/21",
+      "time": "TBAM",
+      "date_display": "AUG 21 \u2022 TBAM",
+      "opponent": "7:00pm",
+      "location": "Away",
+      "is_home": false,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
       "date": "8/14",
       "time": "7:00PM",
       "date_display": "AUG 14 \u2022 7:00PM",
