@@ -1,5 +1,6 @@
 import json
 import re
+import time
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 
@@ -36,14 +37,17 @@ TEAMS = [
     }
 ]
 
-MONTHS = {
-    "1": "JAN", "2": "FEB", "3": "MAR", "4": "APR", "5": "MAY", "6": "JUN",
-    "7": "JUL", "8": "AUG", "9": "SEP", "10": "OCT", "11": "NOV", "12": "DEC"
+MONTHS_MAP = {
+    "JAN": 1, "FEB": 2, "MAR": 3, "APR": 4, "MAY": 5, "JUN": 6,
+    "JUL": 7, "AUG": 8, "SEP": 9, "OCT": 10, "NOV": 11, "DEC": 12
 }
+MONTH_NAMES = {v: k for k, v in MONTHS_MAP.items()}
 
 def parse_game_row(date_raw, opponent_raw, result_raw):
-    cleaned_date_str = re.sub(r'(\d{1,2}/\d{1,2})(\d{1,2}:)', r'\1 \2', date_raw.strip())
-    
+    cleaned_date = re.sub(r'(\d{1,2}/\d{1,2})(\d{1,2}:)', r'\1 \2', date_raw.strip())
+    cleaned_date = re.sub(r'([a-zA-Z]{3}\s*\d{1,2})(\d{1,2}:)', r'\1 \2', cleaned_date)
+
+    # Home vs Away
     is_home = True
     opp_clean = opponent_raw.strip()
     if opp_clean.startswith("@"):
@@ -56,16 +60,23 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
     is_region = "*" in opp_clean or "*" in opponent_raw
     opp_clean = opp_clean.replace("*", "").strip()
 
-    date_match = re.search(r'(\d{1,2}/\d{1,2})', cleaned_date_str)
-    time_match = re.search(r'(\d{1,2}:\d{2}\s*(?:am|pm)?)', cleaned_date_str, re.IGNORECASE)
+    # Parse Month & Day for sorting
+    month_num, day_num = 8, 1
+    slash_match = re.search(r'(\d{1,2})/(\d{1,2})', cleaned_date)
+    text_match = re.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s*(\d{1,2})', cleaned_date, re.IGNORECASE)
 
-    if date_match:
-        m, d = date_match.group(1).split("/")
-        month_name = MONTHS.get(m, "TBD")
-        date_part = f"{month_name} {d}"
-    else:
-        date_part = "TBD"
+    if slash_match:
+        month_num = int(slash_match.group(1))
+        day_num = int(slash_match.group(2))
+    elif text_match:
+        m_str = text_match.group(1).upper()
+        month_num = MONTHS_MAP.get(m_str, 8)
+        day_num = int(text_match.group(2))
 
+    month_name = MONTH_NAMES.get(month_num, "AUG")
+    date_part = f"{month_name} {day_num}"
+
+    time_match = re.search(r'(\d{1,2}:\d{2}\s*(?:am|pm)?)', cleaned_date, re.IGNORECASE)
     time_part = time_match.group(1).upper() if time_match else ""
     if time_part and "PM" not in time_part and "AM" not in time_part:
         time_part += " PM"
@@ -73,15 +84,20 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
     date_display = f"{date_part} • {time_part}" if time_part else date_part
 
     res_clean = result_raw.strip()
-    if not res_clean or res_clean.lower() in ["preview game", "preview", "upcoming"]:
+    if not res_clean or res_clean.lower() in ["preview game", "preview", "upcoming", "report score"]:
         res_clean = "Preview Game"
+
+    # Sort weight for fall sports (Aug-Dec = 8..12, Jan-Jul = 13..19)
+    sort_month = month_num + 12 if month_num < 6 else month_num
+    sort_key = sort_month * 100 + day_num
 
     return {
         "date_display": date_display,
         "opponent": opp_clean,
         "is_home": is_home,
         "is_region": is_region,
-        "result_display": res_clean
+        "result_display": res_clean,
+        "sort_key": sort_key
     }
 
 def fetch_team_schedule(team_name, target_url, output_path, browser):
@@ -89,14 +105,15 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
     games = []
     
     context = browser.new_context(
-        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        viewport={"width": 1280, "height": 800}
     )
     page = context.new_page()
     
     try:
         page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(5000)
+        page.wait_for_timeout(4000)
         html_content = page.content()
 
         soup = BeautifulSoup(html_content, "html.parser")
@@ -104,14 +121,29 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
         
         for row in rows:
             cells = [td.get_text(strip=True) for td in row.find_all(["td", "th"])]
-            if len(cells) >= 2 and any(re.search(r'\d{1,2}/\d{1,2}', cells[0]) for _ in [1]):
-                games.append(parse_game_row(cells[0], cells[1], cells[2] if len(cells) > 2 else "Preview Game"))
+            if len(cells) >= 2 and any(re.search(r'(\d{1,2}/\d{1,2}|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', cells[0], re.IGNORECASE) for _ in [1]):
+                date_str = cells[0]
+                opp_str = cells[1]
+                if any(h in date_str.lower() for h in ["date", "time", "schedule", "overall"]):
+                    continue
+                res_str = cells[2] if len(cells) > 2 else "Preview Game"
+                
+                parsed = parse_game_row(date_str, opp_str, res_str)
+                if not any(g["date_display"] == parsed["date_display"] and g["opponent"] == parsed["opponent"] for g in games):
+                    games.append(parsed)
+
+        # Sort chronologically by date
+        games.sort(key=lambda x: x["sort_key"])
+
     except Exception as e:
         print(f"Error fetching {team_name}: {e}")
     finally:
         context.close()
 
     if games:
+        for g in games:
+            g.pop("sort_key", None)
+            
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump({"team": team_name, "updated": True, "games": games}, f, indent=2)
         print(f"Saved {len(games)} games to {output_path}")
@@ -123,6 +155,7 @@ def main():
         browser = p.chromium.launch(headless=True)
         for team in TEAMS:
             fetch_team_schedule(team["name"], team["url"], team["output"], browser)
+            time.sleep(2)
         browser.close()
 
 if __name__ == "__main__":

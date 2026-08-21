@@ -21,7 +21,7 @@
       "opponent": "Green Canyon",
       "is_home": true,
       "is_region": false,
-      "result_display": "Report Score"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "AUG 13 \u2022 5:00PM",
@@ -35,14 +35,14 @@
       "opponent": "Farmington",
       "is_home": true,
       "is_region": false,
-      "result_display": "Report Score"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "AUG 20 \u2022 5:00PM",
       "opponent": "Carbon",
       "is_home": true,
       "is_region": false,
-      "result_display": "Report Score"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "AUG 25 \u2022 3:30PM",
