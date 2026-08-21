@@ -3,6 +3,13 @@
   "updated": true,
   "games": [
     {
+      "date_display": "AUG 20 \u2022 4:00PM",
+      "opponent": "Bonneville",
+      "is_home": false,
+      "is_region": false,
+      "result_display": "Report Score"
+    },
+    {
       "date_display": "AUG 27 \u2022 4:00PM",
       "opponent": "West Field",
       "is_home": true,
@@ -50,13 +57,6 @@
       "is_home": true,
       "is_region": false,
       "result_display": "Preview Game"
-    },
-    {
-      "date_display": "AUG 20 \u2022 4:00PM",
-      "opponent": "Bonneville",
-      "is_home": false,
-      "is_region": false,
-      "result_display": "Report Score"
     }
   ]
 }
