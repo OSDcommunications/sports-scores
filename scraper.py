@@ -85,6 +85,7 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
     if not res_clean or res_clean.lower() in ["preview game", "preview", "upcoming", "report score"]:
         res_clean = "Preview Game"
 
+    # Sort key for fall season
     sort_month = month_num + 12 if month_num < 6 else month_num
     sort_key = sort_month * 100 + day_num
 
@@ -100,35 +101,54 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
 def fetch_team_schedule(team_name, target_url, output_path, browser):
     print(f"Fetching schedule for {team_name}...")
     games = []
-    
+
     context = browser.new_context(
         user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
         viewport={"width": 1280, "height": 800}
     )
     page = context.new_page()
-    
-    try:
-        page.goto(target_url, wait_until="networkidle", timeout=60000)
-        page.wait_for_selector("table", timeout=15000)
-        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(3000)
-        html_content = page.content()
 
+    try:
+        page.goto(target_url, wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(5000)
+        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+        page.wait_for_timeout(2000)
+
+        html_content = page.content()
         soup = BeautifulSoup(html_content, "html.parser")
-        rows = soup.find_all("tr")
-        
-        for row in rows:
-            cells = [td.get_text(strip=True) for td in row.find_all(["td", "th"])]
-            if len(cells) >= 2 and any(re.search(r'(\d{1,2}/\d{1,2}|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', cells[0], re.IGNORECASE) for _ in [1]):
-                date_str = cells[0]
-                opp_str = cells[1]
-                if any(h in date_str.lower() for h in ["date", "time", "schedule", "overall"]):
-                    continue
-                res_str = cells[2] if len(cells) > 2 else "Preview Game"
-                
-                parsed = parse_game_row(date_str, opp_str, res_str)
-                if not any(g["date_display"] == parsed["date_display"] and g["opponent"] == parsed["opponent"] for g in games):
-                    games.append(parsed)
+
+        # 1. Primary: Extract from Next.js payload script tag if available
+        script_tag = soup.find("script", id="__NEXT_DATA__")
+        if script_tag and script_tag.string:
+            try:
+                data = json.loads(script_tag.string)
+                # Walk down properties to extract schedule items if structure matches
+                raw_games = data.get("props", {}).get("pageProps", {}).get("schedule", [])
+                for g in raw_games:
+                    d_str = g.get("date", "") + " " + g.get("time", "")
+                    o_str = g.get("opponent", "")
+                    r_str = g.get("result", "Preview Game")
+                    if d_str and o_str:
+                        parsed = parse_game_row(d_str, o_str, r_str)
+                        games.append(parsed)
+            except Exception:
+                pass
+
+        # 2. Fallback: Parse table rows & list elements
+        if not games:
+            rows = soup.find_all(["tr", "li"])
+            for row in rows:
+                cells = [td.get_text(strip=True) for td in row.find_all(["td", "th", "div", "span"]) if td.get_text(strip=True)]
+                if len(cells) >= 2 and any(re.search(r'(\d{1,2}/\d{1,2}|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)', cells[0], re.IGNORECASE) for _ in [1]):
+                    date_str = cells[0]
+                    opp_str = cells[1]
+                    if any(h in date_str.lower() for h in ["date", "time", "schedule", "overall", "league"]):
+                        continue
+                    res_str = cells[2] if len(cells) > 2 else "Preview Game"
+
+                    parsed = parse_game_row(date_str, opp_str, res_str)
+                    if not any(g["date_display"] == parsed["date_display"] and g["opponent"] == parsed["opponent"] for g in games):
+                        games.append(parsed)
 
         games.sort(key=lambda x: x["sort_key"])
 
@@ -140,19 +160,19 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
     if games:
         for g in games:
             g.pop("sort_key", None)
-            
+
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump({"team": team_name, "updated": True, "games": games}, f, indent=2)
-        print(f"Saved {len(games)} games to {output_path}")
+        print(f"Successfully saved {len(games)} games to {output_path}")
     else:
-        print(f"Warning: No games parsed for {team_name}.")
+        print(f"Warning: Could not parse games for {team_name}.")
 
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         for team in TEAMS:
             fetch_team_schedule(team["name"], team["url"], team["output"], browser)
-            time.sleep(3)
+            time.sleep(2)
         browser.close()
 
 if __name__ == "__main__":
