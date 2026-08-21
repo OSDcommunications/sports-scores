@@ -47,7 +47,6 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
     cleaned_date = re.sub(r'(\d{1,2}/\d{1,2})(\d{1,2}:)', r'\1 \2', date_raw.strip())
     cleaned_date = re.sub(r'([a-zA-Z]{3}\s*\d{1,2})(\d{1,2}:)', r'\1 \2', cleaned_date)
 
-    # Home vs Away
     is_home = True
     opp_clean = opponent_raw.strip()
     if opp_clean.startswith("@"):
@@ -60,7 +59,6 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
     is_region = "*" in opp_clean or "*" in opponent_raw
     opp_clean = opp_clean.replace("*", "").strip()
 
-    # Parse Month & Day for sorting
     month_num, day_num = 8, 1
     slash_match = re.search(r'(\d{1,2})/(\d{1,2})', cleaned_date)
     text_match = re.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s*(\d{1,2})', cleaned_date, re.IGNORECASE)
@@ -87,7 +85,6 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
     if not res_clean or res_clean.lower() in ["preview game", "preview", "upcoming", "report score"]:
         res_clean = "Preview Game"
 
-    # Sort weight for fall sports (Aug-Dec = 8..12, Jan-Jul = 13..19)
     sort_month = month_num + 12 if month_num < 6 else month_num
     sort_key = sort_month * 100 + day_num
 
@@ -111,9 +108,10 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
     page = context.new_page()
     
     try:
-        page.goto(target_url, wait_until="domcontentloaded", timeout=60000)
+        page.goto(target_url, wait_until="networkidle", timeout=60000)
+        page.wait_for_selector("table", timeout=15000)
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-        page.wait_for_timeout(4000)
+        page.wait_for_timeout(3000)
         html_content = page.content()
 
         soup = BeautifulSoup(html_content, "html.parser")
@@ -132,7 +130,6 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
                 if not any(g["date_display"] == parsed["date_display"] and g["opponent"] == parsed["opponent"] for g in games):
                     games.append(parsed)
 
-        # Sort chronologically by date
         games.sort(key=lambda x: x["sort_key"])
 
     except Exception as e:
@@ -148,14 +145,14 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
             json.dump({"team": team_name, "updated": True, "games": games}, f, indent=2)
         print(f"Saved {len(games)} games to {output_path}")
     else:
-        print(f"Warning: No games parsed for {team_name}. Keeping prior file intact.")
+        print(f"Warning: No games parsed for {team_name}.")
 
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         for team in TEAMS:
             fetch_team_schedule(team["name"], team["url"], team["output"], browser)
-            time.sleep(2)
+            time.sleep(3)
         browser.close()
 
 if __name__ == "__main__":
