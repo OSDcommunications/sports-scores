@@ -1,0 +1,62 @@
+{
+  "team": "Ogden High JV Football",
+  "updated": true,
+  "games": [
+    {
+      "date_display": "AUG 20 \u2022 4:00PM",
+      "opponent": "8/20",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    },
+    {
+      "date_display": "AUG 27 \u2022 4:00PM",
+      "opponent": "8/27",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    },
+    {
+      "date_display": "SEP 3 \u2022 4:00PM",
+      "opponent": "9/3",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    },
+    {
+      "date_display": "SEP 10 \u2022 4:00PM",
+      "opponent": "9/10",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    },
+    {
+      "date_display": "SEP 17 \u2022 4:00PM",
+      "opponent": "9/17",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    },
+    {
+      "date_display": "SEP 24 \u2022 4:00PM",
+      "opponent": "9/24",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    },
+    {
+      "date_display": "OCT 1 \u2022 3:30PM",
+      "opponent": "10/1",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "OCT 7 \u2022 4:00PM",
+      "opponent": "10/7",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "4:00pm"
+    }
+  ]
+}

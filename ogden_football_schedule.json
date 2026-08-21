@@ -1,0 +1,76 @@
+{
+  "team": "Ogden High Varsity Football",
+  "updated": true,
+  "games": [
+    {
+      "date_display": "AUG 14 \u2022 7:00PM",
+      "opponent": "8/14",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "AUG 21 \u2022 7:00PM",
+      "opponent": "8/21",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "AUG 28 \u2022 7:00PM",
+      "opponent": "8/28",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "SEP 4 \u2022 7:00PM",
+      "opponent": "9/4",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "SEP 11 \u2022 7:00PM",
+      "opponent": "9/11",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "SEP 18 \u2022 7:00PM",
+      "opponent": "9/18",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "SEP 25 \u2022 7:00PM",
+      "opponent": "9/25",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "OCT 2 \u2022 7:00PM",
+      "opponent": "10/2",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "OCT 8 \u2022 7:00PM",
+      "opponent": "10/8",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "OCT 14 \u2022 5:00PM",
+      "opponent": "10/14",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:00pm"
+    }
+  ]
+}

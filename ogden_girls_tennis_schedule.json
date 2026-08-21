@@ -7,112 +7,112 @@
       "opponent": "Bonneville(Washington Terrace, UT)Match Details: win 9 lost 1Location: Ogden High SchoolBox Score",
       "is_home": true,
       "is_region": false,
-      "result_display": "(W) 5 - 0"
+      "result_display": "Bonneville(Washington Terrace, UT)"
     },
     {
       "date_display": "AUG 7",
       "opponent": "Tiger SlamMatch Location: Ogden, UTBox Score",
       "is_home": true,
       "is_region": false,
-      "result_display": "3rd of 9"
+      "result_display": "Tiger Slam"
     },
     {
       "date_display": "AUG 10 \u2022 3:00 PM",
       "opponent": "Box Elder(Brigham City, UT)Location: Ogden High SchoolBox Score",
       "is_home": true,
       "is_region": false,
-      "result_display": "(W) 11 - 1"
+      "result_display": "Box Elder(Brigham City, UT)"
     },
     {
       "date_display": "AUG 11 \u2022 3:00 PM",
       "opponent": "Northridge(Layton, UT)Location: Ogden High SchoolBox Score",
       "is_home": true,
       "is_region": false,
-      "result_display": "(W) 11 - 1"
+      "result_display": "Northridge(Layton, UT)"
     },
     {
       "date_display": "AUG 17 \u2022 3:00 PM",
       "opponent": "Bear River(Garland, UT)Location: Bear River High SchoolBox Score",
       "is_home": false,
       "is_region": false,
-      "result_display": "(W) 4 - 1"
+      "result_display": "@Bear River(Garland, UT)"
     },
     {
       "date_display": "AUG 20 \u2022 3:30 PM",
       "opponent": "Grantsville(Grantsville, UT)Location: Ogden High SchoolBox Score",
       "is_home": true,
       "is_region": false,
-      "result_display": "(L) 8 - 4"
+      "result_display": "Grantsville(Grantsville, UT)"
     },
     {
       "date_display": "AUG 25 \u2022 3:30 PM",
       "opponent": "Morgan(Morgan, UT)Location: Ogden High School",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "Morgan(Morgan, UT)"
     },
     {
       "date_display": "AUG 26 \u2022 3:30 PM",
       "opponent": "Logan(Logan, UT)Location: Logan High School",
       "is_home": false,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "@Logan(Logan, UT)"
     },
     {
       "date_display": "SEP 1 \u2022 3:30 PM",
       "opponent": "Ben Lomond(Ogden, UT)Location: Ben Lomond High School",
       "is_home": false,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "@Ben Lomond(Ogden, UT)"
     },
     {
       "date_display": "SEP 7 \u2022 3:00 PM",
       "opponent": "Layton(Layton, UT)Location: Ogden High School",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "Layton(Layton, UT)"
     },
     {
       "date_display": "SEP 8 \u2022 3:30 PM",
       "opponent": "Grantsville(Grantsville, UT)Location: Grantsville High School",
       "is_home": false,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "@Grantsville(Grantsville, UT)"
     },
     {
       "date_display": "SEP 9 \u2022 3:30 PM",
       "opponent": "Morgan(Morgan, UT)Location: Morgan High School",
       "is_home": false,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "@Morgan(Morgan, UT)"
     },
     {
       "date_display": "SEP 11 \u2022 1:00 PM",
       "opponent": "Fremont(Plain City, UT)Location: Ogden High School",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "Fremont(Plain City, UT)"
     },
     {
       "date_display": "SEP 15 \u2022 3:30 PM",
       "opponent": "Logan(Logan, UT)Location: Ogden High School",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "Logan(Logan, UT)"
     },
     {
       "date_display": "SEP 17 \u2022 3:30 PM",
       "opponent": "Ben Lomond(Ogden, UT)Location: Ben Lomond High School",
       "is_home": false,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "@Ben Lomond(Ogden, UT)"
     },
     {
       "date_display": "SEP 21",
       "opponent": "3A Region 12 TournamentMatch Location: Logan, UTMatch Details: Day 1",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Game"
+      "result_display": "3A Region 12 Tournament"
     }
   ]
 }

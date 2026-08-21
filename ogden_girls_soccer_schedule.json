@@ -1,0 +1,125 @@
+{
+  "team": "Ogden High Varsity Girls Soccer",
+  "updated": true,
+  "games": [
+    {
+      "date_display": "AUG 5 \u2022 5:30PM",
+      "opponent": "8/5",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:30pm"
+    },
+    {
+      "date_display": "AUG 7 \u2022 5:00PM",
+      "opponent": "8/7",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:00pm"
+    },
+    {
+      "date_display": "AUG 11 \u2022 7:00PM",
+      "opponent": "8/11",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "AUG 13 \u2022 7:00PM",
+      "opponent": "8/13",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "AUG 17 \u2022 7:00PM",
+      "opponent": "8/17",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "AUG 20 \u2022 7:00PM",
+      "opponent": "8/20",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "AUG 25 \u2022 5:30PM",
+      "opponent": "8/25",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:30pm"
+    },
+    {
+      "date_display": "AUG 27 \u2022 3:30PM",
+      "opponent": "8/27",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "SEP 1 \u2022 7:00PM",
+      "opponent": "9/1",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "7:00pm"
+    },
+    {
+      "date_display": "SEP 3 \u2022 5:30PM",
+      "opponent": "9/3",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:30pm"
+    },
+    {
+      "date_display": "SEP 8 \u2022 3:30PM",
+      "opponent": "9/8",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "SEP 10 \u2022 3:30PM",
+      "opponent": "9/10",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "SEP 15 \u2022 3:30PM",
+      "opponent": "9/15",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "SEP 22 \u2022 5:30PM",
+      "opponent": "9/22",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:30pm"
+    },
+    {
+      "date_display": "SEP 24 \u2022 3:30PM",
+      "opponent": "9/24",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "SEP 29 \u2022 3:30PM",
+      "opponent": "9/29",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "3:30pm"
+    },
+    {
+      "date_display": "OCT 1 \u2022 5:30PM",
+      "opponent": "10/1",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "5:30pm"
+    }
+  ]
+}

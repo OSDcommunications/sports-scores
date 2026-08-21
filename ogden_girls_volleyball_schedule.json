@@ -4,164 +4,164 @@
   "games": [
     {
       "date_display": "AUG 6 \u2022 6:30PM",
-      "opponent": "Bonneville",
+      "opponent": "8/6",
       "is_home": true,
       "is_region": false,
-      "result_display": "W3-0"
+      "result_display": "6:30pm"
     },
     {
       "date_display": "AUG 11 \u2022 6:30PM",
-      "opponent": "Davis",
+      "opponent": "8/11",
       "is_home": true,
       "is_region": false,
-      "result_display": "W3-2"
+      "result_display": "6:30pm"
     },
     {
       "date_display": "AUG 13 \u2022 6:30PM",
-      "opponent": "Judge Memorial Catholic",
-      "is_home": false,
+      "opponent": "8/13",
+      "is_home": true,
       "is_region": false,
-      "result_display": "W3-0"
+      "result_display": "6:30pm"
     },
     {
       "date_display": "AUG 14 \u2022 4:00PM",
-      "opponent": "Hillcrest",
+      "opponent": "8/14",
       "is_home": true,
-      "is_region": true,
-      "result_display": "L2-1"
+      "is_region": false,
+      "result_display": "4:00pm"
     },
     {
       "date_display": "AUG 14 \u2022 6:00PM",
-      "opponent": "Murray",
+      "opponent": "8/14",
       "is_home": true,
-      "is_region": true,
-      "result_display": "W2-0"
+      "is_region": false,
+      "result_display": "6:00pm"
     },
     {
       "date_display": "AUG 14 \u2022 8:00PM",
-      "opponent": "Tooele",
+      "opponent": "8/14",
       "is_home": true,
-      "is_region": true,
-      "result_display": "W2-0"
+      "is_region": false,
+      "result_display": "8:00pm"
     },
     {
       "date_display": "AUG 15",
-      "opponent": "Woods Cross",
+      "opponent": "8/15",
       "is_home": true,
-      "is_region": true,
-      "result_display": "L3-0"
+      "is_region": false,
+      "result_display": "TBA"
     },
     {
       "date_display": "AUG 15 \u2022 9:00AM",
-      "opponent": "Cedar Valley",
+      "opponent": "8/15",
       "is_home": true,
-      "is_region": true,
-      "result_display": "W2-1"
+      "is_region": false,
+      "result_display": "9:00am"
     },
     {
       "date_display": "AUG 15 \u2022 2:00PM",
-      "opponent": "North Summit",
+      "opponent": "8/15",
       "is_home": true,
-      "is_region": true,
-      "result_display": "L3-0"
+      "is_region": false,
+      "result_display": "2:00pm"
     },
     {
       "date_display": "AUG 18 \u2022 6:30PM",
-      "opponent": "Northridge",
+      "opponent": "8/18",
       "is_home": true,
       "is_region": false,
-      "result_display": "W3-2"
+      "result_display": "6:30pm"
     },
     {
       "date_display": "AUG 20 \u2022 6:30PM",
-      "opponent": "Juan Diego Catholic",
-      "is_home": false,
+      "opponent": "8/20",
+      "is_home": true,
       "is_region": false,
-      "result_display": "W3-0"
+      "result_display": "6:30pm"
     },
     {
       "date_display": "AUG 27 \u2022 6:30PM",
-      "opponent": "Delta",
+      "opponent": "8/27",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Match"
+      "result_display": "6:30pm"
     },
     {
       "date_display": "SEP 1 \u2022 6:00PM",
-      "opponent": "St. Joseph",
+      "opponent": "9/1",
       "is_home": true,
       "is_region": false,
-      "result_display": "Preview Match"
+      "result_display": "6:00pm"
     },
     {
       "date_display": "SEP 10 \u2022 6:30PM",
-      "opponent": "Layton Christian Academy",
+      "opponent": "9/10",
       "is_home": true,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "SEP 15 \u2022 6:30PM",
-      "opponent": "Ben Lomond",
-      "is_home": false,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "opponent": "9/15",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "SEP 17 \u2022 6:30PM",
-      "opponent": "Morgan",
+      "opponent": "9/17",
       "is_home": true,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "SEP 22 \u2022 6:30PM",
-      "opponent": "Grantsville",
-      "is_home": false,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "opponent": "9/22",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "SEP 24 \u2022 6:30PM",
-      "opponent": "Logan",
+      "opponent": "9/24",
       "is_home": true,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "SEP 29 \u2022 6:30PM",
-      "opponent": "Layton Christian Academy",
-      "is_home": false,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "opponent": "9/29",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "OCT 1 \u2022 6:30PM",
-      "opponent": "Ben Lomond",
+      "opponent": "10/1",
       "is_home": true,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "OCT 6 \u2022 6:30PM",
-      "opponent": "Morgan",
-      "is_home": false,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "opponent": "10/6",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "OCT 13 \u2022 6:30PM",
-      "opponent": "Grantsville",
+      "opponent": "10/13",
       "is_home": true,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "is_region": false,
+      "result_display": "6:30pm"
     },
     {
       "date_display": "OCT 20 \u2022 6:30PM",
-      "opponent": "Logan",
-      "is_home": false,
-      "is_region": true,
-      "result_display": "Preview Match"
+      "opponent": "10/20",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "6:30pm"
     }
   ]
 }
