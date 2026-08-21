@@ -1,7 +1,7 @@
 {
   "team": "Ogden High Varsity Girls Tennis",
   "source_url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/tennis/girls/schedule/",
-  "last_updated": "2026-08-21 18:19:56",
+  "last_updated": "2026-08-21 19:38:31",
   "overall_record": "4-1",
   "record": "4-1",
   "total_matches": 125,
@@ -10,8 +10,8 @@
   "homeMatches": 104,
   "away_matches": 21,
   "awayMatches": 21,
-  "region_matches": 5,
-  "regionMatches": 5,
+  "region_matches": 0,
+  "regionMatches": 0,
   "metrics": {
     "overall_record": "4-1",
     "record": "4-1",
@@ -27,9 +27,9 @@
     "away": 21,
     "away_matches": 21,
     "awayMatches": 21,
-    "region": 5,
-    "region_matches": 5,
-    "regionMatches": 5
+    "region": 0,
+    "region_matches": 0,
+    "regionMatches": 0
   },
   "game_metrics": {
     "overall_record": "4-1",
@@ -46,16 +46,16 @@
     "away": 21,
     "away_matches": 21,
     "awayMatches": 21,
-    "region": 5,
-    "region_matches": 5,
-    "regionMatches": 5
+    "region": 0,
+    "region_matches": 0,
+    "regionMatches": 0
   },
   "games": [
     {
       "date": "Number of Matches\tWins\tLosses\tWin %",
       "time": "",
       "date_time": "Number of Matches\tWins\tLosses\tWin %",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -67,16 +67,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Number of Matches\tWins\tLosses\tWin %",
-      "details": [
-        "Number of Matches\tWins\tLosses\tWin %"
-      ]
+      "raw": "Number of Matches\tWins\tLosses\tWin % |  | "
     },
     {
       "date": "145\t97\t48\t66.90",
       "time": "",
       "date_time": "145\t97\t48\t66.90",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -88,16 +85,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "145\t97\t48\t66.90",
-      "details": [
-        "145\t97\t48\t66.90"
-      ]
+      "raw": "145\t97\t48\t66.90 |  | "
     },
     {
       "date": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "time": "3:30",
       "date_time": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM 3:30",
-      "opponent": "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
+      "opponent": "@ The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
       "opponent_name": "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
       "opponentName": "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
       "location": "Away",
@@ -105,22 +99,17 @@
       "isHome": false,
       "is_away": true,
       "isAway": true,
-      "is_region": true,
-      "isRegion": true,
+      "is_region": false,
+      "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM | vs. Morgan (UT) | The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
-      "details": [
-        "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
-        "vs. Morgan (UT)",
-        "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p."
-      ]
+      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM | The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p. | "
     },
     {
       "date": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "time": "3:30 PM",
       "date_time": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM 3:30 PM",
-      "opponent": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
+      "opponent": "@ NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "opponent_name": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "opponentName": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "location": "Away",
@@ -132,16 +121,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
-      "details": [
-        "NEXT GAME: Tuesday, Aug 25 at 3:30 PM"
-      ]
+      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM | NEXT GAME: Tuesday, Aug 25 at 3:30 PM | "
     },
     {
       "date": "Tuesday, Aug 25 at 3:30 PM",
       "time": "3:30 PM",
       "date_time": "Tuesday, Aug 25 at 3:30 PM 3:30 PM",
-      "opponent": "Tuesday, Aug 25 at 3:30 PM",
+      "opponent": "@ Tuesday, Aug 25 at 3:30 PM",
       "opponent_name": "Tuesday, Aug 25 at 3:30 PM",
       "opponentName": "Tuesday, Aug 25 at 3:30 PM",
       "location": "Away",
@@ -153,16 +139,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Tuesday, Aug 25 at 3:30 PM",
-      "details": [
-        "Tuesday, Aug 25 at 3:30 PM"
-      ]
+      "raw": "Tuesday, Aug 25 at 3:30 PM | Tuesday, Aug 25 at 3:30 PM | "
     },
     {
       "date": "Date\tOpponent/Match\tResult",
       "time": "",
       "date_time": "Date\tOpponent/Match\tResult",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -174,16 +157,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Date\tOpponent/Match\tResult",
-      "details": [
-        "Date\tOpponent/Match\tResult"
-      ]
+      "raw": "Date\tOpponent/Match\tResult |  | "
     },
     {
       "date": "Opponent/Match",
       "time": "",
       "date_time": "Opponent/Match",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -195,18 +175,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Opponent/Match",
-      "details": [
-        "Opponent/Match"
-      ]
+      "raw": "Opponent/Match |  | "
     },
     {
       "date": "8/5",
       "time": "3:00",
       "date_time": "8/5 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -216,68 +193,13 @@
       "isRegion": false,
       "result": "(W) 5 - 0",
       "score": "(W) 5 - 0",
-      "raw": "8/5 | 3:00p | Bonneville (Washington Terrace, UT) | Match Details: win 9 lost 1 | Location: Ogden High School | Box Score | (W) 5 - 0",
-      "details": [
-        "8/5",
-        "3:00p",
-        "Bonneville (Washington Terrace, UT)",
-        "Match Details: win 9 lost 1",
-        "Location: Ogden High School",
-        "Box Score",
-        "(W) 5 - 0"
-      ]
+      "raw": "8/5 |  | (W) 5 - 0"
     },
     {
       "date": "8/5",
       "time": "3:00",
       "date_time": "8/5 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/5 | 3:00p",
-      "details": [
-        "8/5",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Bonneville (Washington Terrace, UT)",
-      "time": "",
-      "date_time": "Bonneville (Washington Terrace, UT)",
-      "opponent": "Match Details: win 9 lost 1",
-      "opponent_name": "Match Details: win 9 lost 1",
-      "opponentName": "Match Details: win 9 lost 1",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Bonneville (Washington Terrace, UT) | Match Details: win 9 lost 1 | Location: Ogden High School | Box Score",
-      "details": [
-        "Bonneville (Washington Terrace, UT)",
-        "Match Details: win 9 lost 1",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Bonneville (Washington Terrace, UT)",
-      "time": "",
-      "date_time": "Bonneville (Washington Terrace, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -289,16 +211,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Bonneville (Washington Terrace, UT)",
-      "details": [
-        "Bonneville (Washington Terrace, UT)"
-      ]
+      "raw": "8/5 |  | "
     },
     {
       "date": "Bonneville (Washington Terrace, UT)",
       "time": "",
       "date_time": "Bonneville (Washington Terrace, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -310,16 +229,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Bonneville (Washington Terrace, UT)",
-      "details": [
-        "Bonneville (Washington Terrace, UT)"
-      ]
+      "raw": "Bonneville (Washington Terrace, UT) |  | "
+    },
+    {
+      "date": "Bonneville (Washington Terrace, UT)",
+      "time": "",
+      "date_time": "Bonneville (Washington Terrace, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Bonneville (Washington Terrace, UT) |  | "
+    },
+    {
+      "date": "Bonneville (Washington Terrace, UT)",
+      "time": "",
+      "date_time": "Bonneville (Washington Terrace, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Bonneville (Washington Terrace, UT) |  | "
     },
     {
       "date": "(Washington Terrace, UT)",
       "time": "",
       "date_time": "(Washington Terrace, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -331,16 +283,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Washington Terrace, UT)",
-      "details": [
-        "(Washington Terrace, UT)"
-      ]
+      "raw": "(Washington Terrace, UT) |  | "
     },
     {
       "date": "Match Details: win 9 lost 1",
       "time": "",
       "date_time": "Match Details: win 9 lost 1",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -352,16 +301,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Details: win 9 lost 1",
-      "details": [
-        "Match Details: win 9 lost 1"
-      ]
+      "raw": "Match Details: win 9 lost 1 |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -373,16 +319,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -394,18 +337,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/7",
       "time": "",
       "date_time": "8/7",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -415,66 +355,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/7 | TBA | Tiger Slam | Match Location: Ogden, UT | Box Score | 3rd of 9",
-      "details": [
-        "8/7",
-        "TBA",
-        "Tiger Slam",
-        "Match Location: Ogden, UT",
-        "Box Score",
-        "3rd of 9"
-      ]
+      "raw": "8/7 |  | "
     },
     {
       "date": "8/7",
       "time": "",
       "date_time": "8/7",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/7 | TBA",
-      "details": [
-        "8/7",
-        "TBA"
-      ]
-    },
-    {
-      "date": "Tiger Slam",
-      "time": "",
-      "date_time": "Tiger Slam",
-      "opponent": "Match Location: Ogden, UT",
-      "opponent_name": "Match Location: Ogden, UT",
-      "opponentName": "Match Location: Ogden, UT",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Tiger Slam | Match Location: Ogden, UT | Box Score",
-      "details": [
-        "Tiger Slam",
-        "Match Location: Ogden, UT",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Tiger Slam",
-      "time": "",
-      "date_time": "Tiger Slam",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -486,16 +373,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Tiger Slam",
-      "details": [
-        "Tiger Slam"
-      ]
+      "raw": "8/7 |  | "
     },
     {
       "date": "Tiger Slam",
       "time": "",
       "date_time": "Tiger Slam",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -507,16 +391,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Tiger Slam",
-      "details": [
-        "Tiger Slam"
-      ]
+      "raw": "Tiger Slam |  | "
+    },
+    {
+      "date": "Tiger Slam",
+      "time": "",
+      "date_time": "Tiger Slam",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Tiger Slam |  | "
+    },
+    {
+      "date": "Tiger Slam",
+      "time": "",
+      "date_time": "Tiger Slam",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Tiger Slam |  | "
     },
     {
       "date": "Match Location: Ogden, UT",
       "time": "",
       "date_time": "Match Location: Ogden, UT",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -528,16 +445,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Location: Ogden, UT",
-      "details": [
-        "Match Location: Ogden, UT"
-      ]
+      "raw": "Match Location: Ogden, UT |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -549,18 +463,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/10",
       "time": "3:00",
       "date_time": "8/10 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -570,66 +481,13 @@
       "isRegion": false,
       "result": "(W) 11 - 1",
       "score": "(W) 11 - 1",
-      "raw": "8/10 | 3:00p | Box Elder (Brigham City, UT) | Location: Ogden High School | Box Score | (W) 11 - 1",
-      "details": [
-        "8/10",
-        "3:00p",
-        "Box Elder (Brigham City, UT)",
-        "Location: Ogden High School",
-        "Box Score",
-        "(W) 11 - 1"
-      ]
+      "raw": "8/10 |  | (W) 11 - 1"
     },
     {
       "date": "8/10",
       "time": "3:00",
       "date_time": "8/10 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/10 | 3:00p",
-      "details": [
-        "8/10",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Box Elder (Brigham City, UT)",
-      "time": "",
-      "date_time": "Box Elder (Brigham City, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Box Elder (Brigham City, UT) | Location: Ogden High School | Box Score",
-      "details": [
-        "Box Elder (Brigham City, UT)",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Box Elder (Brigham City, UT)",
-      "time": "",
-      "date_time": "Box Elder (Brigham City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -641,16 +499,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Elder (Brigham City, UT)",
-      "details": [
-        "Box Elder (Brigham City, UT)"
-      ]
+      "raw": "8/10 |  | "
     },
     {
       "date": "Box Elder (Brigham City, UT)",
       "time": "",
       "date_time": "Box Elder (Brigham City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -662,16 +517,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Elder (Brigham City, UT)",
-      "details": [
-        "Box Elder (Brigham City, UT)"
-      ]
+      "raw": "Box Elder (Brigham City, UT) |  | "
+    },
+    {
+      "date": "Box Elder (Brigham City, UT)",
+      "time": "",
+      "date_time": "Box Elder (Brigham City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Box Elder (Brigham City, UT) |  | "
+    },
+    {
+      "date": "Box Elder (Brigham City, UT)",
+      "time": "",
+      "date_time": "Box Elder (Brigham City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Box Elder (Brigham City, UT) |  | "
     },
     {
       "date": "(Brigham City, UT)",
       "time": "",
       "date_time": "(Brigham City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -683,16 +571,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Brigham City, UT)",
-      "details": [
-        "(Brigham City, UT)"
-      ]
+      "raw": "(Brigham City, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -704,16 +589,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -725,18 +607,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/11",
       "time": "3:00",
       "date_time": "8/11 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -746,66 +625,13 @@
       "isRegion": false,
       "result": "(W) 11 - 1",
       "score": "(W) 11 - 1",
-      "raw": "8/11 | 3:00p | Northridge (Layton, UT) | Location: Ogden High School | Box Score | (W) 11 - 1",
-      "details": [
-        "8/11",
-        "3:00p",
-        "Northridge (Layton, UT)",
-        "Location: Ogden High School",
-        "Box Score",
-        "(W) 11 - 1"
-      ]
+      "raw": "8/11 |  | (W) 11 - 1"
     },
     {
       "date": "8/11",
       "time": "3:00",
       "date_time": "8/11 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/11 | 3:00p",
-      "details": [
-        "8/11",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Northridge (Layton, UT)",
-      "time": "",
-      "date_time": "Northridge (Layton, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Northridge (Layton, UT) | Location: Ogden High School | Box Score",
-      "details": [
-        "Northridge (Layton, UT)",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Northridge (Layton, UT)",
-      "time": "",
-      "date_time": "Northridge (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -817,16 +643,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Northridge (Layton, UT)",
-      "details": [
-        "Northridge (Layton, UT)"
-      ]
+      "raw": "8/11 |  | "
     },
     {
       "date": "Northridge (Layton, UT)",
       "time": "",
       "date_time": "Northridge (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -838,16 +661,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Northridge (Layton, UT)",
-      "details": [
-        "Northridge (Layton, UT)"
-      ]
+      "raw": "Northridge (Layton, UT) |  | "
+    },
+    {
+      "date": "Northridge (Layton, UT)",
+      "time": "",
+      "date_time": "Northridge (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Northridge (Layton, UT) |  | "
+    },
+    {
+      "date": "Northridge (Layton, UT)",
+      "time": "",
+      "date_time": "Northridge (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Northridge (Layton, UT) |  | "
     },
     {
       "date": "(Layton, UT)",
       "time": "",
       "date_time": "(Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -859,16 +715,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Layton, UT)",
-      "details": [
-        "(Layton, UT)"
-      ]
+      "raw": "(Layton, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -880,16 +733,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -901,18 +751,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/17",
       "time": "3:00",
       "date_time": "8/17 3:00",
-      "opponent": "@ Bear River (Garland, UT)",
-      "opponent_name": "Bear River (Garland, UT)",
-      "opponentName": "Bear River (Garland, UT)",
+      "opponent": "@ @ Bear River (Garland, UT)",
+      "opponent_name": "@ Bear River (Garland, UT)",
+      "opponentName": "@ Bear River (Garland, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -922,23 +769,15 @@
       "isRegion": false,
       "result": "(W) 4 - 1",
       "score": "(W) 4 - 1",
-      "raw": "8/17 | 3:00p | @ Bear River (Garland, UT) | Location: Bear River High School | Box Score | (W) 4 - 1",
-      "details": [
-        "8/17",
-        "3:00p",
-        "@ Bear River (Garland, UT)",
-        "Location: Bear River High School",
-        "Box Score",
-        "(W) 4 - 1"
-      ]
+      "raw": "8/17 | @ Bear River (Garland, UT) | (W) 4 - 1"
     },
     {
       "date": "8/17",
       "time": "3:00",
       "date_time": "8/17 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -948,19 +787,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/17 | 3:00p",
-      "details": [
-        "8/17",
-        "3:00p"
-      ]
+      "raw": "8/17 |  | "
     },
     {
       "date": "@ Bear River (Garland, UT)",
       "time": "",
       "date_time": "@ Bear River (Garland, UT)",
-      "opponent": "@ Bear River (Garland, UT)",
-      "opponent_name": "Bear River (Garland, UT)",
-      "opponentName": "Bear River (Garland, UT)",
+      "opponent": "@ @ Bear River (Garland, UT)",
+      "opponent_name": "@ Bear River (Garland, UT)",
+      "opponentName": "@ Bear River (Garland, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -970,20 +805,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Bear River (Garland, UT) | Location: Bear River High School | Box Score",
-      "details": [
-        "@ Bear River (Garland, UT)",
-        "Location: Bear River High School",
-        "Box Score"
-      ]
+      "raw": "@ Bear River (Garland, UT) | @ Bear River (Garland, UT) | "
     },
     {
       "date": "@ Bear River (Garland, UT)",
       "time": "",
       "date_time": "@ Bear River (Garland, UT)",
-      "opponent": "@ Bear River (Garland, UT)",
-      "opponent_name": "Bear River (Garland, UT)",
-      "opponentName": "Bear River (Garland, UT)",
+      "opponent": "@ @ Bear River (Garland, UT)",
+      "opponent_name": "@ Bear River (Garland, UT)",
+      "opponentName": "@ Bear River (Garland, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -993,16 +823,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Bear River (Garland, UT)",
-      "details": [
-        "@ Bear River (Garland, UT)"
-      ]
+      "raw": "@ Bear River (Garland, UT) | @ Bear River (Garland, UT) | "
     },
     {
       "date": "Bear River (Garland, UT)",
       "time": "",
       "date_time": "Bear River (Garland, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1014,16 +841,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Bear River (Garland, UT)",
-      "details": [
-        "Bear River (Garland, UT)"
-      ]
+      "raw": "Bear River (Garland, UT) |  | "
     },
     {
       "date": "(Garland, UT)",
       "time": "",
       "date_time": "(Garland, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1035,16 +859,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Garland, UT)",
-      "details": [
-        "(Garland, UT)"
-      ]
+      "raw": "(Garland, UT) |  | "
     },
     {
       "date": "Location: Bear River High School",
       "time": "",
       "date_time": "Location: Bear River High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1056,16 +877,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Bear River High School",
-      "details": [
-        "Location: Bear River High School"
-      ]
+      "raw": "Location: Bear River High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1077,18 +895,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/20",
       "time": "3:30",
       "date_time": "8/20 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -1098,66 +913,13 @@
       "isRegion": false,
       "result": "(L) 8 - 4",
       "score": "(L) 8 - 4",
-      "raw": "8/20 | 3:30p | Grantsville (Grantsville, UT) | Location: Ogden High School | Box Score | (L) 8 - 4",
-      "details": [
-        "8/20",
-        "3:30p",
-        "Grantsville (Grantsville, UT)",
-        "Location: Ogden High School",
-        "Box Score",
-        "(L) 8 - 4"
-      ]
+      "raw": "8/20 |  | (L) 8 - 4"
     },
     {
       "date": "8/20",
       "time": "3:30",
       "date_time": "8/20 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/20 | 3:30p",
-      "details": [
-        "8/20",
-        "3:30p"
-      ]
-    },
-    {
-      "date": "Grantsville (Grantsville, UT)",
-      "time": "",
-      "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Grantsville (Grantsville, UT) | Location: Ogden High School | Box Score",
-      "details": [
-        "Grantsville (Grantsville, UT)",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Grantsville (Grantsville, UT)",
-      "time": "",
-      "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1169,16 +931,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Grantsville (Grantsville, UT)",
-      "details": [
-        "Grantsville (Grantsville, UT)"
-      ]
+      "raw": "8/20 |  | "
     },
     {
       "date": "Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1190,16 +949,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Grantsville (Grantsville, UT)",
-      "details": [
-        "Grantsville (Grantsville, UT)"
-      ]
+      "raw": "Grantsville (Grantsville, UT) |  | "
+    },
+    {
+      "date": "Grantsville (Grantsville, UT)",
+      "time": "",
+      "date_time": "Grantsville (Grantsville, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Grantsville (Grantsville, UT) |  | "
+    },
+    {
+      "date": "Grantsville (Grantsville, UT)",
+      "time": "",
+      "date_time": "Grantsville (Grantsville, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Grantsville (Grantsville, UT) |  | "
     },
     {
       "date": "(Grantsville, UT)",
       "time": "",
       "date_time": "(Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1211,16 +1003,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Grantsville, UT)",
-      "details": [
-        "(Grantsville, UT)"
-      ]
+      "raw": "(Grantsville, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1232,16 +1021,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1253,18 +1039,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/25",
       "time": "3:30",
       "date_time": "8/25 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -1274,63 +1057,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/25 | 3:30p | Morgan (Morgan, UT) | Location: Ogden High School",
-      "details": [
-        "8/25",
-        "3:30p",
-        "Morgan (Morgan, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "8/25 |  | "
     },
     {
       "date": "8/25",
       "time": "3:30",
       "date_time": "8/25 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/25 | 3:30p",
-      "details": [
-        "8/25",
-        "3:30p"
-      ]
-    },
-    {
-      "date": "Morgan (Morgan, UT)",
-      "time": "",
-      "date_time": "Morgan (Morgan, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Morgan (Morgan, UT) | Location: Ogden High School",
-      "details": [
-        "Morgan (Morgan, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Morgan (Morgan, UT)",
-      "time": "",
-      "date_time": "Morgan (Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1342,16 +1075,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Morgan (Morgan, UT)",
-      "details": [
-        "Morgan (Morgan, UT)"
-      ]
+      "raw": "8/25 |  | "
     },
     {
       "date": "Morgan (Morgan, UT)",
       "time": "",
       "date_time": "Morgan (Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1363,16 +1093,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Morgan (Morgan, UT)",
-      "details": [
-        "Morgan (Morgan, UT)"
-      ]
+      "raw": "Morgan (Morgan, UT) |  | "
+    },
+    {
+      "date": "Morgan (Morgan, UT)",
+      "time": "",
+      "date_time": "Morgan (Morgan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Morgan (Morgan, UT) |  | "
+    },
+    {
+      "date": "Morgan (Morgan, UT)",
+      "time": "",
+      "date_time": "Morgan (Morgan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Morgan (Morgan, UT) |  | "
     },
     {
       "date": "(Morgan, UT)",
       "time": "",
       "date_time": "(Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1384,16 +1147,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Morgan, UT)",
-      "details": [
-        "(Morgan, UT)"
-      ]
+      "raw": "(Morgan, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1405,18 +1165,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "8/26",
       "time": "3:30",
       "date_time": "8/26 3:30",
-      "opponent": "@ Logan (Logan, UT)",
-      "opponent_name": "Logan (Logan, UT)",
-      "opponentName": "Logan (Logan, UT)",
+      "opponent": "@ @ Logan (Logan, UT)",
+      "opponent_name": "@ Logan (Logan, UT)",
+      "opponentName": "@ Logan (Logan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1426,21 +1183,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/26 | 3:30p | @ Logan (Logan, UT) | Location: Logan High School",
-      "details": [
-        "8/26",
-        "3:30p",
-        "@ Logan (Logan, UT)",
-        "Location: Logan High School"
-      ]
+      "raw": "8/26 | @ Logan (Logan, UT) | "
     },
     {
       "date": "8/26",
       "time": "3:30",
       "date_time": "8/26 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -1450,19 +1201,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/26 | 3:30p",
-      "details": [
-        "8/26",
-        "3:30p"
-      ]
+      "raw": "8/26 |  | "
     },
     {
       "date": "@ Logan (Logan, UT)",
       "time": "",
       "date_time": "@ Logan (Logan, UT)",
-      "opponent": "@ Logan (Logan, UT)",
-      "opponent_name": "Logan (Logan, UT)",
-      "opponentName": "Logan (Logan, UT)",
+      "opponent": "@ @ Logan (Logan, UT)",
+      "opponent_name": "@ Logan (Logan, UT)",
+      "opponentName": "@ Logan (Logan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1472,19 +1219,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Logan (Logan, UT) | Location: Logan High School",
-      "details": [
-        "@ Logan (Logan, UT)",
-        "Location: Logan High School"
-      ]
+      "raw": "@ Logan (Logan, UT) | @ Logan (Logan, UT) | "
     },
     {
       "date": "@ Logan (Logan, UT)",
       "time": "",
       "date_time": "@ Logan (Logan, UT)",
-      "opponent": "@ Logan (Logan, UT)",
-      "opponent_name": "Logan (Logan, UT)",
-      "opponentName": "Logan (Logan, UT)",
+      "opponent": "@ @ Logan (Logan, UT)",
+      "opponent_name": "@ Logan (Logan, UT)",
+      "opponentName": "@ Logan (Logan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1494,16 +1237,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Logan (Logan, UT)",
-      "details": [
-        "@ Logan (Logan, UT)"
-      ]
+      "raw": "@ Logan (Logan, UT) | @ Logan (Logan, UT) | "
     },
     {
       "date": "Logan (Logan, UT)",
       "time": "",
       "date_time": "Logan (Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1515,16 +1255,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Logan (Logan, UT)",
-      "details": [
-        "Logan (Logan, UT)"
-      ]
+      "raw": "Logan (Logan, UT) |  | "
     },
     {
       "date": "(Logan, UT)",
       "time": "",
       "date_time": "(Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1536,16 +1273,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Logan, UT)",
-      "details": [
-        "(Logan, UT)"
-      ]
+      "raw": "(Logan, UT) |  | "
     },
     {
       "date": "Location: Logan High School",
       "time": "",
       "date_time": "Location: Logan High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1557,18 +1291,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Logan High School",
-      "details": [
-        "Location: Logan High School"
-      ]
+      "raw": "Location: Logan High School |  | "
     },
     {
       "date": "9/1",
       "time": "3:30",
       "date_time": "9/1 3:30",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1578,21 +1309,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/1 | 3:30p | @ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "9/1",
-        "3:30p",
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "9/1 | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "9/1",
       "time": "3:30",
       "date_time": "9/1 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -1602,19 +1327,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/1 | 3:30p",
-      "details": [
-        "9/1",
-        "3:30p"
-      ]
+      "raw": "9/1 |  | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1624,19 +1345,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1646,16 +1363,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT)",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "Ben Lomond (Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1667,16 +1381,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Ben Lomond (Ogden, UT)",
-      "details": [
-        "Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "Ben Lomond (Ogden, UT) |  | "
     },
     {
       "date": "(Ogden, UT)",
       "time": "",
       "date_time": "(Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1688,16 +1399,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Ogden, UT)",
-      "details": [
-        "(Ogden, UT)"
-      ]
+      "raw": "(Ogden, UT) |  | "
     },
     {
       "date": "Location: Ben Lomond High School",
       "time": "",
       "date_time": "Location: Ben Lomond High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1709,18 +1417,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ben Lomond High School",
-      "details": [
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "Location: Ben Lomond High School |  | "
     },
     {
       "date": "9/7",
       "time": "3:00",
       "date_time": "9/7 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -1730,63 +1435,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/7 | 3:00p | Layton (Layton, UT) | Location: Ogden High School",
-      "details": [
-        "9/7",
-        "3:00p",
-        "Layton (Layton, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "9/7 |  | "
     },
     {
       "date": "9/7",
       "time": "3:00",
       "date_time": "9/7 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "9/7 | 3:00p",
-      "details": [
-        "9/7",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Layton (Layton, UT)",
-      "time": "",
-      "date_time": "Layton (Layton, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Layton (Layton, UT) | Location: Ogden High School",
-      "details": [
-        "Layton (Layton, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Layton (Layton, UT)",
-      "time": "",
-      "date_time": "Layton (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1798,16 +1453,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Layton (Layton, UT)",
-      "details": [
-        "Layton (Layton, UT)"
-      ]
+      "raw": "9/7 |  | "
     },
     {
       "date": "Layton (Layton, UT)",
       "time": "",
       "date_time": "Layton (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1819,16 +1471,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Layton (Layton, UT)",
-      "details": [
-        "Layton (Layton, UT)"
-      ]
+      "raw": "Layton (Layton, UT) |  | "
+    },
+    {
+      "date": "Layton (Layton, UT)",
+      "time": "",
+      "date_time": "Layton (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Layton (Layton, UT) |  | "
+    },
+    {
+      "date": "Layton (Layton, UT)",
+      "time": "",
+      "date_time": "Layton (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Layton (Layton, UT) |  | "
     },
     {
       "date": "(Layton, UT)",
       "time": "",
       "date_time": "(Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1840,16 +1525,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Layton, UT)",
-      "details": [
-        "(Layton, UT)"
-      ]
+      "raw": "(Layton, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1861,18 +1543,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "9/8",
       "time": "3:30",
       "date_time": "9/8 3:30",
-      "opponent": "@ Grantsville (Grantsville, UT)",
-      "opponent_name": "Grantsville (Grantsville, UT)",
-      "opponentName": "Grantsville (Grantsville, UT)",
+      "opponent": "@ @ Grantsville (Grantsville, UT)",
+      "opponent_name": "@ Grantsville (Grantsville, UT)",
+      "opponentName": "@ Grantsville (Grantsville, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1882,21 +1561,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/8 | 3:30p | @ Grantsville (Grantsville, UT) | Location: Grantsville High School",
-      "details": [
-        "9/8",
-        "3:30p",
-        "@ Grantsville (Grantsville, UT)",
-        "Location: Grantsville High School"
-      ]
+      "raw": "9/8 | @ Grantsville (Grantsville, UT) | "
     },
     {
       "date": "9/8",
       "time": "3:30",
       "date_time": "9/8 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -1906,19 +1579,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/8 | 3:30p",
-      "details": [
-        "9/8",
-        "3:30p"
-      ]
+      "raw": "9/8 |  | "
     },
     {
       "date": "@ Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "@ Grantsville (Grantsville, UT)",
-      "opponent": "@ Grantsville (Grantsville, UT)",
-      "opponent_name": "Grantsville (Grantsville, UT)",
-      "opponentName": "Grantsville (Grantsville, UT)",
+      "opponent": "@ @ Grantsville (Grantsville, UT)",
+      "opponent_name": "@ Grantsville (Grantsville, UT)",
+      "opponentName": "@ Grantsville (Grantsville, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1928,19 +1597,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Grantsville (Grantsville, UT) | Location: Grantsville High School",
-      "details": [
-        "@ Grantsville (Grantsville, UT)",
-        "Location: Grantsville High School"
-      ]
+      "raw": "@ Grantsville (Grantsville, UT) | @ Grantsville (Grantsville, UT) | "
     },
     {
       "date": "@ Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "@ Grantsville (Grantsville, UT)",
-      "opponent": "@ Grantsville (Grantsville, UT)",
-      "opponent_name": "Grantsville (Grantsville, UT)",
-      "opponentName": "Grantsville (Grantsville, UT)",
+      "opponent": "@ @ Grantsville (Grantsville, UT)",
+      "opponent_name": "@ Grantsville (Grantsville, UT)",
+      "opponentName": "@ Grantsville (Grantsville, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -1950,16 +1615,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Grantsville (Grantsville, UT)",
-      "details": [
-        "@ Grantsville (Grantsville, UT)"
-      ]
+      "raw": "@ Grantsville (Grantsville, UT) | @ Grantsville (Grantsville, UT) | "
     },
     {
       "date": "Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1971,16 +1633,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Grantsville (Grantsville, UT)",
-      "details": [
-        "Grantsville (Grantsville, UT)"
-      ]
+      "raw": "Grantsville (Grantsville, UT) |  | "
     },
     {
       "date": "(Grantsville, UT)",
       "time": "",
       "date_time": "(Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -1992,16 +1651,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Grantsville, UT)",
-      "details": [
-        "(Grantsville, UT)"
-      ]
+      "raw": "(Grantsville, UT) |  | "
     },
     {
       "date": "Location: Grantsville High School",
       "time": "",
       "date_time": "Location: Grantsville High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2013,18 +1669,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Grantsville High School",
-      "details": [
-        "Location: Grantsville High School"
-      ]
+      "raw": "Location: Grantsville High School |  | "
     },
     {
       "date": "9/9",
       "time": "3:30",
       "date_time": "9/9 3:30",
-      "opponent": "@ Morgan (Morgan, UT)",
-      "opponent_name": "Morgan (Morgan, UT)",
-      "opponentName": "Morgan (Morgan, UT)",
+      "opponent": "@ @ Morgan (Morgan, UT)",
+      "opponent_name": "@ Morgan (Morgan, UT)",
+      "opponentName": "@ Morgan (Morgan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -2034,21 +1687,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/9 | 3:30p | @ Morgan (Morgan, UT) | Location: Morgan High School",
-      "details": [
-        "9/9",
-        "3:30p",
-        "@ Morgan (Morgan, UT)",
-        "Location: Morgan High School"
-      ]
+      "raw": "9/9 | @ Morgan (Morgan, UT) | "
     },
     {
       "date": "9/9",
       "time": "3:30",
       "date_time": "9/9 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -2058,19 +1705,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/9 | 3:30p",
-      "details": [
-        "9/9",
-        "3:30p"
-      ]
+      "raw": "9/9 |  | "
     },
     {
       "date": "@ Morgan (Morgan, UT)",
       "time": "",
       "date_time": "@ Morgan (Morgan, UT)",
-      "opponent": "@ Morgan (Morgan, UT)",
-      "opponent_name": "Morgan (Morgan, UT)",
-      "opponentName": "Morgan (Morgan, UT)",
+      "opponent": "@ @ Morgan (Morgan, UT)",
+      "opponent_name": "@ Morgan (Morgan, UT)",
+      "opponentName": "@ Morgan (Morgan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -2080,19 +1723,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Morgan (Morgan, UT) | Location: Morgan High School",
-      "details": [
-        "@ Morgan (Morgan, UT)",
-        "Location: Morgan High School"
-      ]
+      "raw": "@ Morgan (Morgan, UT) | @ Morgan (Morgan, UT) | "
     },
     {
       "date": "@ Morgan (Morgan, UT)",
       "time": "",
       "date_time": "@ Morgan (Morgan, UT)",
-      "opponent": "@ Morgan (Morgan, UT)",
-      "opponent_name": "Morgan (Morgan, UT)",
-      "opponentName": "Morgan (Morgan, UT)",
+      "opponent": "@ @ Morgan (Morgan, UT)",
+      "opponent_name": "@ Morgan (Morgan, UT)",
+      "opponentName": "@ Morgan (Morgan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -2102,16 +1741,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Morgan (Morgan, UT)",
-      "details": [
-        "@ Morgan (Morgan, UT)"
-      ]
+      "raw": "@ Morgan (Morgan, UT) | @ Morgan (Morgan, UT) | "
     },
     {
       "date": "Morgan (Morgan, UT)",
       "time": "",
       "date_time": "Morgan (Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2123,16 +1759,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Morgan (Morgan, UT)",
-      "details": [
-        "Morgan (Morgan, UT)"
-      ]
+      "raw": "Morgan (Morgan, UT) |  | "
     },
     {
       "date": "(Morgan, UT)",
       "time": "",
       "date_time": "(Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2144,16 +1777,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Morgan, UT)",
-      "details": [
-        "(Morgan, UT)"
-      ]
+      "raw": "(Morgan, UT) |  | "
     },
     {
       "date": "Location: Morgan High School",
       "time": "",
       "date_time": "Location: Morgan High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2165,18 +1795,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Morgan High School",
-      "details": [
-        "Location: Morgan High School"
-      ]
+      "raw": "Location: Morgan High School |  | "
     },
     {
       "date": "9/11",
       "time": "1:00",
       "date_time": "9/11 1:00",
-      "opponent": "1:00p",
-      "opponent_name": "1:00p",
-      "opponentName": "1:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -2186,63 +1813,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/11 | 1:00p | Fremont (Plain City, UT) | Location: Ogden High School",
-      "details": [
-        "9/11",
-        "1:00p",
-        "Fremont (Plain City, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "9/11 |  | "
     },
     {
       "date": "9/11",
       "time": "1:00",
       "date_time": "9/11 1:00",
-      "opponent": "1:00p",
-      "opponent_name": "1:00p",
-      "opponentName": "1:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "9/11 | 1:00p",
-      "details": [
-        "9/11",
-        "1:00p"
-      ]
-    },
-    {
-      "date": "Fremont (Plain City, UT)",
-      "time": "",
-      "date_time": "Fremont (Plain City, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Fremont (Plain City, UT) | Location: Ogden High School",
-      "details": [
-        "Fremont (Plain City, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Fremont (Plain City, UT)",
-      "time": "",
-      "date_time": "Fremont (Plain City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2254,16 +1831,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Fremont (Plain City, UT)",
-      "details": [
-        "Fremont (Plain City, UT)"
-      ]
+      "raw": "9/11 |  | "
     },
     {
       "date": "Fremont (Plain City, UT)",
       "time": "",
       "date_time": "Fremont (Plain City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2275,16 +1849,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Fremont (Plain City, UT)",
-      "details": [
-        "Fremont (Plain City, UT)"
-      ]
+      "raw": "Fremont (Plain City, UT) |  | "
+    },
+    {
+      "date": "Fremont (Plain City, UT)",
+      "time": "",
+      "date_time": "Fremont (Plain City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Fremont (Plain City, UT) |  | "
+    },
+    {
+      "date": "Fremont (Plain City, UT)",
+      "time": "",
+      "date_time": "Fremont (Plain City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Fremont (Plain City, UT) |  | "
     },
     {
       "date": "(Plain City, UT)",
       "time": "",
       "date_time": "(Plain City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2296,16 +1903,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Plain City, UT)",
-      "details": [
-        "(Plain City, UT)"
-      ]
+      "raw": "(Plain City, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2317,18 +1921,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "9/15",
       "time": "3:30",
       "date_time": "9/15 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -2338,63 +1939,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/15 | 3:30p | Logan (Logan, UT) | Location: Ogden High School",
-      "details": [
-        "9/15",
-        "3:30p",
-        "Logan (Logan, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "9/15 |  | "
     },
     {
       "date": "9/15",
       "time": "3:30",
       "date_time": "9/15 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "9/15 | 3:30p",
-      "details": [
-        "9/15",
-        "3:30p"
-      ]
-    },
-    {
-      "date": "Logan (Logan, UT)",
-      "time": "",
-      "date_time": "Logan (Logan, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Logan (Logan, UT) | Location: Ogden High School",
-      "details": [
-        "Logan (Logan, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Logan (Logan, UT)",
-      "time": "",
-      "date_time": "Logan (Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2406,16 +1957,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Logan (Logan, UT)",
-      "details": [
-        "Logan (Logan, UT)"
-      ]
+      "raw": "9/15 |  | "
     },
     {
       "date": "Logan (Logan, UT)",
       "time": "",
       "date_time": "Logan (Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2427,16 +1975,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Logan (Logan, UT)",
-      "details": [
-        "Logan (Logan, UT)"
-      ]
+      "raw": "Logan (Logan, UT) |  | "
+    },
+    {
+      "date": "Logan (Logan, UT)",
+      "time": "",
+      "date_time": "Logan (Logan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Logan (Logan, UT) |  | "
+    },
+    {
+      "date": "Logan (Logan, UT)",
+      "time": "",
+      "date_time": "Logan (Logan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Logan (Logan, UT) |  | "
     },
     {
       "date": "(Logan, UT)",
       "time": "",
       "date_time": "(Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2448,16 +2029,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Logan, UT)",
-      "details": [
-        "(Logan, UT)"
-      ]
+      "raw": "(Logan, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2469,18 +2047,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "9/17",
       "time": "3:30",
       "date_time": "9/17 3:30",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -2490,21 +2065,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/17 | 3:30p | @ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "9/17",
-        "3:30p",
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "9/17 | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "9/17",
       "time": "3:30",
       "date_time": "9/17 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -2514,19 +2083,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/17 | 3:30p",
-      "details": [
-        "9/17",
-        "3:30p"
-      ]
+      "raw": "9/17 |  | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -2536,19 +2101,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -2558,16 +2119,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT)",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "Ben Lomond (Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2579,16 +2137,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Ben Lomond (Ogden, UT)",
-      "details": [
-        "Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "Ben Lomond (Ogden, UT) |  | "
     },
     {
       "date": "(Ogden, UT)",
       "time": "",
       "date_time": "(Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2600,16 +2155,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Ogden, UT)",
-      "details": [
-        "(Ogden, UT)"
-      ]
+      "raw": "(Ogden, UT) |  | "
     },
     {
       "date": "Location: Ben Lomond High School",
       "time": "",
       "date_time": "Location: Ben Lomond High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2621,43 +2173,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ben Lomond High School",
-      "details": [
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "Location: Ben Lomond High School |  | "
     },
     {
       "date": "9/21",
       "time": "",
       "date_time": "9/21",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": true,
-      "isRegion": true,
-      "result": "",
-      "score": "",
-      "raw": "9/21 | TBA | 3A Region 12 Tournament | Match Location: Logan, UT | Match Details: Day 1",
-      "details": [
-        "9/21",
-        "TBA",
-        "3A Region 12 Tournament",
-        "Match Location: Logan, UT",
-        "Match Details: Day 1"
-      ]
-    },
-    {
-      "date": "9/21",
-      "time": "",
-      "date_time": "9/21",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -2667,40 +2191,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/21 | TBA",
-      "details": [
-        "9/21",
-        "TBA"
-      ]
+      "raw": "9/21 |  | "
     },
     {
-      "date": "3A Region 12 Tournament",
+      "date": "9/21",
       "time": "",
-      "date_time": "3A Region 12 Tournament",
-      "opponent": "Match Location: Logan, UT",
-      "opponent_name": "Match Location: Logan, UT",
-      "opponentName": "Match Location: Logan, UT",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": true,
-      "isRegion": true,
-      "result": "",
-      "score": "",
-      "raw": "3A Region 12 Tournament | Match Location: Logan, UT | Match Details: Day 1",
-      "details": [
-        "3A Region 12 Tournament",
-        "Match Location: Logan, UT",
-        "Match Details: Day 1"
-      ]
-    },
-    {
-      "date": "3A Region 12 Tournament",
-      "time": "",
-      "date_time": "3A Region 12 Tournament",
-      "opponent": "",
+      "date_time": "9/21",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2708,20 +2205,17 @@
       "isHome": true,
       "is_away": false,
       "isAway": false,
-      "is_region": true,
-      "isRegion": true,
+      "is_region": false,
+      "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "3A Region 12 Tournament",
-      "details": [
-        "3A Region 12 Tournament"
-      ]
+      "raw": "9/21 |  | "
     },
     {
       "date": "3A Region 12 Tournament",
       "time": "",
       "date_time": "3A Region 12 Tournament",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2729,20 +2223,53 @@
       "isHome": true,
       "is_away": false,
       "isAway": false,
-      "is_region": true,
-      "isRegion": true,
+      "is_region": false,
+      "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "3A Region 12 Tournament",
-      "details": [
-        "3A Region 12 Tournament"
-      ]
+      "raw": "3A Region 12 Tournament |  | "
+    },
+    {
+      "date": "3A Region 12 Tournament",
+      "time": "",
+      "date_time": "3A Region 12 Tournament",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "3A Region 12 Tournament |  | "
+    },
+    {
+      "date": "3A Region 12 Tournament",
+      "time": "",
+      "date_time": "3A Region 12 Tournament",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "3A Region 12 Tournament |  | "
     },
     {
       "date": "Match Location: Logan, UT",
       "time": "",
       "date_time": "Match Location: Logan, UT",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2754,16 +2281,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Location: Logan, UT",
-      "details": [
-        "Match Location: Logan, UT"
-      ]
+      "raw": "Match Location: Logan, UT |  | "
     },
     {
       "date": "Match Details: Day 1",
       "time": "",
       "date_time": "Match Details: Day 1",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2775,10 +2299,7 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Details: Day 1",
-      "details": [
-        "Match Details: Day 1"
-      ]
+      "raw": "Match Details: Day 1 |  | "
     }
   ],
   "schedule": [
@@ -2786,7 +2307,7 @@
       "date": "Number of Matches\tWins\tLosses\tWin %",
       "time": "",
       "date_time": "Number of Matches\tWins\tLosses\tWin %",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2798,16 +2319,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Number of Matches\tWins\tLosses\tWin %",
-      "details": [
-        "Number of Matches\tWins\tLosses\tWin %"
-      ]
+      "raw": "Number of Matches\tWins\tLosses\tWin % |  | "
     },
     {
       "date": "145\t97\t48\t66.90",
       "time": "",
       "date_time": "145\t97\t48\t66.90",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2819,16 +2337,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "145\t97\t48\t66.90",
-      "details": [
-        "145\t97\t48\t66.90"
-      ]
+      "raw": "145\t97\t48\t66.90 |  | "
     },
     {
       "date": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "time": "3:30",
       "date_time": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM 3:30",
-      "opponent": "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
+      "opponent": "@ The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
       "opponent_name": "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
       "opponentName": "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
       "location": "Away",
@@ -2836,22 +2351,17 @@
       "isHome": false,
       "is_away": true,
       "isAway": true,
-      "is_region": true,
-      "isRegion": true,
+      "is_region": false,
+      "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM | vs. Morgan (UT) | The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p.",
-      "details": [
-        "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
-        "vs. Morgan (UT)",
-        "The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p."
-      ]
+      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM | The Ogden varsity tennis team has a home conference match vs. Morgan (UT) on Tuesday, August 25 @ 3:30p. | "
     },
     {
       "date": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "time": "3:30 PM",
       "date_time": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM 3:30 PM",
-      "opponent": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
+      "opponent": "@ NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "opponent_name": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "opponentName": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
       "location": "Away",
@@ -2863,16 +2373,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM",
-      "details": [
-        "NEXT GAME: Tuesday, Aug 25 at 3:30 PM"
-      ]
+      "raw": "NEXT GAME: Tuesday, Aug 25 at 3:30 PM | NEXT GAME: Tuesday, Aug 25 at 3:30 PM | "
     },
     {
       "date": "Tuesday, Aug 25 at 3:30 PM",
       "time": "3:30 PM",
       "date_time": "Tuesday, Aug 25 at 3:30 PM 3:30 PM",
-      "opponent": "Tuesday, Aug 25 at 3:30 PM",
+      "opponent": "@ Tuesday, Aug 25 at 3:30 PM",
       "opponent_name": "Tuesday, Aug 25 at 3:30 PM",
       "opponentName": "Tuesday, Aug 25 at 3:30 PM",
       "location": "Away",
@@ -2884,16 +2391,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Tuesday, Aug 25 at 3:30 PM",
-      "details": [
-        "Tuesday, Aug 25 at 3:30 PM"
-      ]
+      "raw": "Tuesday, Aug 25 at 3:30 PM | Tuesday, Aug 25 at 3:30 PM | "
     },
     {
       "date": "Date\tOpponent/Match\tResult",
       "time": "",
       "date_time": "Date\tOpponent/Match\tResult",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2905,16 +2409,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Date\tOpponent/Match\tResult",
-      "details": [
-        "Date\tOpponent/Match\tResult"
-      ]
+      "raw": "Date\tOpponent/Match\tResult |  | "
     },
     {
       "date": "Opponent/Match",
       "time": "",
       "date_time": "Opponent/Match",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -2926,18 +2427,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Opponent/Match",
-      "details": [
-        "Opponent/Match"
-      ]
+      "raw": "Opponent/Match |  | "
     },
     {
       "date": "8/5",
       "time": "3:00",
       "date_time": "8/5 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -2947,68 +2445,13 @@
       "isRegion": false,
       "result": "(W) 5 - 0",
       "score": "(W) 5 - 0",
-      "raw": "8/5 | 3:00p | Bonneville (Washington Terrace, UT) | Match Details: win 9 lost 1 | Location: Ogden High School | Box Score | (W) 5 - 0",
-      "details": [
-        "8/5",
-        "3:00p",
-        "Bonneville (Washington Terrace, UT)",
-        "Match Details: win 9 lost 1",
-        "Location: Ogden High School",
-        "Box Score",
-        "(W) 5 - 0"
-      ]
+      "raw": "8/5 |  | (W) 5 - 0"
     },
     {
       "date": "8/5",
       "time": "3:00",
       "date_time": "8/5 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/5 | 3:00p",
-      "details": [
-        "8/5",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Bonneville (Washington Terrace, UT)",
-      "time": "",
-      "date_time": "Bonneville (Washington Terrace, UT)",
-      "opponent": "Match Details: win 9 lost 1",
-      "opponent_name": "Match Details: win 9 lost 1",
-      "opponentName": "Match Details: win 9 lost 1",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Bonneville (Washington Terrace, UT) | Match Details: win 9 lost 1 | Location: Ogden High School | Box Score",
-      "details": [
-        "Bonneville (Washington Terrace, UT)",
-        "Match Details: win 9 lost 1",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Bonneville (Washington Terrace, UT)",
-      "time": "",
-      "date_time": "Bonneville (Washington Terrace, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3020,16 +2463,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Bonneville (Washington Terrace, UT)",
-      "details": [
-        "Bonneville (Washington Terrace, UT)"
-      ]
+      "raw": "8/5 |  | "
     },
     {
       "date": "Bonneville (Washington Terrace, UT)",
       "time": "",
       "date_time": "Bonneville (Washington Terrace, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3041,16 +2481,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Bonneville (Washington Terrace, UT)",
-      "details": [
-        "Bonneville (Washington Terrace, UT)"
-      ]
+      "raw": "Bonneville (Washington Terrace, UT) |  | "
+    },
+    {
+      "date": "Bonneville (Washington Terrace, UT)",
+      "time": "",
+      "date_time": "Bonneville (Washington Terrace, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Bonneville (Washington Terrace, UT) |  | "
+    },
+    {
+      "date": "Bonneville (Washington Terrace, UT)",
+      "time": "",
+      "date_time": "Bonneville (Washington Terrace, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Bonneville (Washington Terrace, UT) |  | "
     },
     {
       "date": "(Washington Terrace, UT)",
       "time": "",
       "date_time": "(Washington Terrace, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3062,16 +2535,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Washington Terrace, UT)",
-      "details": [
-        "(Washington Terrace, UT)"
-      ]
+      "raw": "(Washington Terrace, UT) |  | "
     },
     {
       "date": "Match Details: win 9 lost 1",
       "time": "",
       "date_time": "Match Details: win 9 lost 1",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3083,16 +2553,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Details: win 9 lost 1",
-      "details": [
-        "Match Details: win 9 lost 1"
-      ]
+      "raw": "Match Details: win 9 lost 1 |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3104,16 +2571,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3125,18 +2589,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/7",
       "time": "",
       "date_time": "8/7",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -3146,66 +2607,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/7 | TBA | Tiger Slam | Match Location: Ogden, UT | Box Score | 3rd of 9",
-      "details": [
-        "8/7",
-        "TBA",
-        "Tiger Slam",
-        "Match Location: Ogden, UT",
-        "Box Score",
-        "3rd of 9"
-      ]
+      "raw": "8/7 |  | "
     },
     {
       "date": "8/7",
       "time": "",
       "date_time": "8/7",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/7 | TBA",
-      "details": [
-        "8/7",
-        "TBA"
-      ]
-    },
-    {
-      "date": "Tiger Slam",
-      "time": "",
-      "date_time": "Tiger Slam",
-      "opponent": "Match Location: Ogden, UT",
-      "opponent_name": "Match Location: Ogden, UT",
-      "opponentName": "Match Location: Ogden, UT",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Tiger Slam | Match Location: Ogden, UT | Box Score",
-      "details": [
-        "Tiger Slam",
-        "Match Location: Ogden, UT",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Tiger Slam",
-      "time": "",
-      "date_time": "Tiger Slam",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3217,16 +2625,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Tiger Slam",
-      "details": [
-        "Tiger Slam"
-      ]
+      "raw": "8/7 |  | "
     },
     {
       "date": "Tiger Slam",
       "time": "",
       "date_time": "Tiger Slam",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3238,16 +2643,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Tiger Slam",
-      "details": [
-        "Tiger Slam"
-      ]
+      "raw": "Tiger Slam |  | "
+    },
+    {
+      "date": "Tiger Slam",
+      "time": "",
+      "date_time": "Tiger Slam",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Tiger Slam |  | "
+    },
+    {
+      "date": "Tiger Slam",
+      "time": "",
+      "date_time": "Tiger Slam",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Tiger Slam |  | "
     },
     {
       "date": "Match Location: Ogden, UT",
       "time": "",
       "date_time": "Match Location: Ogden, UT",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3259,16 +2697,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Location: Ogden, UT",
-      "details": [
-        "Match Location: Ogden, UT"
-      ]
+      "raw": "Match Location: Ogden, UT |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3280,18 +2715,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/10",
       "time": "3:00",
       "date_time": "8/10 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -3301,66 +2733,13 @@
       "isRegion": false,
       "result": "(W) 11 - 1",
       "score": "(W) 11 - 1",
-      "raw": "8/10 | 3:00p | Box Elder (Brigham City, UT) | Location: Ogden High School | Box Score | (W) 11 - 1",
-      "details": [
-        "8/10",
-        "3:00p",
-        "Box Elder (Brigham City, UT)",
-        "Location: Ogden High School",
-        "Box Score",
-        "(W) 11 - 1"
-      ]
+      "raw": "8/10 |  | (W) 11 - 1"
     },
     {
       "date": "8/10",
       "time": "3:00",
       "date_time": "8/10 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/10 | 3:00p",
-      "details": [
-        "8/10",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Box Elder (Brigham City, UT)",
-      "time": "",
-      "date_time": "Box Elder (Brigham City, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Box Elder (Brigham City, UT) | Location: Ogden High School | Box Score",
-      "details": [
-        "Box Elder (Brigham City, UT)",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Box Elder (Brigham City, UT)",
-      "time": "",
-      "date_time": "Box Elder (Brigham City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3372,16 +2751,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Elder (Brigham City, UT)",
-      "details": [
-        "Box Elder (Brigham City, UT)"
-      ]
+      "raw": "8/10 |  | "
     },
     {
       "date": "Box Elder (Brigham City, UT)",
       "time": "",
       "date_time": "Box Elder (Brigham City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3393,16 +2769,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Elder (Brigham City, UT)",
-      "details": [
-        "Box Elder (Brigham City, UT)"
-      ]
+      "raw": "Box Elder (Brigham City, UT) |  | "
+    },
+    {
+      "date": "Box Elder (Brigham City, UT)",
+      "time": "",
+      "date_time": "Box Elder (Brigham City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Box Elder (Brigham City, UT) |  | "
+    },
+    {
+      "date": "Box Elder (Brigham City, UT)",
+      "time": "",
+      "date_time": "Box Elder (Brigham City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Box Elder (Brigham City, UT) |  | "
     },
     {
       "date": "(Brigham City, UT)",
       "time": "",
       "date_time": "(Brigham City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3414,16 +2823,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Brigham City, UT)",
-      "details": [
-        "(Brigham City, UT)"
-      ]
+      "raw": "(Brigham City, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3435,16 +2841,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3456,18 +2859,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/11",
       "time": "3:00",
       "date_time": "8/11 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -3477,66 +2877,13 @@
       "isRegion": false,
       "result": "(W) 11 - 1",
       "score": "(W) 11 - 1",
-      "raw": "8/11 | 3:00p | Northridge (Layton, UT) | Location: Ogden High School | Box Score | (W) 11 - 1",
-      "details": [
-        "8/11",
-        "3:00p",
-        "Northridge (Layton, UT)",
-        "Location: Ogden High School",
-        "Box Score",
-        "(W) 11 - 1"
-      ]
+      "raw": "8/11 |  | (W) 11 - 1"
     },
     {
       "date": "8/11",
       "time": "3:00",
       "date_time": "8/11 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/11 | 3:00p",
-      "details": [
-        "8/11",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Northridge (Layton, UT)",
-      "time": "",
-      "date_time": "Northridge (Layton, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Northridge (Layton, UT) | Location: Ogden High School | Box Score",
-      "details": [
-        "Northridge (Layton, UT)",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Northridge (Layton, UT)",
-      "time": "",
-      "date_time": "Northridge (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3548,16 +2895,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Northridge (Layton, UT)",
-      "details": [
-        "Northridge (Layton, UT)"
-      ]
+      "raw": "8/11 |  | "
     },
     {
       "date": "Northridge (Layton, UT)",
       "time": "",
       "date_time": "Northridge (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3569,16 +2913,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Northridge (Layton, UT)",
-      "details": [
-        "Northridge (Layton, UT)"
-      ]
+      "raw": "Northridge (Layton, UT) |  | "
+    },
+    {
+      "date": "Northridge (Layton, UT)",
+      "time": "",
+      "date_time": "Northridge (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Northridge (Layton, UT) |  | "
+    },
+    {
+      "date": "Northridge (Layton, UT)",
+      "time": "",
+      "date_time": "Northridge (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Northridge (Layton, UT) |  | "
     },
     {
       "date": "(Layton, UT)",
       "time": "",
       "date_time": "(Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3590,16 +2967,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Layton, UT)",
-      "details": [
-        "(Layton, UT)"
-      ]
+      "raw": "(Layton, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3611,16 +2985,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3632,18 +3003,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/17",
       "time": "3:00",
       "date_time": "8/17 3:00",
-      "opponent": "@ Bear River (Garland, UT)",
-      "opponent_name": "Bear River (Garland, UT)",
-      "opponentName": "Bear River (Garland, UT)",
+      "opponent": "@ @ Bear River (Garland, UT)",
+      "opponent_name": "@ Bear River (Garland, UT)",
+      "opponentName": "@ Bear River (Garland, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -3653,23 +3021,15 @@
       "isRegion": false,
       "result": "(W) 4 - 1",
       "score": "(W) 4 - 1",
-      "raw": "8/17 | 3:00p | @ Bear River (Garland, UT) | Location: Bear River High School | Box Score | (W) 4 - 1",
-      "details": [
-        "8/17",
-        "3:00p",
-        "@ Bear River (Garland, UT)",
-        "Location: Bear River High School",
-        "Box Score",
-        "(W) 4 - 1"
-      ]
+      "raw": "8/17 | @ Bear River (Garland, UT) | (W) 4 - 1"
     },
     {
       "date": "8/17",
       "time": "3:00",
       "date_time": "8/17 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -3679,19 +3039,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/17 | 3:00p",
-      "details": [
-        "8/17",
-        "3:00p"
-      ]
+      "raw": "8/17 |  | "
     },
     {
       "date": "@ Bear River (Garland, UT)",
       "time": "",
       "date_time": "@ Bear River (Garland, UT)",
-      "opponent": "@ Bear River (Garland, UT)",
-      "opponent_name": "Bear River (Garland, UT)",
-      "opponentName": "Bear River (Garland, UT)",
+      "opponent": "@ @ Bear River (Garland, UT)",
+      "opponent_name": "@ Bear River (Garland, UT)",
+      "opponentName": "@ Bear River (Garland, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -3701,20 +3057,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Bear River (Garland, UT) | Location: Bear River High School | Box Score",
-      "details": [
-        "@ Bear River (Garland, UT)",
-        "Location: Bear River High School",
-        "Box Score"
-      ]
+      "raw": "@ Bear River (Garland, UT) | @ Bear River (Garland, UT) | "
     },
     {
       "date": "@ Bear River (Garland, UT)",
       "time": "",
       "date_time": "@ Bear River (Garland, UT)",
-      "opponent": "@ Bear River (Garland, UT)",
-      "opponent_name": "Bear River (Garland, UT)",
-      "opponentName": "Bear River (Garland, UT)",
+      "opponent": "@ @ Bear River (Garland, UT)",
+      "opponent_name": "@ Bear River (Garland, UT)",
+      "opponentName": "@ Bear River (Garland, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -3724,16 +3075,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Bear River (Garland, UT)",
-      "details": [
-        "@ Bear River (Garland, UT)"
-      ]
+      "raw": "@ Bear River (Garland, UT) | @ Bear River (Garland, UT) | "
     },
     {
       "date": "Bear River (Garland, UT)",
       "time": "",
       "date_time": "Bear River (Garland, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3745,16 +3093,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Bear River (Garland, UT)",
-      "details": [
-        "Bear River (Garland, UT)"
-      ]
+      "raw": "Bear River (Garland, UT) |  | "
     },
     {
       "date": "(Garland, UT)",
       "time": "",
       "date_time": "(Garland, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3766,16 +3111,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Garland, UT)",
-      "details": [
-        "(Garland, UT)"
-      ]
+      "raw": "(Garland, UT) |  | "
     },
     {
       "date": "Location: Bear River High School",
       "time": "",
       "date_time": "Location: Bear River High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3787,16 +3129,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Bear River High School",
-      "details": [
-        "Location: Bear River High School"
-      ]
+      "raw": "Location: Bear River High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3808,18 +3147,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/20",
       "time": "3:30",
       "date_time": "8/20 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -3829,66 +3165,13 @@
       "isRegion": false,
       "result": "(L) 8 - 4",
       "score": "(L) 8 - 4",
-      "raw": "8/20 | 3:30p | Grantsville (Grantsville, UT) | Location: Ogden High School | Box Score | (L) 8 - 4",
-      "details": [
-        "8/20",
-        "3:30p",
-        "Grantsville (Grantsville, UT)",
-        "Location: Ogden High School",
-        "Box Score",
-        "(L) 8 - 4"
-      ]
+      "raw": "8/20 |  | (L) 8 - 4"
     },
     {
       "date": "8/20",
       "time": "3:30",
       "date_time": "8/20 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/20 | 3:30p",
-      "details": [
-        "8/20",
-        "3:30p"
-      ]
-    },
-    {
-      "date": "Grantsville (Grantsville, UT)",
-      "time": "",
-      "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Grantsville (Grantsville, UT) | Location: Ogden High School | Box Score",
-      "details": [
-        "Grantsville (Grantsville, UT)",
-        "Location: Ogden High School",
-        "Box Score"
-      ]
-    },
-    {
-      "date": "Grantsville (Grantsville, UT)",
-      "time": "",
-      "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3900,16 +3183,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Grantsville (Grantsville, UT)",
-      "details": [
-        "Grantsville (Grantsville, UT)"
-      ]
+      "raw": "8/20 |  | "
     },
     {
       "date": "Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3921,16 +3201,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Grantsville (Grantsville, UT)",
-      "details": [
-        "Grantsville (Grantsville, UT)"
-      ]
+      "raw": "Grantsville (Grantsville, UT) |  | "
+    },
+    {
+      "date": "Grantsville (Grantsville, UT)",
+      "time": "",
+      "date_time": "Grantsville (Grantsville, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Grantsville (Grantsville, UT) |  | "
+    },
+    {
+      "date": "Grantsville (Grantsville, UT)",
+      "time": "",
+      "date_time": "Grantsville (Grantsville, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Grantsville (Grantsville, UT) |  | "
     },
     {
       "date": "(Grantsville, UT)",
       "time": "",
       "date_time": "(Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3942,16 +3255,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Grantsville, UT)",
-      "details": [
-        "(Grantsville, UT)"
-      ]
+      "raw": "(Grantsville, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3963,16 +3273,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "Box Score",
       "time": "",
       "date_time": "Box Score",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -3984,18 +3291,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Box Score",
-      "details": [
-        "Box Score"
-      ]
+      "raw": "Box Score |  | "
     },
     {
       "date": "8/25",
       "time": "3:30",
       "date_time": "8/25 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4005,63 +3309,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/25 | 3:30p | Morgan (Morgan, UT) | Location: Ogden High School",
-      "details": [
-        "8/25",
-        "3:30p",
-        "Morgan (Morgan, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "8/25 |  | "
     },
     {
       "date": "8/25",
       "time": "3:30",
       "date_time": "8/25 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "8/25 | 3:30p",
-      "details": [
-        "8/25",
-        "3:30p"
-      ]
-    },
-    {
-      "date": "Morgan (Morgan, UT)",
-      "time": "",
-      "date_time": "Morgan (Morgan, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Morgan (Morgan, UT) | Location: Ogden High School",
-      "details": [
-        "Morgan (Morgan, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Morgan (Morgan, UT)",
-      "time": "",
-      "date_time": "Morgan (Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4073,16 +3327,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Morgan (Morgan, UT)",
-      "details": [
-        "Morgan (Morgan, UT)"
-      ]
+      "raw": "8/25 |  | "
     },
     {
       "date": "Morgan (Morgan, UT)",
       "time": "",
       "date_time": "Morgan (Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4094,16 +3345,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Morgan (Morgan, UT)",
-      "details": [
-        "Morgan (Morgan, UT)"
-      ]
+      "raw": "Morgan (Morgan, UT) |  | "
+    },
+    {
+      "date": "Morgan (Morgan, UT)",
+      "time": "",
+      "date_time": "Morgan (Morgan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Morgan (Morgan, UT) |  | "
+    },
+    {
+      "date": "Morgan (Morgan, UT)",
+      "time": "",
+      "date_time": "Morgan (Morgan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Morgan (Morgan, UT) |  | "
     },
     {
       "date": "(Morgan, UT)",
       "time": "",
       "date_time": "(Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4115,16 +3399,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Morgan, UT)",
-      "details": [
-        "(Morgan, UT)"
-      ]
+      "raw": "(Morgan, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4136,18 +3417,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "8/26",
       "time": "3:30",
       "date_time": "8/26 3:30",
-      "opponent": "@ Logan (Logan, UT)",
-      "opponent_name": "Logan (Logan, UT)",
-      "opponentName": "Logan (Logan, UT)",
+      "opponent": "@ @ Logan (Logan, UT)",
+      "opponent_name": "@ Logan (Logan, UT)",
+      "opponentName": "@ Logan (Logan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4157,21 +3435,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/26 | 3:30p | @ Logan (Logan, UT) | Location: Logan High School",
-      "details": [
-        "8/26",
-        "3:30p",
-        "@ Logan (Logan, UT)",
-        "Location: Logan High School"
-      ]
+      "raw": "8/26 | @ Logan (Logan, UT) | "
     },
     {
       "date": "8/26",
       "time": "3:30",
       "date_time": "8/26 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4181,19 +3453,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "8/26 | 3:30p",
-      "details": [
-        "8/26",
-        "3:30p"
-      ]
+      "raw": "8/26 |  | "
     },
     {
       "date": "@ Logan (Logan, UT)",
       "time": "",
       "date_time": "@ Logan (Logan, UT)",
-      "opponent": "@ Logan (Logan, UT)",
-      "opponent_name": "Logan (Logan, UT)",
-      "opponentName": "Logan (Logan, UT)",
+      "opponent": "@ @ Logan (Logan, UT)",
+      "opponent_name": "@ Logan (Logan, UT)",
+      "opponentName": "@ Logan (Logan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4203,19 +3471,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Logan (Logan, UT) | Location: Logan High School",
-      "details": [
-        "@ Logan (Logan, UT)",
-        "Location: Logan High School"
-      ]
+      "raw": "@ Logan (Logan, UT) | @ Logan (Logan, UT) | "
     },
     {
       "date": "@ Logan (Logan, UT)",
       "time": "",
       "date_time": "@ Logan (Logan, UT)",
-      "opponent": "@ Logan (Logan, UT)",
-      "opponent_name": "Logan (Logan, UT)",
-      "opponentName": "Logan (Logan, UT)",
+      "opponent": "@ @ Logan (Logan, UT)",
+      "opponent_name": "@ Logan (Logan, UT)",
+      "opponentName": "@ Logan (Logan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4225,16 +3489,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Logan (Logan, UT)",
-      "details": [
-        "@ Logan (Logan, UT)"
-      ]
+      "raw": "@ Logan (Logan, UT) | @ Logan (Logan, UT) | "
     },
     {
       "date": "Logan (Logan, UT)",
       "time": "",
       "date_time": "Logan (Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4246,16 +3507,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Logan (Logan, UT)",
-      "details": [
-        "Logan (Logan, UT)"
-      ]
+      "raw": "Logan (Logan, UT) |  | "
     },
     {
       "date": "(Logan, UT)",
       "time": "",
       "date_time": "(Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4267,16 +3525,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Logan, UT)",
-      "details": [
-        "(Logan, UT)"
-      ]
+      "raw": "(Logan, UT) |  | "
     },
     {
       "date": "Location: Logan High School",
       "time": "",
       "date_time": "Location: Logan High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4288,18 +3543,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Logan High School",
-      "details": [
-        "Location: Logan High School"
-      ]
+      "raw": "Location: Logan High School |  | "
     },
     {
       "date": "9/1",
       "time": "3:30",
       "date_time": "9/1 3:30",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4309,21 +3561,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/1 | 3:30p | @ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "9/1",
-        "3:30p",
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "9/1 | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "9/1",
       "time": "3:30",
       "date_time": "9/1 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4333,19 +3579,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/1 | 3:30p",
-      "details": [
-        "9/1",
-        "3:30p"
-      ]
+      "raw": "9/1 |  | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4355,19 +3597,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4377,16 +3615,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT)",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "Ben Lomond (Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4398,16 +3633,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Ben Lomond (Ogden, UT)",
-      "details": [
-        "Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "Ben Lomond (Ogden, UT) |  | "
     },
     {
       "date": "(Ogden, UT)",
       "time": "",
       "date_time": "(Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4419,16 +3651,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Ogden, UT)",
-      "details": [
-        "(Ogden, UT)"
-      ]
+      "raw": "(Ogden, UT) |  | "
     },
     {
       "date": "Location: Ben Lomond High School",
       "time": "",
       "date_time": "Location: Ben Lomond High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4440,18 +3669,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ben Lomond High School",
-      "details": [
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "Location: Ben Lomond High School |  | "
     },
     {
       "date": "9/7",
       "time": "3:00",
       "date_time": "9/7 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4461,63 +3687,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/7 | 3:00p | Layton (Layton, UT) | Location: Ogden High School",
-      "details": [
-        "9/7",
-        "3:00p",
-        "Layton (Layton, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "9/7 |  | "
     },
     {
       "date": "9/7",
       "time": "3:00",
       "date_time": "9/7 3:00",
-      "opponent": "3:00p",
-      "opponent_name": "3:00p",
-      "opponentName": "3:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "9/7 | 3:00p",
-      "details": [
-        "9/7",
-        "3:00p"
-      ]
-    },
-    {
-      "date": "Layton (Layton, UT)",
-      "time": "",
-      "date_time": "Layton (Layton, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Layton (Layton, UT) | Location: Ogden High School",
-      "details": [
-        "Layton (Layton, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Layton (Layton, UT)",
-      "time": "",
-      "date_time": "Layton (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4529,16 +3705,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Layton (Layton, UT)",
-      "details": [
-        "Layton (Layton, UT)"
-      ]
+      "raw": "9/7 |  | "
     },
     {
       "date": "Layton (Layton, UT)",
       "time": "",
       "date_time": "Layton (Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4550,16 +3723,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Layton (Layton, UT)",
-      "details": [
-        "Layton (Layton, UT)"
-      ]
+      "raw": "Layton (Layton, UT) |  | "
+    },
+    {
+      "date": "Layton (Layton, UT)",
+      "time": "",
+      "date_time": "Layton (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Layton (Layton, UT) |  | "
+    },
+    {
+      "date": "Layton (Layton, UT)",
+      "time": "",
+      "date_time": "Layton (Layton, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Layton (Layton, UT) |  | "
     },
     {
       "date": "(Layton, UT)",
       "time": "",
       "date_time": "(Layton, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4571,16 +3777,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Layton, UT)",
-      "details": [
-        "(Layton, UT)"
-      ]
+      "raw": "(Layton, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4592,18 +3795,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "9/8",
       "time": "3:30",
       "date_time": "9/8 3:30",
-      "opponent": "@ Grantsville (Grantsville, UT)",
-      "opponent_name": "Grantsville (Grantsville, UT)",
-      "opponentName": "Grantsville (Grantsville, UT)",
+      "opponent": "@ @ Grantsville (Grantsville, UT)",
+      "opponent_name": "@ Grantsville (Grantsville, UT)",
+      "opponentName": "@ Grantsville (Grantsville, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4613,21 +3813,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/8 | 3:30p | @ Grantsville (Grantsville, UT) | Location: Grantsville High School",
-      "details": [
-        "9/8",
-        "3:30p",
-        "@ Grantsville (Grantsville, UT)",
-        "Location: Grantsville High School"
-      ]
+      "raw": "9/8 | @ Grantsville (Grantsville, UT) | "
     },
     {
       "date": "9/8",
       "time": "3:30",
       "date_time": "9/8 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4637,19 +3831,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/8 | 3:30p",
-      "details": [
-        "9/8",
-        "3:30p"
-      ]
+      "raw": "9/8 |  | "
     },
     {
       "date": "@ Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "@ Grantsville (Grantsville, UT)",
-      "opponent": "@ Grantsville (Grantsville, UT)",
-      "opponent_name": "Grantsville (Grantsville, UT)",
-      "opponentName": "Grantsville (Grantsville, UT)",
+      "opponent": "@ @ Grantsville (Grantsville, UT)",
+      "opponent_name": "@ Grantsville (Grantsville, UT)",
+      "opponentName": "@ Grantsville (Grantsville, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4659,19 +3849,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Grantsville (Grantsville, UT) | Location: Grantsville High School",
-      "details": [
-        "@ Grantsville (Grantsville, UT)",
-        "Location: Grantsville High School"
-      ]
+      "raw": "@ Grantsville (Grantsville, UT) | @ Grantsville (Grantsville, UT) | "
     },
     {
       "date": "@ Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "@ Grantsville (Grantsville, UT)",
-      "opponent": "@ Grantsville (Grantsville, UT)",
-      "opponent_name": "Grantsville (Grantsville, UT)",
-      "opponentName": "Grantsville (Grantsville, UT)",
+      "opponent": "@ @ Grantsville (Grantsville, UT)",
+      "opponent_name": "@ Grantsville (Grantsville, UT)",
+      "opponentName": "@ Grantsville (Grantsville, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4681,16 +3867,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Grantsville (Grantsville, UT)",
-      "details": [
-        "@ Grantsville (Grantsville, UT)"
-      ]
+      "raw": "@ Grantsville (Grantsville, UT) | @ Grantsville (Grantsville, UT) | "
     },
     {
       "date": "Grantsville (Grantsville, UT)",
       "time": "",
       "date_time": "Grantsville (Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4702,16 +3885,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Grantsville (Grantsville, UT)",
-      "details": [
-        "Grantsville (Grantsville, UT)"
-      ]
+      "raw": "Grantsville (Grantsville, UT) |  | "
     },
     {
       "date": "(Grantsville, UT)",
       "time": "",
       "date_time": "(Grantsville, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4723,16 +3903,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Grantsville, UT)",
-      "details": [
-        "(Grantsville, UT)"
-      ]
+      "raw": "(Grantsville, UT) |  | "
     },
     {
       "date": "Location: Grantsville High School",
       "time": "",
       "date_time": "Location: Grantsville High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4744,18 +3921,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Grantsville High School",
-      "details": [
-        "Location: Grantsville High School"
-      ]
+      "raw": "Location: Grantsville High School |  | "
     },
     {
       "date": "9/9",
       "time": "3:30",
       "date_time": "9/9 3:30",
-      "opponent": "@ Morgan (Morgan, UT)",
-      "opponent_name": "Morgan (Morgan, UT)",
-      "opponentName": "Morgan (Morgan, UT)",
+      "opponent": "@ @ Morgan (Morgan, UT)",
+      "opponent_name": "@ Morgan (Morgan, UT)",
+      "opponentName": "@ Morgan (Morgan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4765,21 +3939,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/9 | 3:30p | @ Morgan (Morgan, UT) | Location: Morgan High School",
-      "details": [
-        "9/9",
-        "3:30p",
-        "@ Morgan (Morgan, UT)",
-        "Location: Morgan High School"
-      ]
+      "raw": "9/9 | @ Morgan (Morgan, UT) | "
     },
     {
       "date": "9/9",
       "time": "3:30",
       "date_time": "9/9 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4789,19 +3957,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/9 | 3:30p",
-      "details": [
-        "9/9",
-        "3:30p"
-      ]
+      "raw": "9/9 |  | "
     },
     {
       "date": "@ Morgan (Morgan, UT)",
       "time": "",
       "date_time": "@ Morgan (Morgan, UT)",
-      "opponent": "@ Morgan (Morgan, UT)",
-      "opponent_name": "Morgan (Morgan, UT)",
-      "opponentName": "Morgan (Morgan, UT)",
+      "opponent": "@ @ Morgan (Morgan, UT)",
+      "opponent_name": "@ Morgan (Morgan, UT)",
+      "opponentName": "@ Morgan (Morgan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4811,19 +3975,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Morgan (Morgan, UT) | Location: Morgan High School",
-      "details": [
-        "@ Morgan (Morgan, UT)",
-        "Location: Morgan High School"
-      ]
+      "raw": "@ Morgan (Morgan, UT) | @ Morgan (Morgan, UT) | "
     },
     {
       "date": "@ Morgan (Morgan, UT)",
       "time": "",
       "date_time": "@ Morgan (Morgan, UT)",
-      "opponent": "@ Morgan (Morgan, UT)",
-      "opponent_name": "Morgan (Morgan, UT)",
-      "opponentName": "Morgan (Morgan, UT)",
+      "opponent": "@ @ Morgan (Morgan, UT)",
+      "opponent_name": "@ Morgan (Morgan, UT)",
+      "opponentName": "@ Morgan (Morgan, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -4833,16 +3993,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Morgan (Morgan, UT)",
-      "details": [
-        "@ Morgan (Morgan, UT)"
-      ]
+      "raw": "@ Morgan (Morgan, UT) | @ Morgan (Morgan, UT) | "
     },
     {
       "date": "Morgan (Morgan, UT)",
       "time": "",
       "date_time": "Morgan (Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4854,16 +4011,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Morgan (Morgan, UT)",
-      "details": [
-        "Morgan (Morgan, UT)"
-      ]
+      "raw": "Morgan (Morgan, UT) |  | "
     },
     {
       "date": "(Morgan, UT)",
       "time": "",
       "date_time": "(Morgan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4875,16 +4029,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Morgan, UT)",
-      "details": [
-        "(Morgan, UT)"
-      ]
+      "raw": "(Morgan, UT) |  | "
     },
     {
       "date": "Location: Morgan High School",
       "time": "",
       "date_time": "Location: Morgan High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4896,18 +4047,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Morgan High School",
-      "details": [
-        "Location: Morgan High School"
-      ]
+      "raw": "Location: Morgan High School |  | "
     },
     {
       "date": "9/11",
       "time": "1:00",
       "date_time": "9/11 1:00",
-      "opponent": "1:00p",
-      "opponent_name": "1:00p",
-      "opponentName": "1:00p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -4917,63 +4065,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/11 | 1:00p | Fremont (Plain City, UT) | Location: Ogden High School",
-      "details": [
-        "9/11",
-        "1:00p",
-        "Fremont (Plain City, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "9/11 |  | "
     },
     {
       "date": "9/11",
       "time": "1:00",
       "date_time": "9/11 1:00",
-      "opponent": "1:00p",
-      "opponent_name": "1:00p",
-      "opponentName": "1:00p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "9/11 | 1:00p",
-      "details": [
-        "9/11",
-        "1:00p"
-      ]
-    },
-    {
-      "date": "Fremont (Plain City, UT)",
-      "time": "",
-      "date_time": "Fremont (Plain City, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Fremont (Plain City, UT) | Location: Ogden High School",
-      "details": [
-        "Fremont (Plain City, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Fremont (Plain City, UT)",
-      "time": "",
-      "date_time": "Fremont (Plain City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -4985,16 +4083,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Fremont (Plain City, UT)",
-      "details": [
-        "Fremont (Plain City, UT)"
-      ]
+      "raw": "9/11 |  | "
     },
     {
       "date": "Fremont (Plain City, UT)",
       "time": "",
       "date_time": "Fremont (Plain City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5006,16 +4101,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Fremont (Plain City, UT)",
-      "details": [
-        "Fremont (Plain City, UT)"
-      ]
+      "raw": "Fremont (Plain City, UT) |  | "
+    },
+    {
+      "date": "Fremont (Plain City, UT)",
+      "time": "",
+      "date_time": "Fremont (Plain City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Fremont (Plain City, UT) |  | "
+    },
+    {
+      "date": "Fremont (Plain City, UT)",
+      "time": "",
+      "date_time": "Fremont (Plain City, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Fremont (Plain City, UT) |  | "
     },
     {
       "date": "(Plain City, UT)",
       "time": "",
       "date_time": "(Plain City, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5027,16 +4155,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Plain City, UT)",
-      "details": [
-        "(Plain City, UT)"
-      ]
+      "raw": "(Plain City, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5048,18 +4173,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "9/15",
       "time": "3:30",
       "date_time": "9/15 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -5069,63 +4191,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/15 | 3:30p | Logan (Logan, UT) | Location: Ogden High School",
-      "details": [
-        "9/15",
-        "3:30p",
-        "Logan (Logan, UT)",
-        "Location: Ogden High School"
-      ]
+      "raw": "9/15 |  | "
     },
     {
       "date": "9/15",
       "time": "3:30",
       "date_time": "9/15 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "9/15 | 3:30p",
-      "details": [
-        "9/15",
-        "3:30p"
-      ]
-    },
-    {
-      "date": "Logan (Logan, UT)",
-      "time": "",
-      "date_time": "Logan (Logan, UT)",
-      "opponent": "Location: Ogden High School",
-      "opponent_name": "Location: Ogden High School",
-      "opponentName": "Location: Ogden High School",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": false,
-      "isRegion": false,
-      "result": "",
-      "score": "",
-      "raw": "Logan (Logan, UT) | Location: Ogden High School",
-      "details": [
-        "Logan (Logan, UT)",
-        "Location: Ogden High School"
-      ]
-    },
-    {
-      "date": "Logan (Logan, UT)",
-      "time": "",
-      "date_time": "Logan (Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5137,16 +4209,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Logan (Logan, UT)",
-      "details": [
-        "Logan (Logan, UT)"
-      ]
+      "raw": "9/15 |  | "
     },
     {
       "date": "Logan (Logan, UT)",
       "time": "",
       "date_time": "Logan (Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5158,16 +4227,49 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Logan (Logan, UT)",
-      "details": [
-        "Logan (Logan, UT)"
-      ]
+      "raw": "Logan (Logan, UT) |  | "
+    },
+    {
+      "date": "Logan (Logan, UT)",
+      "time": "",
+      "date_time": "Logan (Logan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Logan (Logan, UT) |  | "
+    },
+    {
+      "date": "Logan (Logan, UT)",
+      "time": "",
+      "date_time": "Logan (Logan, UT)",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "Logan (Logan, UT) |  | "
     },
     {
       "date": "(Logan, UT)",
       "time": "",
       "date_time": "(Logan, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5179,16 +4281,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Logan, UT)",
-      "details": [
-        "(Logan, UT)"
-      ]
+      "raw": "(Logan, UT) |  | "
     },
     {
       "date": "Location: Ogden High School",
       "time": "",
       "date_time": "Location: Ogden High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5200,18 +4299,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ogden High School",
-      "details": [
-        "Location: Ogden High School"
-      ]
+      "raw": "Location: Ogden High School |  | "
     },
     {
       "date": "9/17",
       "time": "3:30",
       "date_time": "9/17 3:30",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -5221,21 +4317,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/17 | 3:30p | @ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "9/17",
-        "3:30p",
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "9/17 | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "9/17",
       "time": "3:30",
       "date_time": "9/17 3:30",
-      "opponent": "3:30p",
-      "opponent_name": "3:30p",
-      "opponentName": "3:30p",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -5245,19 +4335,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/17 | 3:30p",
-      "details": [
-        "9/17",
-        "3:30p"
-      ]
+      "raw": "9/17 |  | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -5267,19 +4353,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT) | Location: Ben Lomond High School",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)",
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "@ Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "@ Ben Lomond (Ogden, UT)",
-      "opponent": "@ Ben Lomond (Ogden, UT)",
-      "opponent_name": "Ben Lomond (Ogden, UT)",
-      "opponentName": "Ben Lomond (Ogden, UT)",
+      "opponent": "@ @ Ben Lomond (Ogden, UT)",
+      "opponent_name": "@ Ben Lomond (Ogden, UT)",
+      "opponentName": "@ Ben Lomond (Ogden, UT)",
       "location": "Away",
       "is_home": false,
       "isHome": false,
@@ -5289,16 +4371,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "@ Ben Lomond (Ogden, UT)",
-      "details": [
-        "@ Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "@ Ben Lomond (Ogden, UT) | @ Ben Lomond (Ogden, UT) | "
     },
     {
       "date": "Ben Lomond (Ogden, UT)",
       "time": "",
       "date_time": "Ben Lomond (Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5310,16 +4389,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Ben Lomond (Ogden, UT)",
-      "details": [
-        "Ben Lomond (Ogden, UT)"
-      ]
+      "raw": "Ben Lomond (Ogden, UT) |  | "
     },
     {
       "date": "(Ogden, UT)",
       "time": "",
       "date_time": "(Ogden, UT)",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5331,16 +4407,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "(Ogden, UT)",
-      "details": [
-        "(Ogden, UT)"
-      ]
+      "raw": "(Ogden, UT) |  | "
     },
     {
       "date": "Location: Ben Lomond High School",
       "time": "",
       "date_time": "Location: Ben Lomond High School",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5352,43 +4425,15 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Location: Ben Lomond High School",
-      "details": [
-        "Location: Ben Lomond High School"
-      ]
+      "raw": "Location: Ben Lomond High School |  | "
     },
     {
       "date": "9/21",
       "time": "",
       "date_time": "9/21",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": true,
-      "isRegion": true,
-      "result": "",
-      "score": "",
-      "raw": "9/21 | TBA | 3A Region 12 Tournament | Match Location: Logan, UT | Match Details: Day 1",
-      "details": [
-        "9/21",
-        "TBA",
-        "3A Region 12 Tournament",
-        "Match Location: Logan, UT",
-        "Match Details: Day 1"
-      ]
-    },
-    {
-      "date": "9/21",
-      "time": "",
-      "date_time": "9/21",
-      "opponent": "TBA",
-      "opponent_name": "TBA",
-      "opponentName": "TBA",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
       "location": "Home",
       "is_home": true,
       "isHome": true,
@@ -5398,40 +4443,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "9/21 | TBA",
-      "details": [
-        "9/21",
-        "TBA"
-      ]
+      "raw": "9/21 |  | "
     },
     {
-      "date": "3A Region 12 Tournament",
+      "date": "9/21",
       "time": "",
-      "date_time": "3A Region 12 Tournament",
-      "opponent": "Match Location: Logan, UT",
-      "opponent_name": "Match Location: Logan, UT",
-      "opponentName": "Match Location: Logan, UT",
-      "location": "Home",
-      "is_home": true,
-      "isHome": true,
-      "is_away": false,
-      "isAway": false,
-      "is_region": true,
-      "isRegion": true,
-      "result": "",
-      "score": "",
-      "raw": "3A Region 12 Tournament | Match Location: Logan, UT | Match Details: Day 1",
-      "details": [
-        "3A Region 12 Tournament",
-        "Match Location: Logan, UT",
-        "Match Details: Day 1"
-      ]
-    },
-    {
-      "date": "3A Region 12 Tournament",
-      "time": "",
-      "date_time": "3A Region 12 Tournament",
-      "opponent": "",
+      "date_time": "9/21",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5439,20 +4457,17 @@
       "isHome": true,
       "is_away": false,
       "isAway": false,
-      "is_region": true,
-      "isRegion": true,
+      "is_region": false,
+      "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "3A Region 12 Tournament",
-      "details": [
-        "3A Region 12 Tournament"
-      ]
+      "raw": "9/21 |  | "
     },
     {
       "date": "3A Region 12 Tournament",
       "time": "",
       "date_time": "3A Region 12 Tournament",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5460,20 +4475,53 @@
       "isHome": true,
       "is_away": false,
       "isAway": false,
-      "is_region": true,
-      "isRegion": true,
+      "is_region": false,
+      "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "3A Region 12 Tournament",
-      "details": [
-        "3A Region 12 Tournament"
-      ]
+      "raw": "3A Region 12 Tournament |  | "
+    },
+    {
+      "date": "3A Region 12 Tournament",
+      "time": "",
+      "date_time": "3A Region 12 Tournament",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "3A Region 12 Tournament |  | "
+    },
+    {
+      "date": "3A Region 12 Tournament",
+      "time": "",
+      "date_time": "3A Region 12 Tournament",
+      "opponent": "vs ",
+      "opponent_name": "",
+      "opponentName": "",
+      "location": "Home",
+      "is_home": true,
+      "isHome": true,
+      "is_away": false,
+      "isAway": false,
+      "is_region": false,
+      "isRegion": false,
+      "result": "",
+      "score": "",
+      "raw": "3A Region 12 Tournament |  | "
     },
     {
       "date": "Match Location: Logan, UT",
       "time": "",
       "date_time": "Match Location: Logan, UT",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5485,16 +4533,13 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Location: Logan, UT",
-      "details": [
-        "Match Location: Logan, UT"
-      ]
+      "raw": "Match Location: Logan, UT |  | "
     },
     {
       "date": "Match Details: Day 1",
       "time": "",
       "date_time": "Match Details: Day 1",
-      "opponent": "",
+      "opponent": "vs ",
       "opponent_name": "",
       "opponentName": "",
       "location": "Home",
@@ -5506,10 +4551,7 @@
       "isRegion": false,
       "result": "",
       "score": "",
-      "raw": "Match Details: Day 1",
-      "details": [
-        "Match Details: Day 1"
-      ]
+      "raw": "Match Details: Day 1 |  | "
     }
   ]
 }
