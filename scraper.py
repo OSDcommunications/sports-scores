@@ -13,41 +13,45 @@ TEAMS = [
     },
     {
         "name": "Ogden High JV Football",
-        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/football/junior-varsity/schedule/",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/football/jv/schedule/",
         "filename": "ogden_jv_football_schedule.json"
     },
     {
         "name": "Ogden High Girls Soccer",
-        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/girls-soccer/schedule/",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/soccer/girls/schedule/",
         "filename": "ogden_girls_soccer_schedule.json"
     },
     {
         "name": "Ogden High JV Girls Soccer",
-        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/girls-soccer/junior-varsity/schedule/",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/soccer/girls/jv/schedule/",
         "filename": "ogden_jv_girls_soccer_schedule.json"
     },
     {
         "name": "Ogden High Girls Tennis",
-        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/girls-tennis/schedule/",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/tennis/girls/schedule/",
         "filename": "ogden_girls_tennis_schedule.json"
     },
     {
         "name": "Ogden High Girls Volleyball",
-        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/girls-volleyball/schedule/",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/volleyball/schedule/",
         "filename": "ogden_girls_volleyball_schedule.json"
     }
 ]
 
 def parse_schedule_text(text):
     games = []
-    pattern = r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?)\s*\n?\s*(\d{1,2}:\d{2}\s*(?:[ap]\.?m\.?|[ap])?|TBA|tba)?\s*\n?\s*(vs|@)\s*\n?\s*([^\n]+)'
+    # Pattern handles concatenated strings (e.g. 8/207:00pm) and separated formats
+    pattern = r'(\d{1,2})/([0-3]?\d)\s*(\d{1,2}:\d{2}\s*(?:[ap]\.?m\.?|[ap])?|TBA|tba)?\s*\n?\s*(vs|@)\s*\n?\s*([^\n]+)'
     matches = list(re.finditer(pattern, text, re.IGNORECASE))
     
     for i, match in enumerate(matches):
-        date_raw = match.group(1)
-        time_raw = match.group(2) or "TBA"
-        location_str = match.group(3)
-        opp_raw = match.group(4).strip()
+        m_str = match.group(1)
+        d_str = match.group(2)
+        time_raw = match.group(3) or "TBA"
+        location_str = match.group(4)
+        opp_raw = match.group(5).strip()
+        
+        date_raw = f"{m_str}/{d_str}"
         
         time_clean = time_raw.upper().replace('.', '').strip()
         if time_clean.endswith('P') and not time_clean.endswith('PM'):
@@ -59,13 +63,17 @@ def parse_schedule_text(text):
         end_idx = matches[i+1].start() if i + 1 < len(matches) else len(text)
         tail_text = text[start_idx:end_idx]
         
-        res_match = re.search(r'([WL]\s*\d+-\d+|Preview Game|Upcoming|Final|TBD)', tail_text, re.IGNORECASE)
-        result_display = res_match.group(1).strip() if res_match else "Preview Game"
+        res_match = re.search(r'([WL]\s*\d+-\d+|Preview Game|Upcoming|Final|TBD|Box Score|Preview)', tail_text, re.IGNORECASE)
+        result_display = "Preview Game"
+        if res_match:
+            matched_res = res_match.group(1).strip()
+            if matched_res.lower() in ["preview", "box score"]:
+                result_display = "Preview Game"
+            else:
+                result_display = matched_res
         
-        date_parts = date_raw.split("/")
-        m, d = date_parts[0], date_parts[1]
-        month_name = MONTHS.get(m, "AUG")
-        date_display = f"{month_name} {d} • {time_clean}"
+        month_name = MONTHS.get(m_str, "AUG")
+        date_display = f"{month_name} {d_str} • {time_clean}"
         
         is_home = location_str.lower() == "vs"
         is_region = "*" in opp_raw
