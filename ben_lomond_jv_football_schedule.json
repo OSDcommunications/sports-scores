@@ -1,0 +1,87 @@
+{
+  "team": "Ben Lomond JV Football",
+  "source_url": "https://www.maxpreps.com/ut/ogden/ben-lomond-scots/football/jv/schedule/",
+  "last_updated": "2026-08-21T17:21:47.185490",
+  "metrics": {
+    "total_games": 6,
+    "wins": 0,
+    "losses": 0,
+    "ties": 0
+  },
+  "games": [
+    {
+      "raw": "Date/Time\tOpponent\tGame Info",
+      "date": "Date/Time\tOpponent\tGame Info",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Date/Time\tOpponent\tGame Info"
+      ]
+    },
+    {
+      "raw": "8/26 | 6:00pm | @ | Duchesne | Preview Game",
+      "date": "8/26",
+      "opponent": "6:00pm",
+      "result": "@",
+      "details": [
+        "8/26",
+        "6:00pm",
+        "@",
+        "Duchesne",
+        "Preview Game"
+      ]
+    },
+    {
+      "raw": "9/9 | 6:00pm | vs | Duchesne | Preview Game",
+      "date": "9/9",
+      "opponent": "6:00pm",
+      "result": "vs",
+      "details": [
+        "9/9",
+        "6:00pm",
+        "vs",
+        "Duchesne",
+        "Preview Game"
+      ]
+    },
+    {
+      "raw": "9/17 | 4:00pm | @ | Grantsville | Preview Game",
+      "date": "9/17",
+      "opponent": "4:00pm",
+      "result": "@",
+      "details": [
+        "9/17",
+        "4:00pm",
+        "@",
+        "Grantsville",
+        "Preview Game"
+      ]
+    },
+    {
+      "raw": "9/24 | 4:00pm | @ | Morgan | Preview Game",
+      "date": "9/24",
+      "opponent": "4:00pm",
+      "result": "@",
+      "details": [
+        "9/24",
+        "4:00pm",
+        "@",
+        "Morgan",
+        "Preview Game"
+      ]
+    },
+    {
+      "raw": "10/7 | 3:30pm | @ | Union* | Preview Game",
+      "date": "10/7",
+      "opponent": "3:30pm",
+      "result": "@",
+      "details": [
+        "10/7",
+        "3:30pm",
+        "@",
+        "Union*",
+        "Preview Game"
+      ]
+    }
+  ]
+}

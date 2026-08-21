@@ -1,15 +1,7 @@
-import os
 import json
-import requests
-from bs4 import BeautifulSoup
+import datetime
+from playwright.sync_api import sync_playwright
 
-# Define headers to mimic a web browser
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept-Language": "en-US,en;q=0.9"
-}
-
-# Master list of teams to scrape (OHS + BLHS)
 TEAMS = [
     # ================= OGDEN HIGH SCHOOL =================
     {
@@ -76,48 +68,73 @@ TEAMS = [
     }
 ]
 
-def scrape_schedule(team_info):
-    name = team_info["name"]
-    url = team_info["url"]
-    output_filename = team_info["output"]
-
-    print(f"Fetching schedule for {name}...")
-    try:
-        response = requests.get(url, headers=HEADERS, timeout=15)
-        response.raise_for_status()
-    except Exception as e:
-        print(f"  [ERROR] Failed to fetch {url}: {e}")
-        return
-
-    soup = BeautifulSoup(response.text, "html.parser")
+def scrape_schedule(page, team):
+    print(f"Fetching schedule for {team['name']}...")
     games = []
+    wins, losses, ties = 0, 0, 0
 
-    # MaxPreps schedules typically format games in rows or cards
-    # Adjust selectors as necessary based on MaxPreps page DOM
-    rows = soup.find_all("tr") or soup.find_all("div", class_="contest-row")
+    try:
+        page.goto(team["url"], wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(3000)
 
-    for row in rows:
-        text = row.get_text(separator=" ", strip=True)
-        if text:
-            games.append({"raw": text})
+        # Target MaxPreps contest rows
+        rows = page.query_selector_all("tr, div[class*='contest-row'], div[class*='ContestRow']")
+        
+        for row in rows:
+            text = row.inner_text().strip()
+            if text and len(text) > 5:
+                lines = [line.strip() for line in text.split("\n") if line.strip()]
+                
+                game_obj = {
+                    "raw": " | ".join(lines),
+                    "date": lines[0] if len(lines) > 0 else "",
+                    "opponent": lines[1] if len(lines) > 1 else "",
+                    "result": lines[2] if len(lines) > 2 else "",
+                    "details": lines
+                }
+                games.append(game_obj)
+                
+                full_str = " ".join(lines).upper()
+                if " W " in f" {full_str} " or full_str.startswith("W "):
+                    wins += 1
+                elif " L " in f" {full_str} " or full_str.startswith("L "):
+                    losses += 1
+                elif " T " in f" {full_str} " or full_str.startswith("T "):
+                    ties += 1
+
+    except Exception as e:
+        print(f"  [ERROR] Scraping failed for {team['name']}: {e}")
 
     schedule_data = {
-        "team": name,
-        "source_url": url,
-        "total_games": len(games),
+        "team": team["name"],
+        "source_url": team["url"],
+        "last_updated": datetime.datetime.now().isoformat(),
+        "metrics": {
+            "total_games": len(games),
+            "wins": wins,
+            "losses": losses,
+            "ties": ties
+        },
         "games": games
     }
 
-    with open(output_filename, "w", encoding="utf-8") as f:
+    with open(team["output"], "w", encoding="utf-8") as f:
         json.dump(schedule_data, f, indent=2, ensure_ascii=False)
 
-    print(f"  [SUCCESS] Saved {len(games)} entries to {output_filename}")
+    print(f"  [SUCCESS] Saved {len(games)} entries to {team['output']}")
 
 def main():
-    print("Starting schedule scraper for OHS and BLHS sports...\n")
-    for team in TEAMS:
-        scrape_schedule(team)
-    print("\nScraper completed successfully!")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+        page = context.new_page()
+
+        for team in TEAMS:
+            scrape_schedule(page, team)
+
+        browser.close()
 
 if __name__ == "__main__":
     main()

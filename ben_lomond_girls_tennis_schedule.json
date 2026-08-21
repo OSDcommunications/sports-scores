@@ -1,0 +1,167 @@
+{
+  "team": "Ben Lomond Varsity Girls Tennis",
+  "source_url": "https://www.maxpreps.com/ut/ogden/ben-lomond-scots/tennis/girls/schedule/",
+  "last_updated": "2026-08-21T17:21:57.900516",
+  "metrics": {
+    "total_games": 13,
+    "wins": 0,
+    "losses": 0,
+    "ties": 0
+  },
+  "games": [
+    {
+      "raw": "Number of Matches\tWins\tLosses\tWin %",
+      "date": "Number of Matches\tWins\tLosses\tWin %",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Number of Matches\tWins\tLosses\tWin %"
+      ]
+    },
+    {
+      "raw": "21\t1\t20\t4.76",
+      "date": "21\t1\t20\t4.76",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "21\t1\t20\t4.76"
+      ]
+    },
+    {
+      "raw": "Date\tOpponent/Match\tResult",
+      "date": "Date\tOpponent/Match\tResult",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Date\tOpponent/Match\tResult"
+      ]
+    },
+    {
+      "raw": "8/11 | 3:30p | @ Roy (Roy, UT) | Location: Roy High School | Box Score | (L) 5 - 0",
+      "date": "8/11",
+      "opponent": "3:30p",
+      "result": "@ Roy (Roy, UT)",
+      "details": [
+        "8/11",
+        "3:30p",
+        "@ Roy (Roy, UT)",
+        "Location: Roy High School",
+        "Box Score",
+        "(L) 5 - 0"
+      ]
+    },
+    {
+      "raw": "8/18 | 3:30p | Logan (Logan, UT) | Location: Ben Lomond High School | Box Score | (L) 5 - 0",
+      "date": "8/18",
+      "opponent": "3:30p",
+      "result": "Logan (Logan, UT)",
+      "details": [
+        "8/18",
+        "3:30p",
+        "Logan (Logan, UT)",
+        "Location: Ben Lomond High School",
+        "Box Score",
+        "(L) 5 - 0"
+      ]
+    },
+    {
+      "raw": "8/20 | 3:30p | @ Morgan (Morgan, UT) | Location: Morgan High School | Box Score | (L) 5 - 0",
+      "date": "8/20",
+      "opponent": "3:30p",
+      "result": "@ Morgan (Morgan, UT)",
+      "details": [
+        "8/20",
+        "3:30p",
+        "@ Morgan (Morgan, UT)",
+        "Location: Morgan High School",
+        "Box Score",
+        "(L) 5 - 0"
+      ]
+    },
+    {
+      "raw": "8/27 | 3:30p | @ Grantsville (Grantsville, UT) | Location: Grantsville High School",
+      "date": "8/27",
+      "opponent": "3:30p",
+      "result": "@ Grantsville (Grantsville, UT)",
+      "details": [
+        "8/27",
+        "3:30p",
+        "@ Grantsville (Grantsville, UT)",
+        "Location: Grantsville High School"
+      ]
+    },
+    {
+      "raw": "9/1 | 3:30p | Ogden (Ogden, UT) | Location: Ben Lomond High School",
+      "date": "9/1",
+      "opponent": "3:30p",
+      "result": "Ogden (Ogden, UT)",
+      "details": [
+        "9/1",
+        "3:30p",
+        "Ogden (Ogden, UT)",
+        "Location: Ben Lomond High School"
+      ]
+    },
+    {
+      "raw": "9/3 | 3:30p | @ Logan (Logan, UT) | Location: Logan High School",
+      "date": "9/3",
+      "opponent": "3:30p",
+      "result": "@ Logan (Logan, UT)",
+      "details": [
+        "9/3",
+        "3:30p",
+        "@ Logan (Logan, UT)",
+        "Location: Logan High School"
+      ]
+    },
+    {
+      "raw": "9/8 | 3:30p | Morgan (Morgan, UT) | Location: Ben Lomond High School",
+      "date": "9/8",
+      "opponent": "3:30p",
+      "result": "Morgan (Morgan, UT)",
+      "details": [
+        "9/8",
+        "3:30p",
+        "Morgan (Morgan, UT)",
+        "Location: Ben Lomond High School"
+      ]
+    },
+    {
+      "raw": "9/15 | 3:30p | Grantsville (Grantsville, UT) | Location: Ben Lomond High School",
+      "date": "9/15",
+      "opponent": "3:30p",
+      "result": "Grantsville (Grantsville, UT)",
+      "details": [
+        "9/15",
+        "3:30p",
+        "Grantsville (Grantsville, UT)",
+        "Location: Ben Lomond High School"
+      ]
+    },
+    {
+      "raw": "9/17 | 3:30p | Ogden (Ogden, UT) | Location: Ben Lomond High School",
+      "date": "9/17",
+      "opponent": "3:30p",
+      "result": "Ogden (Ogden, UT)",
+      "details": [
+        "9/17",
+        "3:30p",
+        "Ogden (Ogden, UT)",
+        "Location: Ben Lomond High School"
+      ]
+    },
+    {
+      "raw": "9/21 | TBA | 3A Region 12 Tournament | Match Location: Logan, UT | Match Details: Day 1",
+      "date": "9/21",
+      "opponent": "TBA",
+      "result": "3A Region 12 Tournament",
+      "details": [
+        "9/21",
+        "TBA",
+        "3A Region 12 Tournament",
+        "Match Location: Logan, UT",
+        "Match Details: Day 1"
+      ]
+    }
+  ]
+}

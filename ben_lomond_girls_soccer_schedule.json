@@ -1,0 +1,218 @@
+{
+  "team": "Ben Lomond Varsity Girls Soccer",
+  "source_url": "https://www.maxpreps.com/ut/ogden/ben-lomond-scots/soccer/girls/schedule/",
+  "last_updated": "2026-08-21T17:21:50.699879",
+  "metrics": {
+    "total_games": 16,
+    "wins": 4,
+    "losses": 0,
+    "ties": 0
+  },
+  "games": [
+    {
+      "raw": "Date/Time\tOpponent\tResult\tMatch Info",
+      "date": "Date/Time\tOpponent\tResult\tMatch Info",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Date/Time\tOpponent\tResult\tMatch Info"
+      ]
+    },
+    {
+      "raw": "8/7 | 3:30pm | vs | West | W 5-1 | Box Score",
+      "date": "8/7",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "8/7",
+        "3:30pm",
+        "vs",
+        "West",
+        "W 5-1",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/12 | 3:30pm | vs | Roy | W 2-1 | Box Score",
+      "date": "8/12",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "8/12",
+        "3:30pm",
+        "vs",
+        "Roy",
+        "W 2-1",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/14 | 3:30pm | vs | Hunter | W 4-0 | Box Score",
+      "date": "8/14",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "8/14",
+        "3:30pm",
+        "vs",
+        "Hunter",
+        "W 4-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/20 | 4:00pm | @ | R | Rowland Hall | W 2-0 | Box Score",
+      "date": "8/20",
+      "opponent": "4:00pm",
+      "result": "@",
+      "details": [
+        "8/20",
+        "4:00pm",
+        "@",
+        "R",
+        "Rowland Hall",
+        "W 2-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "Date/Time\tOpponent\tMatch Info",
+      "date": "Date/Time\tOpponent\tMatch Info",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Date/Time\tOpponent\tMatch Info"
+      ]
+    },
+    {
+      "raw": "8/25 | 4:00pm | @ | American Heritage | Preview Match",
+      "date": "8/25",
+      "opponent": "4:00pm",
+      "result": "@",
+      "details": [
+        "8/25",
+        "4:00pm",
+        "@",
+        "American Heritage",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "8/27 | 4:00pm | vs | St. Joseph | Preview Match",
+      "date": "8/27",
+      "opponent": "4:00pm",
+      "result": "vs",
+      "details": [
+        "8/27",
+        "4:00pm",
+        "vs",
+        "St. Joseph",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/3 | 3:30pm | @ | Grantsville* | Preview Match",
+      "date": "9/3",
+      "opponent": "3:30pm",
+      "result": "@",
+      "details": [
+        "9/3",
+        "3:30pm",
+        "@",
+        "Grantsville*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/10 | 3:30pm | @ | Morgan* | Preview Match",
+      "date": "9/10",
+      "opponent": "3:30pm",
+      "result": "@",
+      "details": [
+        "9/10",
+        "3:30pm",
+        "@",
+        "Morgan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/15 | 3:30pm | vs | Ogden* | Preview Match",
+      "date": "9/15",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "9/15",
+        "3:30pm",
+        "vs",
+        "Ogden*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/17 | 3:30pm | vs | Logan* | Preview Match",
+      "date": "9/17",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "9/17",
+        "3:30pm",
+        "vs",
+        "Logan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/22 | 3:30pm | vs | Grantsville* | Preview Match",
+      "date": "9/22",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "9/22",
+        "3:30pm",
+        "vs",
+        "Grantsville*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/29 | 3:30pm | vs | Morgan* | Preview Match",
+      "date": "9/29",
+      "opponent": "3:30pm",
+      "result": "vs",
+      "details": [
+        "9/29",
+        "3:30pm",
+        "vs",
+        "Morgan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/1 | 5:30pm | @ | Ogden* | Preview Match",
+      "date": "10/1",
+      "opponent": "5:30pm",
+      "result": "@",
+      "details": [
+        "10/1",
+        "5:30pm",
+        "@",
+        "Ogden*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/6 | 7:00pm | @ | Logan* | Preview Match",
+      "date": "10/6",
+      "opponent": "7:00pm",
+      "result": "@",
+      "details": [
+        "10/6",
+        "7:00pm",
+        "@",
+        "Logan*",
+        "Preview Match"
+      ]
+    }
+  ]
+}

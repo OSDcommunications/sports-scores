@@ -1,0 +1,374 @@
+{
+  "team": "Ben Lomond Varsity Girls Volleyball",
+  "source_url": "https://www.maxpreps.com/ut/ogden/ben-lomond-scots/volleyball/girls/schedule/",
+  "last_updated": "2026-08-21T17:22:01.601541",
+  "metrics": {
+    "total_games": 28,
+    "wins": 0,
+    "losses": 5,
+    "ties": 0
+  },
+  "games": [
+    {
+      "raw": "Date/Time\tOpponent\tResult\tMatch Info",
+      "date": "Date/Time\tOpponent\tResult\tMatch Info",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Date/Time\tOpponent\tResult\tMatch Info"
+      ]
+    },
+    {
+      "raw": "8/4 | 6:30pm | vs | Summit Academy | L 3-0 | Box Score",
+      "date": "8/4",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "8/4",
+        "6:30pm",
+        "vs",
+        "Summit Academy",
+        "L 3-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/6 | 6:30pm | vs | Providence Hall | L 3-0 | Box Score",
+      "date": "8/6",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "8/6",
+        "6:30pm",
+        "vs",
+        "Providence Hall",
+        "L 3-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/11 | 6:30pm | vs | Bonneville | L 3-0 | Box Score",
+      "date": "8/11",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "8/11",
+        "6:30pm",
+        "vs",
+        "Bonneville",
+        "L 3-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/13 | 7:00pm | @ | Intermountain Christian | L 3-0 | Box Score",
+      "date": "8/13",
+      "opponent": "7:00pm",
+      "result": "@",
+      "details": [
+        "8/13",
+        "7:00pm",
+        "@",
+        "Intermountain Christian",
+        "L 3-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/18 | 6:30pm | @ | Waterford | L 3-0 | Box Score",
+      "date": "8/18",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "8/18",
+        "6:30pm",
+        "@",
+        "Waterford",
+        "L 3-0",
+        "Box Score"
+      ]
+    },
+    {
+      "raw": "8/21 | 9:00am | @ | Roy | Report Score\tView Matchup",
+      "date": "8/21",
+      "opponent": "9:00am",
+      "result": "@",
+      "details": [
+        "8/21",
+        "9:00am",
+        "@",
+        "Roy",
+        "Report Score\tView Matchup"
+      ]
+    },
+    {
+      "raw": "8/21 | 12:00pm | vs | Summit Academy*** | Preview Match",
+      "date": "8/21",
+      "opponent": "12:00pm",
+      "result": "vs",
+      "details": [
+        "8/21",
+        "12:00pm",
+        "vs",
+        "Summit Academy***",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "Date/Time\tOpponent\tMatch Info",
+      "date": "Date/Time\tOpponent\tMatch Info",
+      "opponent": "",
+      "result": "",
+      "details": [
+        "Date/Time\tOpponent\tMatch Info"
+      ]
+    },
+    {
+      "raw": "8/22 | 10:30am | @ | Copper Hills*** | Preview Match",
+      "date": "8/22",
+      "opponent": "10:30am",
+      "result": "@",
+      "details": [
+        "8/22",
+        "10:30am",
+        "@",
+        "Copper Hills***",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "8/22 | 1:30pm | @ | St. Joseph*** | Preview Match",
+      "date": "8/22",
+      "opponent": "1:30pm",
+      "result": "@",
+      "details": [
+        "8/22",
+        "1:30pm",
+        "@",
+        "St. Joseph***",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "8/25 | 6:00pm | @ | Granger | Preview Match",
+      "date": "8/25",
+      "opponent": "6:00pm",
+      "result": "@",
+      "details": [
+        "8/25",
+        "6:00pm",
+        "@",
+        "Granger",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/1 | 6:30pm | @ | UMAHF | Preview Match",
+      "date": "9/1",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "9/1",
+        "6:30pm",
+        "@",
+        "UMAHF",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/3 | 6:30pm | vs | ALA | Preview Match",
+      "date": "9/3",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "9/3",
+        "6:30pm",
+        "vs",
+        "ALA",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/8 | 6:30pm | @ | St. Joseph | Preview Match",
+      "date": "9/8",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "9/8",
+        "6:30pm",
+        "@",
+        "St. Joseph",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/10 | 6:30pm | @ | Logan* | Preview Match",
+      "date": "9/10",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "9/10",
+        "6:30pm",
+        "@",
+        "Logan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/15 | 6:30pm | vs | Ogden* | Preview Match",
+      "date": "9/15",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "9/15",
+        "6:30pm",
+        "vs",
+        "Ogden*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/17 | 6:30pm | vs | Layton Christian Academy* | Preview Match",
+      "date": "9/17",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "9/17",
+        "6:30pm",
+        "vs",
+        "Layton Christian Academy*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/22 | 6:30pm | vs | Morgan* | Preview Match",
+      "date": "9/22",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "9/22",
+        "6:30pm",
+        "vs",
+        "Morgan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/24 | 6:30pm | vs | Grantsville* | Preview Match",
+      "date": "9/24",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "9/24",
+        "6:30pm",
+        "vs",
+        "Grantsville*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "9/29 | 6:30pm | vs | Logan* | Preview Match",
+      "date": "9/29",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "9/29",
+        "6:30pm",
+        "vs",
+        "Logan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/1 | 6:30pm | @ | Ogden* | Preview Match",
+      "date": "10/1",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "10/1",
+        "6:30pm",
+        "@",
+        "Ogden*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/6 | 6:30pm | @ | Layton Christian Academy* | Preview Match",
+      "date": "10/6",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "10/6",
+        "6:30pm",
+        "@",
+        "Layton Christian Academy*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/7 | 6:30pm | vs | UMAHF | Preview Match",
+      "date": "10/7",
+      "opponent": "6:30pm",
+      "result": "vs",
+      "details": [
+        "10/7",
+        "6:30pm",
+        "vs",
+        "UMAHF",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/8 | 6:30pm | @ | Bonneville | Preview Match",
+      "date": "10/8",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "10/8",
+        "6:30pm",
+        "@",
+        "Bonneville",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/13 | 6:30pm | @ | Morgan* | Preview Match",
+      "date": "10/13",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "10/13",
+        "6:30pm",
+        "@",
+        "Morgan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/20 | 6:30pm | @ | Grantsville* | Preview Match",
+      "date": "10/20",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "10/20",
+        "6:30pm",
+        "@",
+        "Grantsville*",
+        "Preview Match"
+      ]
+    },
+    {
+      "raw": "10/22 | 6:30pm | @ | Providence Hall | Preview Match",
+      "date": "10/22",
+      "opponent": "6:30pm",
+      "result": "@",
+      "details": [
+        "10/22",
+        "6:30pm",
+        "@",
+        "Providence Hall",
+        "Preview Match"
+      ]
+    }
+  ]
+}
