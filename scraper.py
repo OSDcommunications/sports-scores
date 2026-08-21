@@ -2,9 +2,10 @@ import json
 import re
 import datetime
 import os
+import urllib.request
 from playwright.sync_api import sync_playwright
 
-# List of all 12 teams for Ogden High School and Ben Lomond High School
+# All 12 teams for Ogden High and Ben Lomond High
 TEAMS = [
     # ================= OGDEN HIGH SCHOOL =================
     {
@@ -71,69 +72,76 @@ TEAMS = [
     }
 ]
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.google.com/"
+}
+
+def extract_contests_from_json(obj):
+    """Recursively find contest list in MaxPreps Next.js JSON tree."""
+    if isinstance(obj, dict):
+        for key in ["contests", "scheduleEntries", "games", "contestList"]:
+            if key in obj and isinstance(obj[key], list) and len(obj[key]) > 0:
+                return obj[key]
+        for v in obj.values():
+            res = extract_contests_from_json(v)
+            if res:
+                return res
+    elif isinstance(obj, list):
+        for item in obj:
+            res = extract_contests_from_json(item)
+            if res:
+                return res
+    return []
+
+def fetch_schedule_direct_http(url):
+    """Method 1: Direct HTTP GET requesting MaxPreps Next.js embedded data."""
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode('utf-8')
+            match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html)
+            if match:
+                raw_data = json.loads(match.group(1))
+                return extract_contests_from_json(raw_data)
+    except Exception as e:
+        print(f"  [INFO] HTTP direct fetch skipped/blocked ({e})")
+    return []
 
 def parse_game_block(lines):
-    """Fallback text parser if JSON extraction fails for a row."""
     if not lines:
         return None
-
     raw_str = " | ".join(lines)
-    date_str = ""
-    time_str = ""
-    opponent_str = ""
-    result_str = ""
-    location_str = "Home"
-    is_home = True
-    is_away = False
-    is_region = False
+    date_str, time_str, opponent_str, result_str = "", "", "", ""
+    location_str, is_home, is_away, is_region = "Home", True, False, False
 
     for line in lines:
         l_lower = line.lower()
-
-        # Date matching
-        if not date_str and (re.search(r'\b(\d{1,2}/\d{1,2})\b', line) or any(
-                m in l_lower for m in ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'])):
-            date_match = re.search(r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?)', line)
-            date_str = date_match.group(1) if date_match else line
-
-        # Time matching
+        if not date_str and (re.search(r'\b(\d{1,2}/\d{1,2})\b', line) or any(m in l_lower for m in ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'])):
+            m = re.search(r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?)', line)
+            date_str = m.group(1) if m else line
         if re.search(r'\d{1,2}:\d{2}\s*(?:am|pm)?', l_lower):
-            time_match = re.search(r'(\d{1,2}:\d{2}\s*(?:am|pm)?)', l_lower)
-            if time_match:
-                time_str = time_match.group(1).upper()
-
-        # Opponent & Location matching
+            m = re.search(r'(\d{1,2}:\d{2}\s*(?:am|pm)?)', l_lower)
+            if m: time_str = m.group(1).upper()
         if '@' in line or 'vs' in l_lower or 'against' in l_lower or 'at ' in l_lower:
             opponent_str = line
             if '@' in line or 'at ' in l_lower:
-                location_str = "Away"
-                is_home = False
-                is_away = True
+                location_str, is_home, is_away = "Away", False, True
             elif 'vs' in l_lower:
-                location_str = "Home"
-                is_home = True
-                is_away = False
-
-        # Region / Conference indicator
+                location_str, is_home, is_away = "Home", True, False
         if '*' in line or 'league' in l_lower or 'region' in l_lower or 'conference' in l_lower:
             is_region = True
-
-        # Score / Result
         if re.search(r'\b[WLT]\b|\b\d+-\d+\b', line):
             result_str = line
 
-    if not date_str and len(lines) > 0:
-        date_str = lines[0]
-    if not opponent_str and len(lines) > 1:
-        opponent_str = lines[1]
-
     opp_clean = re.sub(r'^(vs\.?|@|at)\s*', '', opponent_str, flags=re.IGNORECASE).replace('*', '').strip()
-
     return {
-        "date": date_str,
+        "date": date_str or (lines[0] if len(lines) > 0 else ""),
         "time": time_str,
         "date_time": f"{date_str} {time_str}".strip(),
-        "opponent": opponent_str if opponent_str else opp_clean,
+        "opponent": opponent_str or opp_clean,
         "opponent_name": opp_clean,
         "opponentName": opp_clean,
         "location": location_str,
@@ -145,113 +153,51 @@ def parse_game_block(lines):
         "isRegion": is_region,
         "result": result_str,
         "score": result_str,
-        "raw": raw_str,
-        "details": lines
+        "raw": raw_str
     }
 
-
-def scrape_team_schedule(page, team):
-    print(f"Scraping schedule for {team['name']}...")
+def process_and_save_team(team, raw_contests):
     games = []
+    for c in raw_contests:
+        if isinstance(c, dict):
+            date_val = c.get("date", c.get("dateString", ""))
+            opp_data = c.get("opponent", {})
+            opp_name = opp_data.get("name", "Opponent") if isinstance(opp_data, dict) else str(opp_data)
+            res_data = c.get("result", {})
+            res_text = res_data.get("text", res_data.get("score", "")) if isinstance(res_data, dict) else str(res_data)
 
-    try:
-        page.goto(team["url"], wait_until="domcontentloaded", timeout=30000)
-        page.wait_for_timeout(3000)
+            is_away = c.get("isAway", False) or (isinstance(opp_data, dict) and opp_data.get("isHome", False))
+            is_home = not is_away
+            is_reg = c.get("isConference", c.get("isLeague", False))
 
-        # Method 1: Extract direct schedule payload embedded in MaxPreps Next.js data tag
-        next_data_el = page.query_selector("script#__NEXT_DATA__")
-        if next_data_el:
-            try:
-                raw_json = json.loads(next_data_el.inner_text())
+            games.append({
+                "date": str(date_val),
+                "time": str(c.get("time", "")),
+                "date_time": f"{date_val} {c.get('time', '')}".strip(),
+                "opponent": f"{'@' if is_away else 'vs'} {opp_name}",
+                "opponent_name": opp_name,
+                "opponentName": opp_name,
+                "location": "Away" if is_away else "Home",
+                "is_home": is_home,
+                "isHome": is_home,
+                "is_away": is_away,
+                "isAway": is_away,
+                "is_region": is_reg,
+                "isRegion": is_reg,
+                "result": str(res_text),
+                "score": str(res_text),
+                "raw": f"{date_val} | {opp_name} | {res_text}"
+            })
 
-                def find_contests(obj):
-                    if isinstance(obj, dict):
-                        for k in ["contests", "scheduleEntries", "games", "contestList"]:
-                            if k in obj and isinstance(obj[k], list) and len(obj[k]) > 0:
-                                return obj[k]
-                        for v in obj.values():
-                            res = find_contests(v)
-                            if res:
-                                return res
-                    elif isinstance(obj, list):
-                        for item in obj:
-                            res = find_contests(item)
-                            if res:
-                                return res
-                    return []
-
-                raw_contests = find_contests(raw_json)
-                for contest in raw_contests:
-                    if isinstance(contest, dict):
-                        date_val = contest.get("date", contest.get("dateString", ""))
-                        opp_data = contest.get("opponent", {})
-                        opp_name = opp_data.get("name", "Opponent") if isinstance(opp_data, dict) else str(opp_data)
-                        res_data = contest.get("result", {})
-                        res_text = res_data.get("text", res_data.get("score", "")) if isinstance(res_data, dict) else str(res_data)
-
-                        is_away = contest.get("isAway", False) or (isinstance(opp_data, dict) and opp_data.get("isHome", False))
-                        is_home = not is_away
-                        loc = "Away" if is_away else "Home"
-                        is_reg = contest.get("isConference", contest.get("isLeague", False))
-
-                        games.append({
-                            "date": str(date_val),
-                            "time": str(contest.get("time", "")),
-                            "date_time": f"{date_val} {contest.get('time', '')}".strip(),
-                            "opponent": f"{'@' if is_away else 'vs'} {opp_name}",
-                            "opponent_name": opp_name,
-                            "opponentName": opp_name,
-                            "location": loc,
-                            "is_home": is_home,
-                            "isHome": is_home,
-                            "is_away": is_away,
-                            "isAway": is_away,
-                            "is_region": is_reg,
-                            "isRegion": is_reg,
-                            "result": str(res_text),
-                            "score": str(res_text),
-                            "raw": f"{date_val} | {opp_name} | {res_text}"
-                        })
-            except Exception as e_json:
-                print(f"  [INFO] Next.js parsing skipped: {e_json}")
-
-        # Method 2: DOM row scraping fallback if Next.js data wasn't found
-        if not games:
-            rows = page.query_selector_all("tr, [class*='contest'], [class*='Contest'], [data-testid*='contest']")
-            for row in rows:
-                txt = row.inner_text().strip()
-                if txt and len(txt) > 6:
-                    lines = [line.strip() for line in txt.split("\n") if line.strip()]
-                    parsed = parse_game_block(lines)
-                    if parsed and parsed["date"]:
-                        games.append(parsed)
-
-    except Exception as e:
-        print(f"  [ERROR] Scraping failed for {team['name']}: {e}")
-
-    # Compute metrics summary
-    wins = 0
-    losses = 0
-    ties = 0
-    home_count = 0
-    away_count = 0
-    region_count = 0
-
+    wins, losses, ties, home_cnt, away_cnt, region_cnt = 0, 0, 0, 0, 0, 0
     for g in games:
         res_u = g["result"].upper()
-        if "W" in res_u:
-            wins += 1
-        elif "L" in res_u:
-            losses += 1
-        elif "T" in res_u:
-            ties += 1
-
-        if g.get("is_home"):
-            home_count += 1
-        if g.get("is_away"):
-            away_count += 1
-        if g.get("is_region"):
-            region_count += 1
+        if "W" in res_u: wins += 1
+        elif "L" in res_u: losses += 1
+        elif "T" in res_u: ties += 1
+        if g["is_home"]: home_cnt += 1
+        if g["is_away"]: away_cnt += 1
+        if g["is_region"]: region_cnt += 1
 
     total_games = len(games)
     rec_str = f"{wins}-{losses}" + (f"-{ties}" if ties > 0 else "")
@@ -265,18 +211,17 @@ def scrape_team_schedule(page, team):
         "total_games": total_games,
         "total_matches": total_games,
         "totalMatches": total_games,
-        "home": home_count,
-        "home_matches": home_count,
-        "homeMatches": home_count,
-        "away": away_count,
-        "away_matches": away_count,
-        "awayMatches": away_count,
-        "region": region_count,
-        "region_matches": region_count,
-        "regionMatches": region_count
+        "home": home_cnt,
+        "home_matches": home_cnt,
+        "homeMatches": home_cnt,
+        "away": away_cnt,
+        "away_matches": away_cnt,
+        "awayMatches": away_cnt,
+        "region": region_cnt,
+        "region_matches": region_cnt,
+        "regionMatches": region_cnt
     }
 
-    # Combined payload format to support any website widget variation
     payload = {
         "team": team["name"],
         "source_url": team["url"],
@@ -285,38 +230,79 @@ def scrape_team_schedule(page, team):
         "record": rec_str,
         "total_matches": total_games,
         "totalMatches": total_games,
-        "home_matches": home_count,
-        "homeMatches": home_count,
-        "away_matches": away_count,
-        "awayMatches": away_count,
-        "region_matches": region_count,
-        "regionMatches": region_count,
+        "home_matches": home_cnt,
+        "homeMatches": home_cnt,
+        "away_matches": away_cnt,
+        "awayMatches": away_cnt,
+        "region_matches": region_cnt,
+        "regionMatches": region_cnt,
         "metrics": metrics_obj,
         "game_metrics": metrics_obj,
         "games": games,
         "schedule": games
     }
 
-    # Save to JSON file
-    with open(team["output"], "w", encoding="utf-8") as f:
-        json.dump(payload, f, indent=2, ensure_ascii=False)
-
-    print(f"  [SUCCESS] Saved {total_games} games -> {team['output']}")
-
+    # Only overwrite if we found games OR if no file exists yet
+    if total_games > 0 or not os.path.exists(team["output"]):
+        with open(team["output"], "w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)
+        print(f"  [SUCCESS] Wrote {total_games} games -> {team['output']}")
+    else:
+        print(f"  [WARNING] 0 games scraped for {team['name']}. Preserving existing {team['output']} file.")
 
 def main():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+    print("Starting MaxPreps Schedule Scraper...")
+    
+    # Track teams that need Playwright fallback
+    fallback_teams = []
 
-        for team in TEAMS:
-            scrape_team_schedule(page, team)
+    for team in TEAMS:
+        print(f"\nProcessing {team['name']}...")
+        contests = fetch_schedule_direct_http(team["url"])
+        if contests:
+            process_and_save_team(team, contests)
+        else:
+            fallback_teams.append(team)
 
-        browser.close()
+    # Use Playwright for any remaining teams
+    if fallback_teams:
+        print(f"\nLaunching Playwright browser fallback for {len(fallback_teams)} teams...")
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=HEADERS["User-Agent"])
+            page = context.new_page()
 
+            for team in fallback_teams:
+                print(f"Playwright scraping: {team['name']}...")
+                games_list = []
+                try:
+                    page.goto(team["url"], wait_until="domcontentloaded", timeout=30000)
+                    page.wait_for_timeout(3000)
+                    
+                    next_el = page.query_selector("script#__NEXT_DATA__")
+                    if next_el:
+                        data = json.loads(next_el.inner_text())
+                        contests = extract_contests_from_json(data)
+                        process_and_save_team(team, contests)
+                        continue
+
+                    # DOM row fallback
+                    rows = page.query_selector_all("tr, [class*='contest'], [data-testid*='contest']")
+                    for row in rows:
+                        txt = row.inner_text().strip()
+                        if txt and len(txt) > 6:
+                            lines = [l.strip() for l in txt.split("\n") if l.strip()]
+                            parsed = parse_game_block(lines)
+                            if parsed and parsed["date"]:
+                                games_list.append(parsed)
+
+                    process_and_save_team(team, games_list)
+                except Exception as e:
+                    print(f"  [ERROR] Playwright error for {team['name']}: {e}")
+
+            browser.close()
+
+    print("\nScraper complete!")
 
 if __name__ == "__main__":
     main()
