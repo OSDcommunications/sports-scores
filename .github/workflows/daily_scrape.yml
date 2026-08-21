@@ -5,14 +5,12 @@ on:
     - cron: '0 12 * * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   scrape-and-publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -24,14 +22,17 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install playwright beautifulsoup4
+          pip install playwright
           playwright install chromium
 
       - name: Run Scraper
         run: python scraper.py
 
-      - name: Deploy JSON to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+      - name: Commit and Push Updated JSON Files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add *.json
+          git status
+          git diff-index --quiet HEAD || git commit -m "Auto-update sports schedule JSON [skip ci]"
+          git push
