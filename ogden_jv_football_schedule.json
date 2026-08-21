@@ -4,59 +4,59 @@
   "games": [
     {
       "date_display": "AUG 20 \u2022 4:00PM",
-      "opponent": "8/20",
-      "is_home": true,
+      "opponent": "Bonneville",
+      "is_home": false,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "AUG 27 \u2022 4:00PM",
-      "opponent": "8/27",
+      "opponent": "West Field",
       "is_home": true,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "SEP 3 \u2022 4:00PM",
-      "opponent": "9/3",
+      "opponent": "Clearfield",
       "is_home": true,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "SEP 10 \u2022 4:00PM",
-      "opponent": "9/10",
+      "opponent": "Emery",
       "is_home": true,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "SEP 17 \u2022 4:00PM",
-      "opponent": "9/17",
-      "is_home": true,
+      "opponent": "Logan",
+      "is_home": false,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "SEP 24 \u2022 4:00PM",
-      "opponent": "9/24",
+      "opponent": "Grantsville",
       "is_home": true,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     },
     {
       "date_display": "OCT 1 \u2022 3:30PM",
-      "opponent": "10/1",
-      "is_home": true,
-      "is_region": false,
-      "result_display": "3:30pm"
+      "opponent": "Union",
+      "is_home": false,
+      "is_region": true,
+      "result_display": "Preview Game"
     },
     {
       "date_display": "OCT 7 \u2022 4:00PM",
-      "opponent": "10/7",
+      "opponent": "Morgan",
       "is_home": true,
       "is_region": false,
-      "result_display": "4:00pm"
+      "result_display": "Preview Game"
     }
   ]
 }
