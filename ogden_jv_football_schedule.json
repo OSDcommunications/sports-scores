@@ -4,17 +4,6 @@
   "games": [
     {
       "date": "8/20",
-      "time": "TBA",
-      "date_display": "AUG 20 \u2022 TBA",
-      "opponent": "",
-      "location": "Away",
-      "is_home": false,
-      "is_region": false,
-      "result": "Preview Game",
-      "result_display": "Preview Game"
-    },
-    {
-      "date": "8/20",
       "time": "4:00PM",
       "date_display": "AUG 20 \u2022 4:00PM",
       "opponent": "Bonneville",
