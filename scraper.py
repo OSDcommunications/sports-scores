@@ -22,6 +22,11 @@ TEAMS = [
         "filename": "ogden_girls_soccer_schedule.json"
     },
     {
+        "name": "Ogden High JV Girls Soccer",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/girls-soccer/junior-varsity/schedule/",
+        "filename": "ogden_jv_girls_soccer_schedule.json"
+    },
+    {
         "name": "Ogden High Girls Tennis",
         "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/girls-tennis/schedule/",
         "filename": "ogden_girls_tennis_schedule.json"
