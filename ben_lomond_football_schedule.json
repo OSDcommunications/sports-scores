@@ -1,163 +1,21 @@
 {
   "team": "Ben Lomond Varsity Football",
   "source_url": "https://www.maxpreps.com/ut/ogden/ben-lomond-scots/football/schedule/",
-  "last_updated": "2026-08-21T17:21:43.608217",
+  "last_updated": "2026-08-21 17:40:37",
+  "overall_record": "0-0",
+  "record": "0-0",
   "metrics": {
-    "total_games": 12,
+    "overall_record": "0-0",
     "wins": 0,
-    "losses": 1,
+    "losses": 0,
+    "ties": 0,
+    "total_games": 0
+  },
+  "game_metrics": {
+    "wins": 0,
+    "losses": 0,
     "ties": 0
   },
-  "games": [
-    {
-      "raw": "Date/Time\tOpponent\tResult\tGame Info",
-      "date": "Date/Time\tOpponent\tResult\tGame Info",
-      "opponent": "",
-      "result": "",
-      "details": [
-        "Date/Time\tOpponent\tResult\tGame Info"
-      ]
-    },
-    {
-      "raw": "8/14 | 7:00pm | vs | North Sevier | L 41-33 | Box Score",
-      "date": "8/14",
-      "opponent": "7:00pm",
-      "result": "vs",
-      "details": [
-        "8/14",
-        "7:00pm",
-        "vs",
-        "North Sevier",
-        "L 41-33",
-        "Box Score"
-      ]
-    },
-    {
-      "raw": "Date/Time\tOpponent\tTickets\tGame Info",
-      "date": "Date/Time\tOpponent\tTickets\tGame Info",
-      "opponent": "",
-      "result": "",
-      "details": [
-        "Date/Time\tOpponent\tTickets\tGame Info"
-      ]
-    },
-    {
-      "raw": "8/21 | 7:00pm | @ | Judge Memorial Catholic | Buy Tickets | Preview Game",
-      "date": "8/21",
-      "opponent": "7:00pm",
-      "result": "@",
-      "details": [
-        "8/21",
-        "7:00pm",
-        "@",
-        "Judge Memorial Catholic",
-        "Buy Tickets",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "8/28 | 7:00pm | vs | Evanston | Preview Game",
-      "date": "8/28",
-      "opponent": "7:00pm",
-      "result": "vs",
-      "details": [
-        "8/28",
-        "7:00pm",
-        "vs",
-        "Evanston",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/4 | 7:00pm | @ | ALA | Preview Game",
-      "date": "9/4",
-      "opponent": "7:00pm",
-      "result": "@",
-      "details": [
-        "9/4",
-        "7:00pm",
-        "@",
-        "ALA",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/11 | 7:00pm | vs | Moffat County | Preview Game",
-      "date": "9/11",
-      "opponent": "7:00pm",
-      "result": "vs",
-      "details": [
-        "9/11",
-        "7:00pm",
-        "vs",
-        "Moffat County",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/18 | 7:00pm | vs | Grantsville* | Preview Game",
-      "date": "9/18",
-      "opponent": "7:00pm",
-      "result": "vs",
-      "details": [
-        "9/18",
-        "7:00pm",
-        "vs",
-        "Grantsville*",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/25 | 7:00pm | vs | Morgan* | Preview Game",
-      "date": "9/25",
-      "opponent": "7:00pm",
-      "result": "vs",
-      "details": [
-        "9/25",
-        "7:00pm",
-        "vs",
-        "Morgan*",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "10/2 | 7:00pm | @ | Logan* | Preview Game",
-      "date": "10/2",
-      "opponent": "7:00pm",
-      "result": "@",
-      "details": [
-        "10/2",
-        "7:00pm",
-        "@",
-        "Logan*",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "10/8 | 7:00pm | vs | Union* | Preview Game",
-      "date": "10/8",
-      "opponent": "7:00pm",
-      "result": "vs",
-      "details": [
-        "10/8",
-        "7:00pm",
-        "vs",
-        "Union*",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "10/14 | 5:00pm | @ | Ogden* | Preview Game",
-      "date": "10/14",
-      "opponent": "5:00pm",
-      "result": "@",
-      "details": [
-        "10/14",
-        "5:00pm",
-        "@",
-        "Ogden*",
-        "Preview Game"
-      ]
-    }
-  ]
+  "games": [],
+  "schedule": []
 }

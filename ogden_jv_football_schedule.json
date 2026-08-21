@@ -1,135 +1,21 @@
 {
   "team": "Ogden High JV Football",
   "source_url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/football/jv/schedule/",
-  "last_updated": "2026-08-21T17:21:25.323382",
+  "last_updated": "2026-08-21 17:36:27",
+  "overall_record": "0-0",
+  "record": "0-0",
   "metrics": {
-    "total_games": 10,
+    "overall_record": "0-0",
+    "wins": 0,
+    "losses": 0,
+    "ties": 0,
+    "total_games": 0
+  },
+  "game_metrics": {
     "wins": 0,
     "losses": 0,
     "ties": 0
   },
-  "games": [
-    {
-      "raw": "Date/Time\tOpponent\tResult\tGame Info",
-      "date": "Date/Time\tOpponent\tResult\tGame Info",
-      "opponent": "",
-      "result": "",
-      "details": [
-        "Date/Time\tOpponent\tResult\tGame Info"
-      ]
-    },
-    {
-      "raw": "8/20 | 4:00pm | @ | Bonneville | Report Score\tView Matchup",
-      "date": "8/20",
-      "opponent": "4:00pm",
-      "result": "@",
-      "details": [
-        "8/20",
-        "4:00pm",
-        "@",
-        "Bonneville",
-        "Report Score\tView Matchup"
-      ]
-    },
-    {
-      "raw": "Date/Time\tOpponent\tGame Info",
-      "date": "Date/Time\tOpponent\tGame Info",
-      "opponent": "",
-      "result": "",
-      "details": [
-        "Date/Time\tOpponent\tGame Info"
-      ]
-    },
-    {
-      "raw": "8/27 | 4:00pm | vs | West Field | Preview Game",
-      "date": "8/27",
-      "opponent": "4:00pm",
-      "result": "vs",
-      "details": [
-        "8/27",
-        "4:00pm",
-        "vs",
-        "West Field",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/3 | 4:00pm | vs | Clearfield | Preview Game",
-      "date": "9/3",
-      "opponent": "4:00pm",
-      "result": "vs",
-      "details": [
-        "9/3",
-        "4:00pm",
-        "vs",
-        "Clearfield",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/10 | 4:00pm | vs | Emery | Preview Game",
-      "date": "9/10",
-      "opponent": "4:00pm",
-      "result": "vs",
-      "details": [
-        "9/10",
-        "4:00pm",
-        "vs",
-        "Emery",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/17 | 4:00pm | @ | Logan | Preview Game",
-      "date": "9/17",
-      "opponent": "4:00pm",
-      "result": "@",
-      "details": [
-        "9/17",
-        "4:00pm",
-        "@",
-        "Logan",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "9/24 | 4:00pm | vs | Grantsville | Preview Game",
-      "date": "9/24",
-      "opponent": "4:00pm",
-      "result": "vs",
-      "details": [
-        "9/24",
-        "4:00pm",
-        "vs",
-        "Grantsville",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "10/1 | 3:30pm | @ | Union* | Preview Game",
-      "date": "10/1",
-      "opponent": "3:30pm",
-      "result": "@",
-      "details": [
-        "10/1",
-        "3:30pm",
-        "@",
-        "Union*",
-        "Preview Game"
-      ]
-    },
-    {
-      "raw": "10/7 | 4:00pm | vs | Morgan | Preview Game",
-      "date": "10/7",
-      "opponent": "4:00pm",
-      "result": "vs",
-      "details": [
-        "10/7",
-        "4:00pm",
-        "vs",
-        "Morgan",
-        "Preview Game"
-      ]
-    }
-  ]
+  "games": [],
+  "schedule": []
 }

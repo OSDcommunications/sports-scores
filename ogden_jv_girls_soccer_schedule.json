@@ -1,28 +1,44 @@
 {
   "team": "Ogden High JV Girls Soccer",
   "source_url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/soccer/girls/jv/schedule/",
-  "last_updated": "2026-08-21T17:21:32.532371",
+  "last_updated": "2026-08-21 17:37:37",
+  "overall_record": "2-1",
+  "record": "2-1",
   "metrics": {
-    "total_games": 17,
+    "overall_record": "2-1",
+    "wins": 2,
+    "losses": 1,
+    "ties": 0,
+    "total_games": 17
+  },
+  "game_metrics": {
     "wins": 2,
     "losses": 1,
     "ties": 0
   },
   "games": [
     {
-      "raw": "Date/Time\tOpponent\tResult\tMatch Info",
       "date": "Date/Time\tOpponent\tResult\tMatch Info",
       "opponent": "",
+      "opponent_name": "",
       "result": "",
+      "score": "",
+      "time": "",
+      "location": "",
+      "raw": "Date/Time\tOpponent\tResult\tMatch Info",
       "details": [
         "Date/Time\tOpponent\tResult\tMatch Info"
       ]
     },
     {
-      "raw": "8/5 | 3:30pm | @ | Weber | W 1-0 | Box Score",
       "date": "8/5",
-      "opponent": "3:30pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "W 1-0",
+      "score": "W 1-0",
+      "time": "3:30pm",
+      "location": "",
+      "raw": "8/5 | 3:30pm | @ | Weber | W 1-0 | Box Score",
       "details": [
         "8/5",
         "3:30pm",
@@ -33,10 +49,14 @@
       ]
     },
     {
-      "raw": "8/7 | 3:00pm | @ | West Field | L 4-0 | Box Score",
       "date": "8/7",
-      "opponent": "3:00pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "L 4-0",
+      "score": "L 4-0",
+      "time": "3:00pm",
+      "location": "",
+      "raw": "8/7 | 3:00pm | @ | West Field | L 4-0 | Box Score",
       "details": [
         "8/7",
         "3:00pm",
@@ -47,10 +67,14 @@
       ]
     },
     {
-      "raw": "8/11 | 5:00pm | vs | Green Canyon | Report Score\tView Matchup",
       "date": "8/11",
-      "opponent": "5:00pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/11 | 5:00pm | vs | Green Canyon | Report Score\tView Matchup",
       "details": [
         "8/11",
         "5:00pm",
@@ -60,10 +84,14 @@
       ]
     },
     {
-      "raw": "8/13 | 5:00pm | vs | Fremont | W 2-0 | Box Score",
       "date": "8/13",
-      "opponent": "5:00pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "W 2-0",
+      "score": "W 2-0",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/13 | 5:00pm | vs | Fremont | W 2-0 | Box Score",
       "details": [
         "8/13",
         "5:00pm",
@@ -74,10 +102,14 @@
       ]
     },
     {
-      "raw": "8/17 | 5:00pm | vs | Farmington | Report Score\tView Matchup",
       "date": "8/17",
-      "opponent": "5:00pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/17 | 5:00pm | vs | Farmington | Report Score\tView Matchup",
       "details": [
         "8/17",
         "5:00pm",
@@ -87,10 +119,14 @@
       ]
     },
     {
-      "raw": "8/20 | 5:00pm | vs | Carbon | Report Score\tView Matchup",
       "date": "8/20",
-      "opponent": "5:00pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/20 | 5:00pm | vs | Carbon | Report Score\tView Matchup",
       "details": [
         "8/20",
         "5:00pm",
@@ -100,19 +136,27 @@
       ]
     },
     {
-      "raw": "Date/Time\tOpponent\tMatch Info",
       "date": "Date/Time\tOpponent\tMatch Info",
       "opponent": "",
+      "opponent_name": "",
       "result": "",
+      "score": "",
+      "time": "",
+      "location": "",
+      "raw": "Date/Time\tOpponent\tMatch Info",
       "details": [
         "Date/Time\tOpponent\tMatch Info"
       ]
     },
     {
-      "raw": "8/25 | 3:30pm | @ | Park City | Preview Match",
       "date": "8/25",
-      "opponent": "3:30pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "3:30pm",
+      "location": "",
+      "raw": "8/25 | 3:30pm | @ | Park City | Preview Match",
       "details": [
         "8/25",
         "3:30pm",
@@ -122,10 +166,14 @@
       ]
     },
     {
-      "raw": "8/27 | 5:15pm | @ | Syracuse | Preview Match",
       "date": "8/27",
-      "opponent": "5:15pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:15pm",
+      "location": "",
+      "raw": "8/27 | 5:15pm | @ | Syracuse | Preview Match",
       "details": [
         "8/27",
         "5:15pm",
@@ -135,10 +183,14 @@
       ]
     },
     {
-      "raw": "9/1 | 5:00pm | vs | Olympus | Preview Match",
       "date": "9/1",
-      "opponent": "5:00pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "9/1 | 5:00pm | vs | Olympus | Preview Match",
       "details": [
         "9/1",
         "5:00pm",
@@ -148,10 +200,14 @@
       ]
     },
     {
-      "raw": "9/3 | 3:30pm | @ | Logan* | Preview Match",
       "date": "9/3",
-      "opponent": "3:30pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "3:30pm",
+      "location": "",
+      "raw": "9/3 | 3:30pm | @ | Logan* | Preview Match",
       "details": [
         "9/3",
         "3:30pm",
@@ -161,10 +217,14 @@
       ]
     },
     {
-      "raw": "9/8 | 5:30pm | vs | Morgan* | Preview Match",
       "date": "9/8",
-      "opponent": "5:30pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:30pm",
+      "location": "",
+      "raw": "9/8 | 5:30pm | vs | Morgan* | Preview Match",
       "details": [
         "9/8",
         "5:30pm",
@@ -174,10 +234,14 @@
       ]
     },
     {
-      "raw": "9/10 | 5:30pm | vs | Grantsville* | Preview Match",
       "date": "9/10",
-      "opponent": "5:30pm",
-      "result": "vs",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:30pm",
+      "location": "",
+      "raw": "9/10 | 5:30pm | vs | Grantsville* | Preview Match",
       "details": [
         "9/10",
         "5:30pm",
@@ -187,10 +251,14 @@
       ]
     },
     {
-      "raw": "9/15 | 5:15pm | @ | Ben Lomond* | Preview Match",
       "date": "9/15",
-      "opponent": "5:15pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:15pm",
+      "location": "",
+      "raw": "9/15 | 5:15pm | @ | Ben Lomond* | Preview Match",
       "details": [
         "9/15",
         "5:15pm",
@@ -200,10 +268,14 @@
       ]
     },
     {
-      "raw": "9/24 | 5:00pm | @ | Morgan | Preview Match",
       "date": "9/24",
-      "opponent": "5:00pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "9/24 | 5:00pm | @ | Morgan | Preview Match",
       "details": [
         "9/24",
         "5:00pm",
@@ -213,10 +285,300 @@
       ]
     },
     {
-      "raw": "9/29 | 5:30pm | @ | Grantsville | Preview Match",
       "date": "9/29",
-      "opponent": "5:30pm",
-      "result": "@",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:30pm",
+      "location": "",
+      "raw": "9/29 | 5:30pm | @ | Grantsville | Preview Match",
+      "details": [
+        "9/29",
+        "5:30pm",
+        "@",
+        "Grantsville",
+        "Preview Match"
+      ]
+    }
+  ],
+  "schedule": [
+    {
+      "date": "Date/Time\tOpponent\tResult\tMatch Info",
+      "opponent": "",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "",
+      "location": "",
+      "raw": "Date/Time\tOpponent\tResult\tMatch Info",
+      "details": [
+        "Date/Time\tOpponent\tResult\tMatch Info"
+      ]
+    },
+    {
+      "date": "8/5",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "W 1-0",
+      "score": "W 1-0",
+      "time": "3:30pm",
+      "location": "",
+      "raw": "8/5 | 3:30pm | @ | Weber | W 1-0 | Box Score",
+      "details": [
+        "8/5",
+        "3:30pm",
+        "@",
+        "Weber",
+        "W 1-0",
+        "Box Score"
+      ]
+    },
+    {
+      "date": "8/7",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "L 4-0",
+      "score": "L 4-0",
+      "time": "3:00pm",
+      "location": "",
+      "raw": "8/7 | 3:00pm | @ | West Field | L 4-0 | Box Score",
+      "details": [
+        "8/7",
+        "3:00pm",
+        "@",
+        "West Field",
+        "L 4-0",
+        "Box Score"
+      ]
+    },
+    {
+      "date": "8/11",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/11 | 5:00pm | vs | Green Canyon | Report Score\tView Matchup",
+      "details": [
+        "8/11",
+        "5:00pm",
+        "vs",
+        "Green Canyon",
+        "Report Score\tView Matchup"
+      ]
+    },
+    {
+      "date": "8/13",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "W 2-0",
+      "score": "W 2-0",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/13 | 5:00pm | vs | Fremont | W 2-0 | Box Score",
+      "details": [
+        "8/13",
+        "5:00pm",
+        "vs",
+        "Fremont",
+        "W 2-0",
+        "Box Score"
+      ]
+    },
+    {
+      "date": "8/17",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/17 | 5:00pm | vs | Farmington | Report Score\tView Matchup",
+      "details": [
+        "8/17",
+        "5:00pm",
+        "vs",
+        "Farmington",
+        "Report Score\tView Matchup"
+      ]
+    },
+    {
+      "date": "8/20",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "8/20 | 5:00pm | vs | Carbon | Report Score\tView Matchup",
+      "details": [
+        "8/20",
+        "5:00pm",
+        "vs",
+        "Carbon",
+        "Report Score\tView Matchup"
+      ]
+    },
+    {
+      "date": "Date/Time\tOpponent\tMatch Info",
+      "opponent": "",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "",
+      "location": "",
+      "raw": "Date/Time\tOpponent\tMatch Info",
+      "details": [
+        "Date/Time\tOpponent\tMatch Info"
+      ]
+    },
+    {
+      "date": "8/25",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "3:30pm",
+      "location": "",
+      "raw": "8/25 | 3:30pm | @ | Park City | Preview Match",
+      "details": [
+        "8/25",
+        "3:30pm",
+        "@",
+        "Park City",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "8/27",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:15pm",
+      "location": "",
+      "raw": "8/27 | 5:15pm | @ | Syracuse | Preview Match",
+      "details": [
+        "8/27",
+        "5:15pm",
+        "@",
+        "Syracuse",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/1",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "9/1 | 5:00pm | vs | Olympus | Preview Match",
+      "details": [
+        "9/1",
+        "5:00pm",
+        "vs",
+        "Olympus",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/3",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "3:30pm",
+      "location": "",
+      "raw": "9/3 | 3:30pm | @ | Logan* | Preview Match",
+      "details": [
+        "9/3",
+        "3:30pm",
+        "@",
+        "Logan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/8",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:30pm",
+      "location": "",
+      "raw": "9/8 | 5:30pm | vs | Morgan* | Preview Match",
+      "details": [
+        "9/8",
+        "5:30pm",
+        "vs",
+        "Morgan*",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/10",
+      "opponent": "vs",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:30pm",
+      "location": "",
+      "raw": "9/10 | 5:30pm | vs | Grantsville* | Preview Match",
+      "details": [
+        "9/10",
+        "5:30pm",
+        "vs",
+        "Grantsville*",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/15",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:15pm",
+      "location": "",
+      "raw": "9/15 | 5:15pm | @ | Ben Lomond* | Preview Match",
+      "details": [
+        "9/15",
+        "5:15pm",
+        "@",
+        "Ben Lomond*",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/24",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:00pm",
+      "location": "",
+      "raw": "9/24 | 5:00pm | @ | Morgan | Preview Match",
+      "details": [
+        "9/24",
+        "5:00pm",
+        "@",
+        "Morgan",
+        "Preview Match"
+      ]
+    },
+    {
+      "date": "9/29",
+      "opponent": "@",
+      "opponent_name": "",
+      "result": "",
+      "score": "",
+      "time": "5:30pm",
+      "location": "",
+      "raw": "9/29 | 5:30pm | @ | Grantsville | Preview Match",
       "details": [
         "9/29",
         "5:30pm",
