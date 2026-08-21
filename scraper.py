@@ -13,10 +13,33 @@ TEAMS = [
         "name": "Ogden High JV Football",
         "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/football/jv/schedule/",
         "output": "ogden_jv_football_schedule.json"
+    },
+    {
+        "name": "Ogden High Varsity Girls Soccer",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/soccer/girls/schedule/",
+        "output": "ogden_girls_soccer_schedule.json"
+    },
+    {
+        "name": "Ogden High JV Girls Soccer",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/soccer/girls/jv/schedule/",
+        "output": "ogden_jv_girls_soccer_schedule.json"
+    },
+    {
+        "name": "Ogden High Varsity Girls Volleyball",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/volleyball/girls/schedule/",
+        "output": "ogden_girls_volleyball_schedule.json"
+    },
+    {
+        "name": "Ogden High Varsity Girls Tennis",
+        "url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/tennis/girls/schedule/",
+        "output": "ogden_girls_tennis_schedule.json"
     }
 ]
 
-MONTHS = {"1": "AUG", "8": "AUG", "9": "SEP", "10": "OCT", "11": "NOV", "12": "DEC"}
+MONTHS = {
+    "1": "JAN", "2": "FEB", "3": "MAR", "4": "APR", "5": "MAY", "6": "JUN",
+    "7": "JUL", "8": "AUG", "9": "SEP", "10": "OCT", "11": "NOV", "12": "DEC"
+}
 
 def parse_game_row(date_raw, opponent_raw, result_raw):
     cleaned_date_str = re.sub(r'(\d{1,2}/\d{1,2})(\d{1,2}:)', r'\1 \2', date_raw.strip())
@@ -38,7 +61,7 @@ def parse_game_row(date_raw, opponent_raw, result_raw):
 
     if date_match:
         m, d = date_match.group(1).split("/")
-        month_name = MONTHS.get(m, "AUG" if m == "8" else "SEP")
+        month_name = MONTHS.get(m, "TBD")
         date_part = f"{month_name} {d}"
     else:
         date_part = "TBD"
@@ -65,7 +88,6 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
     print(f"Fetching schedule for {team_name}...")
     games = []
     
-    # Create an isolated context for every team page visit
     context = browser.new_context(
         user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     )
@@ -89,7 +111,6 @@ def fetch_team_schedule(team_name, target_url, output_path, browser):
     finally:
         context.close()
 
-    # Guard: only save if games were successfully parsed
     if games:
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump({"team": team_name, "updated": True, "games": games}, f, indent=2)
