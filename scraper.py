@@ -40,33 +40,40 @@ TEAMS = [
 
 def parse_schedule_text(text):
     games = []
-    pattern = r'(\d{1,2}/\d{1,2})\s*\n?\s*(\d{1,2}:\d{2}\s*(?:am|pm)?)\s*\n?\s*(vs|@)\s*\n?\s*([^\n]+)'
+    pattern = r'(\d{1,2}/\d{1,2}(?:/\d{2,4})?)\s*\n?\s*(\d{1,2}:\d{2}\s*(?:[ap]\.?m\.?|[ap])?|TBA|tba)?\s*\n?\s*(vs|@)\s*\n?\s*([^\n]+)'
     matches = list(re.finditer(pattern, text, re.IGNORECASE))
     
     for i, match in enumerate(matches):
-        date_str = match.group(1)
-        time_str = match.group(2).upper()
+        date_raw = match.group(1)
+        time_raw = match.group(2) or "TBA"
         location_str = match.group(3)
         opp_raw = match.group(4).strip()
         
+        time_clean = time_raw.upper().replace('.', '').strip()
+        if time_clean.endswith('P') and not time_clean.endswith('PM'):
+            time_clean += 'M'
+        elif time_clean.endswith('A') and not time_clean.endswith('AM'):
+            time_clean += 'M'
+            
         start_idx = match.end()
         end_idx = matches[i+1].start() if i + 1 < len(matches) else len(text)
         tail_text = text[start_idx:end_idx]
         
-        res_match = re.search(r'([WL]\s*\d+-\d+|Preview Game|Upcoming|Final)', tail_text, re.IGNORECASE)
+        res_match = re.search(r'([WL]\s*\d+-\d+|Preview Game|Upcoming|Final|TBD)', tail_text, re.IGNORECASE)
         result_display = res_match.group(1).strip() if res_match else "Preview Game"
         
-        m, d = date_str.split("/")
+        date_parts = date_raw.split("/")
+        m, d = date_parts[0], date_parts[1]
         month_name = MONTHS.get(m, "AUG")
-        date_display = f"{month_name} {d} • {time_str}"
+        date_display = f"{month_name} {d} • {time_clean}"
         
         is_home = location_str.lower() == "vs"
         is_region = "*" in opp_raw
         opp_clean = opp_raw.replace("*", "").strip()
         
         games.append({
-            "date": date_str,
-            "time": time_str,
+            "date": date_raw,
+            "time": time_clean,
             "date_display": date_display,
             "opponent": opp_clean,
             "location": "Home" if is_home else "Away",
@@ -93,9 +100,11 @@ def scrape_all():
             try:
                 page = context.new_page()
                 page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-                page.goto(team["url"], wait_until="domcontentloaded", timeout=60000)
+                page.goto(team["url"], wait_until="networkidle", timeout=60000)
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight / 2)")
+                page.wait_for_timeout(2000)
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(3000)
+                page.wait_for_timeout(5000)
                 
                 body_text = page.inner_text("body")
                 games = parse_schedule_text(body_text)
