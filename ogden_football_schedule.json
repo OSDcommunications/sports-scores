@@ -1,55 +1,32 @@
 {
-  "team": "Ogden High Varsity Football",
-  "source_url": "https://www.maxpreps.com/ut/ogden/ogden-tigers/football/schedule/",
-  "last_updated": "2026-08-21 19:18:59",
-  "overall_record": "0-0",
-  "record": "0-0",
-  "total_matches": 0,
-  "totalMatches": 0,
-  "home_matches": 0,
-  "homeMatches": 0,
-  "away_matches": 0,
-  "awayMatches": 0,
-  "region_matches": 0,
-  "regionMatches": 0,
   "metrics": {
-    "overall_record": "0-0",
-    "record": "0-0",
-    "wins": 0,
-    "losses": 0,
-    "ties": 0,
-    "total_games": 0,
-    "total_matches": 0,
-    "totalMatches": 0,
-    "home": 0,
-    "home_matches": 0,
-    "homeMatches": 0,
-    "away": 0,
-    "away_matches": 0,
-    "awayMatches": 0,
-    "region": 0,
-    "region_matches": 0,
-    "regionMatches": 0
+    "total_games": 10,
+    "home": 5,
+    "away": 5,
+    "region": 5
   },
-  "game_metrics": {
-    "overall_record": "0-0",
-    "record": "0-0",
-    "wins": 0,
-    "losses": 0,
-    "ties": 0,
-    "total_games": 0,
-    "total_matches": 0,
-    "totalMatches": 0,
-    "home": 0,
-    "home_matches": 0,
-    "homeMatches": 0,
-    "away": 0,
-    "away_matches": 0,
-    "awayMatches": 0,
-    "region": 0,
-    "region_matches": 0,
-    "regionMatches": 0
-  },
-  "games": [],
-  "schedule": []
+  "games": [
+    {
+      "date": "AUG 14",
+      "time": "7:00 PM",
+      "opponent": "North Sevier",
+      "is_home": true,
+      "is_region": false,
+      "result": "L 41-33"
+    },
+    {
+      "date": "AUG 21",
+      "time": "7:00 PM",
+      "opponent": "Judge Memorial",
+      "is_home": false,
+      "is_region": false
+    },
+    {
+      "date": "OCT 14",
+      "time": "5:00 PM",
+      "opponent": "Ben Lomond",
+      "is_home": true,
+      "is_region": true
+    }
+  ]
 }
