@@ -38,6 +38,30 @@ TEAMS = [
     }
 ]
 
+def is_valid_opponent(opp_str):
+    if not opp_str or len(opp_str) < 2:
+        return False
+    
+    opp_lower = opp_str.lower().strip()
+    invalid_keywords = {
+        "preview", "preview game", "preview match", "report score", 
+        "view matchup", "box score", "match info", "final", "tbd", "tba", 
+        "vs", "@", "upcoming", "today", "tomorrow"
+    }
+    
+    if opp_lower in invalid_keywords:
+        return False
+        
+    # Ignore strings that are purely time numbers (e.g., "7:00pm", "5:30 pm")
+    if re.match(r'^\d{1,2}:\d{2}\s*(?:[ap]\.?m\.?|[ap])?$', opp_lower, re.IGNORECASE):
+        return False
+        
+    # Must contain at least two actual letters
+    if len(re.findall(r'[a-zA-Z]', opp_str)) < 2:
+        return False
+        
+    return True
+
 def parse_schedule_text(text):
     raw_games = []
     pattern = r'(\d{1,2})/([0-3]?\d)\s*\n?\s*(\d{1,2}:\d{2}\s*(?:[ap]\.?m\.?|[ap])?|TBA|tba)?\s*\n?\s*(vs|@)\s*\n?\s*([^\n]+)'
@@ -49,12 +73,17 @@ def parse_schedule_text(text):
         location_str = match.group(4)
         opp_raw = match.group(5).strip()
         
-        # Clean Opponent and Location
+        # Clean Opponent
         is_home = location_str.lower() == "vs"
         is_region = "*" in opp_raw
         opp_clean = opp_raw.replace("*", "").strip()
         opp_clean = re.sub(r'^\d{1,2}:\d{2}\s*(?:AM|PM|a|p)?\s*', '', opp_clean, flags=re.IGNORECASE).strip()
+        opp_clean = re.sub(r'^(?:vs|@)\s*', '', opp_clean, flags=re.IGNORECASE).strip()
         
+        # Filter out banner button matches & phantom cards
+        if not is_valid_opponent(opp_clean):
+            continue
+            
         # Clean Time
         if not time_raw or time_raw.upper() in ["TBA", "TBD"]:
             time_clean = "TBA"
@@ -73,7 +102,6 @@ def parse_schedule_text(text):
         if res_match:
             matched_res = res_match.group(1).strip()
             if matched_res.lower() not in ["preview", "box score", "report score", "preview game", "upcoming", "tbd"]:
-                # Normalize lowercase w/l to uppercase W/L
                 if matched_res[0].lower() in ['w', 'l']:
                     result_display = matched_res[0].upper() + matched_res[1:]
                 else:
@@ -97,7 +125,7 @@ def parse_schedule_text(text):
             "result_display": result_display
         })
         
-    # Deduplicate entries (prefers score entries over preview summaries)
+    # Deduplicate entries by opponent and date
     unique_games = {}
     for g in raw_games:
         key = (g["month_num"], g["day_num"], g["opponent"].lower())
@@ -108,13 +136,12 @@ def parse_schedule_text(text):
             if ("W " in g["result_display"] or "L " in g["result_display"]) and not ("W " in existing["result_display"] or "L " in existing["result_display"]):
                 unique_games[key] = g
 
-    # Sort chronologically (August - December first, January - May second)
+    # Sort chronologically (June - December first, January - May second)
     sorted_games = sorted(
         unique_games.values(),
         key=lambda x: (x["month_num"] if x["month_num"] >= 6 else x["month_num"] + 12, x["day_num"])
     )
     
-    # Strip internal keys before JSON export
     final_games = []
     for g in sorted_games:
         game_copy = dict(g)
@@ -127,7 +154,10 @@ def parse_schedule_text(text):
 def scrape_all():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
-        context = browser.new_context(viewport={"width": 1280, "height": 800})
+        context = browser.new_context(
+            viewport={"width": 1280, "height": 800},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+        )
         
         for team in TEAMS:
             print(f"Scraping {team['name']}...")
@@ -135,6 +165,21 @@ def scrape_all():
                 page = context.new_page()
                 page.goto(team["url"], wait_until="domcontentloaded", timeout=30000)
                 page.wait_for_timeout(3000)
+                
+                # Strip out hero/banner widgets from DOM before reading text
+                page.evaluate("""() => {
+                    const selectors = [
+                        'header', 'nav', 'footer',
+                        '[class*="Hero"]', '[class*="hero"]',
+                        '[class*="Summary"]', '[class*="summary"]',
+                        '[class*="LastMatch"]', '[class*="last-match"]',
+                        '[class*="NextGame"]', '[class*="next-game"]'
+                    ];
+                    selectors.forEach(s => {
+                        document.querySelectorAll(s).forEach(el => el.remove());
+                    });
+                }""")
+                
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
                 page.wait_for_timeout(2000)
                 
