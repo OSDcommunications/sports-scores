@@ -3,54 +3,74 @@
   "updated": true,
   "games": [
     {
-      "date": "8/147:00pm",
-      "opponent": "vsBear River",
-      "result": "L36-13"
+      "date_display": "AUG 14 \u2022 47:00PM",
+      "opponent": "Bear River",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "L36-13"
     },
     {
-      "date": "8/217:00pm",
-      "opponent": "vsBonneville",
-      "result": "Preview Game"
+      "date_display": "AUG 21 \u2022 17:00PM",
+      "opponent": "Bonneville",
+      "is_home": true,
+      "is_region": false,
+      "result_display": "Preview Game"
     },
     {
-      "date": "8/287:00pm",
-      "opponent": "@West Field",
-      "result": "Preview Game"
+      "date_display": "AUG 28 \u2022 87:00PM",
+      "opponent": "West Field",
+      "is_home": false,
+      "is_region": false,
+      "result_display": "Preview Game"
     },
     {
-      "date": "9/47:00pm",
-      "opponent": "@Clearfield",
-      "result": "Preview Game"
+      "date_display": "SEP 47 \u2022 47:00PM",
+      "opponent": "Clearfield",
+      "is_home": false,
+      "is_region": false,
+      "result_display": "Preview Game"
     },
     {
-      "date": "9/117:00pm",
-      "opponent": "@Emery",
-      "result": "Preview Game"
+      "date_display": "SEP 11 \u2022 17:00PM",
+      "opponent": "Emery",
+      "is_home": false,
+      "is_region": false,
+      "result_display": "Preview Game"
     },
     {
-      "date": "9/187:00pm",
-      "opponent": "vsLogan*",
-      "result": "Preview Game"
+      "date_display": "SEP 18 \u2022 87:00PM",
+      "opponent": "Logan",
+      "is_home": true,
+      "is_region": true,
+      "result_display": "Preview Game"
     },
     {
-      "date": "9/257:00pm",
-      "opponent": "@Grantsville*",
-      "result": "Preview Game"
+      "date_display": "SEP 25 \u2022 57:00PM",
+      "opponent": "Grantsville",
+      "is_home": false,
+      "is_region": true,
+      "result_display": "Preview Game"
     },
     {
-      "date": "10/27:00pm",
-      "opponent": "vsUnion*",
-      "result": "Preview Game"
+      "date_display": "OCT 27 \u2022 27:00PM",
+      "opponent": "Union",
+      "is_home": true,
+      "is_region": true,
+      "result_display": "Preview Game"
     },
     {
-      "date": "10/87:00pm",
-      "opponent": "@Morgan*",
-      "result": "Preview Game"
+      "date_display": "OCT 87 \u2022 87:00PM",
+      "opponent": "Morgan",
+      "is_home": false,
+      "is_region": true,
+      "result_display": "Preview Game"
     },
     {
-      "date": "10/145:00pm",
-      "opponent": "vsBen Lomond*",
-      "result": "Preview Game"
+      "date_display": "OCT 14 \u2022 45:00PM",
+      "opponent": "Ben Lomond",
+      "is_home": true,
+      "is_region": true,
+      "result_display": "Preview Game"
     }
   ]
 }
