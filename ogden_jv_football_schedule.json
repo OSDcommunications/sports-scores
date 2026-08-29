@@ -1,5 +1,94 @@
 {
   "team": "Ogden High JV Football",
   "updated": true,
-  "games": []
+  "games": [
+    {
+      "date": "8/20",
+      "time": "4:00PM",
+      "date_display": "AUG 20 \u2022 4:00PM",
+      "opponent": "Bonneville",
+      "location": "Away",
+      "is_home": false,
+      "is_region": false,
+      "result": "L 20-14",
+      "result_display": "L 20-14"
+    },
+    {
+      "date": "8/27",
+      "time": "4:00PM",
+      "date_display": "AUG 27 \u2022 4:00PM",
+      "opponent": "West Field",
+      "location": "Home",
+      "is_home": true,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "9/3",
+      "time": "4:00PM",
+      "date_display": "SEP 3 \u2022 4:00PM",
+      "opponent": "Clearfield",
+      "location": "Home",
+      "is_home": true,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "9/10",
+      "time": "4:00PM",
+      "date_display": "SEP 10 \u2022 4:00PM",
+      "opponent": "Emery",
+      "location": "Home",
+      "is_home": true,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "9/17",
+      "time": "4:00PM",
+      "date_display": "SEP 17 \u2022 4:00PM",
+      "opponent": "Logan",
+      "location": "Away",
+      "is_home": false,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "9/24",
+      "time": "4:00PM",
+      "date_display": "SEP 24 \u2022 4:00PM",
+      "opponent": "Grantsville",
+      "location": "Home",
+      "is_home": true,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "10/1",
+      "time": "3:30PM",
+      "date_display": "OCT 1 \u2022 3:30PM",
+      "opponent": "Union",
+      "location": "Away",
+      "is_home": false,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "10/7",
+      "time": "4:00PM",
+      "date_display": "OCT 7 \u2022 4:00PM",
+      "opponent": "Morgan",
+      "location": "Home",
+      "is_home": true,
+      "is_region": false,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    }
+  ]
 }
