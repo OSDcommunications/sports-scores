@@ -146,6 +146,17 @@
       "result_display": "Preview Game"
     },
     {
+      "date": "9/22",
+      "time": "3:30PM",
+      "date_display": "SEP 22 \u2022 3:30PM",
+      "opponent": "Logan",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
       "date": "9/24",
       "time": "5:00PM",
       "date_display": "SEP 24 \u2022 5:00PM",
