@@ -177,6 +177,17 @@
       "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
+    },
+    {
+      "date": "10/1",
+      "time": "3:30PM",
+      "date_display": "OCT 1 \u2022 3:30PM",
+      "opponent": "Ben Lomond",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     }
   ]
 }
