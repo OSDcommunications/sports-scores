@@ -53,7 +53,7 @@
       "opponent": "Logan",
       "location": "Away",
       "is_home": false,
-      "is_region": false,
+      "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
     },
