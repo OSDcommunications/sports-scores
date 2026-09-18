@@ -164,8 +164,8 @@
       "location": "Away",
       "is_home": false,
       "is_region": true,
-      "result": "Preview Game",
-      "result_display": "Preview Game"
+      "result": "W 3-0",
+      "result_display": "W 3-0"
     },
     {
       "date": "9/17",
@@ -175,8 +175,8 @@
       "location": "Home",
       "is_home": true,
       "is_region": true,
-      "result": "Preview Game",
-      "result_display": "Preview Game"
+      "result": "L 3-0",
+      "result_display": "L 3-0"
     },
     {
       "date": "9/22",
