@@ -86,7 +86,7 @@
       "opponent": "Morgan",
       "location": "Home",
       "is_home": true,
-      "is_region": false,
+      "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
     }
