@@ -188,6 +188,17 @@
       "is_region": true,
       "result": "W 6-0",
       "result_display": "W 6-0"
+    },
+    {
+      "date": "10/14",
+      "time": "4:00PM",
+      "date_display": "OCT 14 \u2022 4:00PM",
+      "opponent": "Emery",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     }
   ]
 }
