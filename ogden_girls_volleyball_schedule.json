@@ -246,6 +246,17 @@
     },
     {
       "date": "10/9",
+      "time": "5:00PM",
+      "date_display": "OCT 9 \u2022 5:00PM",
+      "opponent": "Clearfield",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "W 2-1",
+      "result_display": "W 2-1"
+    },
+    {
+      "date": "10/9",
       "time": "7:00PM",
       "date_display": "OCT 9 \u2022 7:00PM",
       "opponent": "Virgin Valley",
@@ -256,21 +267,21 @@
       "result_display": "L 2-1"
     },
     {
-      "date": "10/9",
-      "time": "9:00PM",
-      "date_display": "OCT 9 \u2022 9:00PM",
-      "opponent": "Clearfield",
+      "date": "10/10",
+      "time": "10:30AM",
+      "date_display": "OCT 10 \u2022 10:30AM",
+      "opponent": "Northridge",
       "location": "Home",
       "is_home": true,
       "is_region": true,
-      "result": "W 2-1",
-      "result_display": "W 2-1"
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     },
     {
       "date": "10/10",
-      "time": "TBA",
-      "date_display": "OCT 10 \u2022 TBA",
-      "opponent": "TBA Opponent",
+      "time": "12:00PM",
+      "date_display": "OCT 10 \u2022 12:00PM",
+      "opponent": "Virgin Valley",
       "location": "Home",
       "is_home": true,
       "is_region": true,
