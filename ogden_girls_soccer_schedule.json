@@ -197,6 +197,17 @@
       "location": "Home",
       "is_home": true,
       "is_region": true,
+      "result": "W 10-0",
+      "result_display": "W 10-0"
+    },
+    {
+      "date": "10/17",
+      "time": "1:00PM",
+      "date_display": "OCT 17 \u2022 1:00PM",
+      "opponent": "Union",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
     }
