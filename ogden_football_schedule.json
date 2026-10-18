@@ -111,6 +111,17 @@
       "is_region": true,
       "result": "W 62-0",
       "result_display": "W 62-0"
+    },
+    {
+      "date": "10/23",
+      "time": "5:00PM",
+      "date_display": "OCT 23 \u2022 5:00PM",
+      "opponent": "Union",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     }
   ]
 }

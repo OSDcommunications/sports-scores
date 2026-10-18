@@ -208,6 +208,17 @@
       "location": "Home",
       "is_home": true,
       "is_region": true,
+      "result": "W 8-0",
+      "result_display": "W 8-0"
+    },
+    {
+      "date": "10/22",
+      "time": "11:30AM",
+      "date_display": "OCT 22 \u2022 11:30AM",
+      "opponent": "TBA Opponent",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
     }
