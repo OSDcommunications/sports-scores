@@ -219,6 +219,17 @@
       "location": "Home",
       "is_home": true,
       "is_region": true,
+      "result": "W 2-1",
+      "result_display": "W 2-1"
+    },
+    {
+      "date": "10/24",
+      "time": "11:00AM",
+      "date_display": "OCT 24 \u2022 11:00AM",
+      "opponent": "Manti",
+      "location": "Away",
+      "is_home": false,
+      "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
     }
