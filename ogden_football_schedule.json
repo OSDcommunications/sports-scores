@@ -120,6 +120,17 @@
       "location": "Home",
       "is_home": true,
       "is_region": true,
+      "result": "W 35-3",
+      "result_display": "W 35-3"
+    },
+    {
+      "date": "10/30",
+      "time": "6:00PM",
+      "date_display": "OCT 30 \u2022 6:00PM",
+      "opponent": "Juab",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
       "result": "Preview Game",
       "result_display": "Preview Game"
     }
