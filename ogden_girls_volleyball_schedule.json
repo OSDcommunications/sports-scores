@@ -309,6 +309,17 @@
       "is_region": true,
       "result": "W 3-1",
       "result_display": "W 3-1"
+    },
+    {
+      "date": "10/29",
+      "time": "5:00PM",
+      "date_display": "OCT 29 \u2022 5:00PM",
+      "opponent": "Carbon",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
     }
   ]
 }
