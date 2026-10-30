@@ -312,14 +312,36 @@
     },
     {
       "date": "10/29",
+      "time": "1:00PM",
+      "date_display": "OCT 29 \u2022 1:00PM",
+      "opponent": "Layton Christian Academy",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "Preview Game",
+      "result_display": "Preview Game"
+    },
+    {
+      "date": "10/29",
       "time": "5:00PM",
       "date_display": "OCT 29 \u2022 5:00PM",
       "opponent": "Carbon",
       "location": "Home",
       "is_home": true,
       "is_region": true,
-      "result": "Preview Game",
-      "result_display": "Preview Game"
+      "result": "W 3-0",
+      "result_display": "W 3-0"
+    },
+    {
+      "date": "10/29",
+      "time": "8:00PM",
+      "date_display": "OCT 29 \u2022 8:00PM",
+      "opponent": "Morgan",
+      "location": "Home",
+      "is_home": true,
+      "is_region": true,
+      "result": "L 3-1",
+      "result_display": "L 3-1"
     }
   ]
 }
