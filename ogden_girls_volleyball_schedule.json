@@ -48,17 +48,6 @@
     },
     {
       "date": "8/14",
-      "time": "6:00PM",
-      "date_display": "AUG 14 \u2022 6:00PM",
-      "opponent": "Murray",
-      "location": "Home",
-      "is_home": true,
-      "is_region": true,
-      "result": "W 2-0",
-      "result_display": "W 2-0"
-    },
-    {
-      "date": "8/14",
       "time": "8:00PM",
       "date_display": "AUG 14 \u2022 8:00PM",
       "opponent": "Tooele",
